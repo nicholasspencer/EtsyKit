@@ -3,4 +3,4 @@ sources:
 templates:
   - Templates/
 output:
-  Sources/Etsy.swift/generated/
+  Sources/Etsy.swift/Generated/
