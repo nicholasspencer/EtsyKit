@@ -6,3 +6,40 @@ scrape_type() {
 
 scrape_type $1
 exit 0
+
+# Produces:
+# {
+#   "property": "name",
+#   "type": "string",
+#   "secondaryType": null
+# }
+# {
+#   "property": "uri",
+#   "type": "string",
+#   "secondaryType": null
+# }
+# {
+#   "property": "params",
+#   "type": null,
+#   "secondaryType": null
+# }
+# {
+#   "property": "defaults",
+#   "type": null,
+#   "secondaryType": null
+# }
+# {
+#   "property": "type",
+#   "type": "string",
+#   "secondaryType": null
+# }
+# {
+#   "property": "visibility",
+#   "type": "string",
+#   "secondaryType": null
+# }
+# {
+#   "property": "http_method",
+#   "type": "string",
+#   "secondaryType": null
+# }

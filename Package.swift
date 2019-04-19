@@ -11,12 +11,9 @@ let package = Package(
     ],
     dependencies: [
         // Dev deps
-        .package(
         .package(url: "https://github.com/nicklockwood/SwiftFormat.git", from: "0.35.8"),
         .package(url: "https://github.com/Realm/SwiftLint.git", from: "0.28.1"),
-//        .package(url: "https://github.com/orta/Komondor", from: "1.0.2"),
-        .Package(url: "https://github.com/stencilproject/Stencil.git", majorVersion: 0, minor: 13),
-
+//        .package(url: "https://github.com/stencilproject/Stencil.git", from: "0.13.1"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
