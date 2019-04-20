@@ -1,0 +1,12 @@
+[
+  {
+    "property": "guest_id",
+    "typeInformation": "guest_id",
+    "secondaryInformation": null
+  },
+  {
+    "property": "checkout_url",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  }
+]

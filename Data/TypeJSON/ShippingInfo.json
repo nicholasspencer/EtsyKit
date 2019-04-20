@@ -1,0 +1,52 @@
+[
+  {
+    "property": "shipping_info_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "origin_country_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "destination_country_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "currency_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "primary_cost",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "secondary_cost",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "listing_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "region_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "origin_country_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "destination_country_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  }
+]

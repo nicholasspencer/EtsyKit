@@ -1,0 +1,22 @@
+[
+  {
+    "property": "user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "favorite_user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "target_user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "creation_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  }
+]

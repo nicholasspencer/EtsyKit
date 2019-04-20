@@ -1,0 +1,262 @@
+[
+  {
+    "property": "listing_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "state",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "category_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "title",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "description",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "creation_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "ending_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "original_creation_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "last_modified_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "price",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "currency_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "quantity",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "sku",
+    "typeInformation": "string",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "tags",
+    "typeInformation": "string",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "category_path",
+    "typeInformation": "string",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "category_path_ids",
+    "typeInformation": "int",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "taxonomy_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "suggested_taxonomy_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "taxonomy_path",
+    "typeInformation": "string",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "materials",
+    "typeInformation": "string",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "shop_section_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "featured_rank",
+    "typeInformation": "featured_rank",
+    "secondaryInformation": null
+  },
+  {
+    "property": "state_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "url",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "views",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "num_favorers",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shipping_template_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shipping_profile_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "processing_min",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "processing_max",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "who_made",
+    "typeInformation": "enum",
+    "secondaryInformation": "i_did,collective,someone_else"
+  },
+  {
+    "property": "is_supply",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "when_made",
+    "typeInformation": "enum",
+    "secondaryInformation": "made_to_order,2010_2019,2000_2009,before_2000,1990s,1980s,1970s,1960s,1950s,1940s,1930s,1920s,1910s,1900s,1800s,1700s,before_1700"
+  },
+  {
+    "property": "item_weight",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "item_weight_unit",
+    "typeInformation": "enum",
+    "secondaryInformation": "oz,lb,g,kg"
+  },
+  {
+    "property": "item_length",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "item_width",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "item_height",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "item_dimensions_unit",
+    "typeInformation": "enum",
+    "secondaryInformation": "in,ft,mm,cm,m"
+  },
+  {
+    "property": "is_private",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "recipient",
+    "typeInformation": "enum",
+    "secondaryInformation": "men,women,unisex_adults,teen_boys,teen_girls,teens,boys,girls,children,baby_boys,baby_girls,babies,birds,cats,dogs,pets,not_specified"
+  },
+  {
+    "property": "occasion",
+    "typeInformation": "enum",
+    "secondaryInformation": "anniversary,baptism,bar_or_bat_mitzvah,birthday,canada_day,chinese_new_year,cinco_de_mayo,confirmation,christmas,day_of_the_dead,easter,eid,engagement,fathers_day,get_well,graduation,halloween,hanukkah,housewarming,kwanzaa,prom,july_4th,mothers_day,new_baby,new_years,quinceanera,retirement,st_patricks_day,sweet_16,sympathy,thanksgiving,valentines,wedding"
+  },
+  {
+    "property": "style",
+    "typeInformation": "string",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "non_taxable",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_customizable",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_digital",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "file_data",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "can_write_inventory",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "has_variations",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "should_auto_renew",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "language",
+    "typeInformation": "language",
+    "secondaryInformation": null
+  }
+]

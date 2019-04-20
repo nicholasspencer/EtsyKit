@@ -1,0 +1,52 @@
+[
+  {
+    "property": "bill_charge_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "creation_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "type",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "type_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "amount",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "currency_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "creation_year",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "creation_month",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "last_modified_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  }
+]

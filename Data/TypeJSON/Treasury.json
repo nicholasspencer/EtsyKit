@@ -1,0 +1,92 @@
+[
+  {
+    "property": "id",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "title",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "description",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "homepage",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "mature",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "private",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "locale",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "comment_count",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "tags",
+    "typeInformation": "string",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "counts",
+    "typeInformation": "TreasuryCounts",
+    "secondaryInformation": null
+  },
+  {
+    "property": "hotness",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "hotness_color",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "user_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "user_avatar_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "listings",
+    "typeInformation": "TreasuryListing",
+    "secondaryInformation": null
+  },
+  {
+    "property": "creation_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "became_public_date",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "property": "code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "desc",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "sizes",
+    "typeInformation": "string",
+    "secondaryInformation": "array"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "property": "shipping_profile_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "value_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "value",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "price",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "secondary_price",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "currency_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "type",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "order",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "language",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  }
+]

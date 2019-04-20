@@ -1,0 +1,12 @@
+[
+  {
+    "property": "data",
+    "typeInformation": "TreasuryListingData",
+    "secondaryInformation": null
+  },
+  {
+    "property": "creation_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "property": "shop_section_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "language",
+    "typeInformation": "language",
+    "secondaryInformation": null
+  },
+  {
+    "property": "title",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  }
+]

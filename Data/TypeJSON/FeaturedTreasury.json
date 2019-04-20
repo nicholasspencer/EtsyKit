@@ -1,0 +1,32 @@
+[
+  {
+    "property": "treasury_key",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "treasury_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "treasury_owner_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "url",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "region",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "active_date",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  }
+]

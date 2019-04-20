@@ -1,0 +1,12 @@
+[
+  {
+    "property": "type",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "values",
+    "typeInformation": "string",
+    "secondaryInformation": "array"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "property": "id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "level",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "parent",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "parent_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "path",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "category_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "children",
+    "typeInformation": "taxonomy",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "children_ids",
+    "typeInformation": "int",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "full_path_taxonomy_ids",
+    "typeInformation": "int",
+    "secondaryInformation": "array"
+  }
+]

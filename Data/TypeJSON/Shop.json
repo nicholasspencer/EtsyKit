@@ -1,0 +1,237 @@
+[
+  {
+    "property": "shop_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shop_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "first_line",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "second_line",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "city",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "state",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "zip",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "country_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "creation_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "title",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "announcement",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "currency_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_vacation",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "vacation_message",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "sale_message",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "digital_sale_message",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "last_updated_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "listing_active_count",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "digital_listing_count",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "login_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "lat",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "lon",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "accepts_custom_requests",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_welcome",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_payment",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_shipping",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_refunds",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_additional",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_seller_info",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_updated_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_has_private_receipt_info",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "vacation_autoreply",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "ga_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "url",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "image_url_760x100",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "num_favorers",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "languages",
+    "typeInformation": "string",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "upcoming_local_event_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "icon_url_fullxfull",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_using_structured_policies",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "has_onboarded_structured_policies",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "has_unstructured_policies",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_privacy",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "use_new_inventory_endpoints",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "include_dispute_form_link",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  }
+]

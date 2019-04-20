@@ -1,0 +1,27 @@
+[
+  {
+    "property": "offering_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "price",
+    "typeInformation": "Money",
+    "secondaryInformation": null
+  },
+  {
+    "property": "quantity",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_enabled",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_deleted",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  }
+]

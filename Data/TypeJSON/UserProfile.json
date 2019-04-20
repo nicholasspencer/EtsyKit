@@ -1,0 +1,117 @@
+[
+  {
+    "property": "user_profile_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "login_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "bio",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "gender",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "birth_month",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "birth_day",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "birth_year",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "join_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "materials",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "country_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "region",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "city",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "location",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "avatar_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "lat",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "lon",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "transaction_buy_count",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "transaction_sold_count",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_seller",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "image_url_75x75",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "first_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "last_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  }
+]

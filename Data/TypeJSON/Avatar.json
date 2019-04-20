@@ -1,0 +1,57 @@
+[
+  {
+    "property": "avatar_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "hex_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "red",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "green",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "blue",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "hue",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "saturation",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "brightness",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_black_and_white",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "creation_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  }
+]

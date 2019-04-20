@@ -1,0 +1,47 @@
+[
+  {
+    "property": "user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "login_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "primary_email",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "creation_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "user_pub_key",
+    "typeInformation": "stringJSON",
+    "secondaryInformation": null
+  },
+  {
+    "property": "referred_by_user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "feedback_info",
+    "typeInformation": "FeedbackInfo",
+    "secondaryInformation": null
+  },
+  {
+    "property": "awaiting_feedback_count",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "use_new_inventory_endpoints",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "property": "products",
+    "typeInformation": "ListingProduct",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "price_on_property",
+    "typeInformation": "int",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "quantity_on_property",
+    "typeInformation": "int",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "sku_on_property",
+    "typeInformation": "int",
+    "secondaryInformation": "array"
+  }
+]

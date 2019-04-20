@@ -1,0 +1,92 @@
+[
+  {
+    "property": "listing_image_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "hex_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "red",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "green",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "blue",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "hue",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "saturation",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "brightness",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_black_and_white",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "creation_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "listing_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "rank",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "url_75x75",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "url_170x135",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "url_570xN",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "url_fullxfull",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "full_height",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "full_width",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  }
+]

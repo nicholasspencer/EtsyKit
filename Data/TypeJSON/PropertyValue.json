@@ -1,0 +1,32 @@
+[
+  {
+    "property": "property_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "property_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "scale_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "scale_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "value_ids",
+    "typeInformation": "int",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "values",
+    "typeInformation": "string",
+    "secondaryInformation": "array"
+  }
+]

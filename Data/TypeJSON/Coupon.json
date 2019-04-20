@@ -1,0 +1,57 @@
+[
+  {
+    "property": "coupon_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "coupon_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "seller_active",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "pct_discount",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "free_shipping",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "domestic_only",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "currency_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "fixed_discount",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "minimum_purchase_price",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "expiration_date",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "coupon_type",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "property": "thread_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "post_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "post",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "user_id",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "last_edit_time",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "create_date",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  }
+]

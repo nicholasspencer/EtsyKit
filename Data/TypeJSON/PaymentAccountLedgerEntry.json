@@ -1,0 +1,42 @@
+[
+  {
+    "property": "entry_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "ledger_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "sequence_number",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "amount",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "currency",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "description",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "balance",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "create_date",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  }
+]

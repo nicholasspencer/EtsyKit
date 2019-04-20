@@ -1,0 +1,32 @@
+[
+  {
+    "property": "payment_adjustment_item_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "payment_adjustment_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "adjustment_type",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "amount",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "transaction_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "create_date",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  }
+]

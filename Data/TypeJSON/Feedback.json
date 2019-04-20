@@ -1,0 +1,67 @@
+[
+  {
+    "property": "feedback_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "transaction_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "creator_user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "target_user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "seller_user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "buyer_user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "creation_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "message",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "value",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "image_feedback_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "image_url_25x25",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "image_url_155x125",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "image_url_fullxfull",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  }
+]

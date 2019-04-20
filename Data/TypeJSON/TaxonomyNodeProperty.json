@@ -1,0 +1,52 @@
+[
+  {
+    "property": "property_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "display_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "scales",
+    "typeInformation": "TaxonomyPropertyScale",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "is_required",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "supports_attributes",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "supports_variations",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_multivalued",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "possible_values",
+    "typeInformation": "TaxonomyPropertyValue",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "selected_values",
+    "typeInformation": "TaxonomyPropertyValue",
+    "secondaryInformation": "array"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "property": "product_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "property_values",
+    "typeInformation": "PropertyValue",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "sku",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "offerings",
+    "typeInformation": "ListingOffering",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "is_deleted",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  }
+]

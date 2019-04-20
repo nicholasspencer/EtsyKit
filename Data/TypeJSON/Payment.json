@@ -1,0 +1,117 @@
+[
+  {
+    "property": "payment_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "buyer_user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shop_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "receipt_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "amount_gross",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "amount_fees",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "amount_net",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "posted_gross",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "posted_fees",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "posted_net",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "adjusted_gross",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "adjusted_fees",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "adjusted_net",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "currency",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shop_currency",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "buyer_currency",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shipping_user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shipping_address_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "billing_address_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "status",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shipped_date",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "create_date",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "update_date",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  }
+]

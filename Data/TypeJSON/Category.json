@@ -1,0 +1,57 @@
+[
+  {
+    "property": "category_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "meta_title",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "meta_keywords",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "meta_description",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "page_description",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "page_title",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "category_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "short_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "long_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "num_children",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  }
+]

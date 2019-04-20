@@ -1,0 +1,37 @@
+[
+  {
+    "property": "shop_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "status",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "story_headline",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "story_leading_paragraph",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "story",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "related_links",
+    "typeInformation": "string",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "url",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  }
+]

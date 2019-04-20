@@ -1,0 +1,27 @@
+[
+  {
+    "property": "listing_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "language",
+    "typeInformation": "language",
+    "secondaryInformation": null
+  },
+  {
+    "property": "title",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "description",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "tags",
+    "typeInformation": "string",
+    "secondaryInformation": "array"
+  }
+]

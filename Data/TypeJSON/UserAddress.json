@@ -1,0 +1,57 @@
+[
+  {
+    "property": "user_address_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "name",
+    "typeInformation": "text",
+    "secondaryInformation": null
+  },
+  {
+    "property": "first_line",
+    "typeInformation": "text",
+    "secondaryInformation": null
+  },
+  {
+    "property": "second_line",
+    "typeInformation": "text",
+    "secondaryInformation": null
+  },
+  {
+    "property": "city",
+    "typeInformation": "text",
+    "secondaryInformation": null
+  },
+  {
+    "property": "state",
+    "typeInformation": "text",
+    "secondaryInformation": null
+  },
+  {
+    "property": "zip",
+    "typeInformation": "text",
+    "secondaryInformation": null
+  },
+  {
+    "property": "country_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "country_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_default_shipping",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  }
+]

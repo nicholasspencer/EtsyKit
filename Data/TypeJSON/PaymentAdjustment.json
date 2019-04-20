@@ -1,0 +1,62 @@
+[
+  {
+    "property": "payment_adjustment_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "payment_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "status",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_success",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "reason_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "total_adjustment_amount",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shop_total_adjustment_amount",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "buyer_total_adjustment_amount",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "total_fee_adjustment_amount",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "create_date",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "update_date",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  }
+]

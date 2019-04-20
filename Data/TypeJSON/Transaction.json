@@ -1,0 +1,132 @@
+[
+  {
+    "property": "transaction_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "title",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "description",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "seller_user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "buyer_user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "creation_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "paid_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shipped_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "price",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "currency_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "quantity",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "tags",
+    "typeInformation": "string",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "materials",
+    "typeInformation": "string",
+    "secondaryInformation": "array"
+  },
+  {
+    "property": "image_listing_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "receipt_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shipping_cost",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_digital",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "file_data",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "listing_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_quick_sale",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "seller_feedback_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "buyer_feedback_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "transaction_type",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "url",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "variations",
+    "typeInformation": "ListingInventory",
+    "secondaryInformation": null
+  },
+  {
+    "property": "product_data",
+    "typeInformation": "ListingProduct",
+    "secondaryInformation": null
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "property": "cart_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shop_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "message_to_seller",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "destination_country_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "coupon_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "currency_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "total",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "subtotal",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shipping_cost",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "tax_cost",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "discount_amount",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shipping_discount_amount",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "tax_discount_amount",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "url",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "listings",
+    "typeInformation": "CartListing",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_download_only",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "has_vat",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shipping_option",
+    "typeInformation": "ShippingOption",
+    "secondaryInformation": null
+  }
+]

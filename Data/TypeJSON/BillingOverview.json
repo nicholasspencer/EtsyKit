@@ -1,0 +1,37 @@
+[
+  {
+    "property": "is_overdue",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "currency_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "overdue_balance",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "balance_due",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "total_balance",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "date_due",
+    "typeInformation": "epoch",
+    "secondaryInformation": null
+  },
+  {
+    "property": "date_overdue",
+    "typeInformation": "epoch",
+    "secondaryInformation": null
+  }
+]

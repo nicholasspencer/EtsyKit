@@ -1,0 +1,12 @@
+[
+  {
+    "property": "style_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "style",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  }
+]

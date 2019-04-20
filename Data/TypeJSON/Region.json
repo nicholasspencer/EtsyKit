@@ -1,0 +1,17 @@
+[
+  {
+    "property": "region_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "region_name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_dead",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "property": "shipping_template_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "title",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "min_processing_days",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "max_processing_days",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "processing_days_display_label",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "origin_country_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  }
+]

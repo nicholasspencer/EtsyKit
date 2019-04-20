@@ -1,0 +1,37 @@
+[
+  {
+    "property": "name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "uri",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "params",
+    "typeInformation": "ParamList",
+    "secondaryInformation": null
+  },
+  {
+    "property": "defaults",
+    "typeInformation": "ParamList",
+    "secondaryInformation": null
+  },
+  {
+    "property": "type",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "visibility",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "http_method",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  }
+]

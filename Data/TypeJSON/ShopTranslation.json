@@ -1,0 +1,77 @@
+[
+  {
+    "property": "shop_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "language",
+    "typeInformation": "language",
+    "secondaryInformation": null
+  },
+  {
+    "property": "announcement",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_welcome",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_payment",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_shipping",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_refunds",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_additional",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_privacy",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "policy_seller_info",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "sale_message",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "digital_sale_message",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "title",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "vacation_autoreply",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "vacation_message",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  }
+]

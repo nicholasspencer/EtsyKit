@@ -1,0 +1,87 @@
+[
+  {
+    "property": "payment_template_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "allow_bt",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "allow_check",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "allow_mo",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "allow_other",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "allow_paypal",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "allow_cc",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "paypal_email",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "first_line",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "second_line",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "city",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "state",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "zip",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "country_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "listing_payment_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  }
+]

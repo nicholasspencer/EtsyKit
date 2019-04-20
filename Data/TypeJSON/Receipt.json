@@ -1,0 +1,192 @@
+[
+  {
+    "property": "receipt_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "receipt_type",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "order_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "seller_user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "buyer_user_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "creation_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "last_modified_tsz",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "first_line",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "second_line",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "city",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "state",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "zip",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "formatted_address",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "country_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "payment_method",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "payment_email",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "message_from_seller",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "message_from_buyer",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "was_paid",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "total_tax_cost",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "total_vat_cost",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "total_price",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "total_shipping_cost",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "currency_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "message_from_payment",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "was_shipped",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "buyer_email",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "seller_email",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "is_gift",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "needs_gift_wrap",
+    "typeInformation": "boolean",
+    "secondaryInformation": null
+  },
+  {
+    "property": "gift_message",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "gift_wrap_price",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "discount_amt",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "subtotal",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "grandtotal",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "adjusted_grandtotal",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "shipments",
+    "typeInformation": "ReceiptShipment",
+    "secondaryInformation": null
+  }
+]

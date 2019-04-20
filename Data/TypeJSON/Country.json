@@ -1,0 +1,37 @@
+[
+  {
+    "property": "country_id",
+    "typeInformation": "int",
+    "secondaryInformation": null
+  },
+  {
+    "property": "iso_country_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "world_bank_country_code",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "name",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "slug",
+    "typeInformation": "string",
+    "secondaryInformation": null
+  },
+  {
+    "property": "lat",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  },
+  {
+    "property": "lon",
+    "typeInformation": "float",
+    "secondaryInformation": null
+  }
+]
