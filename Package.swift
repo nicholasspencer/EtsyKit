@@ -1,4 +1,4 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -8,17 +8,20 @@ let package = Package(
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(name: "Etsy.swift", targets: ["Etsy.swift"]),
+        .library(name: "Etsy.stencil", targets: ["Etsy.stencil"]),
     ],
     dependencies: [
         // Dev deps
         .package(url: "https://github.com/nicklockwood/SwiftFormat.git", from: "0.35.8"),
         .package(url: "https://github.com/Realm/SwiftLint.git", from: "0.28.1"),
-//        .package(url: "https://github.com/stencilproject/Stencil.git", from: "0.13.1"),
+        .package(url: "https://github.com/stencilproject/Stencil.git", from: "0.13.1"),
+        // .package(url: "https://github.com/SwiftGen/SwiftGen.git", from: "6.1.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(name: "Etsy.swift", dependencies: []),
+        .target(name: "Etsy.stencil", dependencies: ["Stencil"]),
         .testTarget(name: "Etsy.swiftTests", dependencies: ["Etsy.swift"]),
     ]
 )
