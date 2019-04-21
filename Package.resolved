@@ -11,6 +11,24 @@
         }
       },
       {
+        "package": "Commander",
+        "repositoryURL": "https://github.com/kylef/Commander.git",
+        "state": {
+          "branch": null,
+          "revision": "e5b50ad7b2e91eeb828393e89b03577b16be7db9",
+          "version": "0.8.0"
+        }
+      },
+      {
+        "package": "Kanna",
+        "repositoryURL": "https://github.com/tid-kijyun/Kanna.git",
+        "state": {
+          "branch": null,
+          "revision": "0534d5d4917410870fcac8907e06f69b58a23417",
+          "version": "4.0.3"
+        }
+      },
+      {
         "package": "Nimble",
         "repositoryURL": "https://github.com/Quick/Nimble.git",
         "state": {
@@ -74,12 +92,30 @@
         }
       },
       {
+        "package": "SwiftClibxml2",
+        "repositoryURL": "https://github.com/tid-kijyun/SwiftClibxml2.git",
+        "state": {
+          "branch": null,
+          "revision": "a7fcb47b35c4a98cb78fe635faf5216a50abad00",
+          "version": "1.1.0"
+        }
+      },
+      {
         "package": "SwiftFormat",
         "repositoryURL": "https://github.com/nicklockwood/SwiftFormat.git",
         "state": {
           "branch": null,
           "revision": "8b3e855384f15847915fa3a02019185ee7515107",
           "version": "0.40.8"
+        }
+      },
+      {
+        "package": "SwiftGen",
+        "repositoryURL": "https://github.com/SwiftGen/SwiftGen.git",
+        "state": {
+          "branch": null,
+          "revision": "c6477a6950d313c94c964c6c8ec960e3aeccb8f6",
+          "version": "6.1.0"
         }
       },
       {
