@@ -1,6 +1,12 @@
 ## SPM
 .PHONY: xcode
 
+etsy_swift:
+	swift build --target EtsySwift
+
+etsy_stencil:
+	swift build --target EtsyStencil
+
 xcode:
 	swift package generate-xcode
 

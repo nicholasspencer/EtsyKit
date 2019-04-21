@@ -7,38 +7,24 @@ let package = Package(
     name: "Etsy.swift",
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
-        .library(name: "Etsy.swift", targets: ["Etsy.swift"]),
-        .library(name: "Etsy.stencil", targets: ["Etsy.stencil"]),
+        .library(name: "EtsySwift", targets: ["EtsySwift"]),
+        .library(name: "EtsyStencil", targets: ["EtsyStencil"]),
     ],
     dependencies: [
         // Dev deps
         .package(url: "https://github.com/nicklockwood/SwiftFormat.git", from: "0.35.8"),
         .package(url: "https://github.com/Realm/SwiftLint.git", from: "0.28.1"),
         .package(url: "https://github.com/stencilproject/Stencil.git", from: "0.13.1"),
-        // .package(url: "https://github.com/SwiftGen/SwiftGen.git", from: "6.1.0"),
+        .package(url: "https://github.com/SwiftGen/StencilSwiftKit.git", from: "2.7.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
-        .target(name: "Etsy.swift", dependencies: []),
-        .target(name: "Etsy.stencil", dependencies: ["Stencil"]),
-        .testTarget(name: "Etsy.swiftTests", dependencies: ["Etsy.swift"]),
+        .target(name: "EtsySwift", dependencies: []),
+        .target(name: "EtsyStencil", dependencies: [
+            "Stencil", 
+            "StencilSwiftKit"
+        ]),
+        .testTarget(name: "EtsySwiftTests", dependencies: ["EtsySwift"]),
     ]
 )
-
-#if canImport(PackageConfig)
-import PackageConfig
-
-let config = PackageConfig([
-    "komondor": [
-        "pre-commit": [
-            "git diff --cached --name-only | xargs git diff | md5 > .pre_format_hash",
-            "swift run swiftformat .",
-            "swift run swiftlint autocorrect --path Etsy.swift/",
-            "git diff --cached --name-only | xargs git diff | md5 > .post_format_hash",
-            "diff .pre_format_hash .post_format_hash > /dev/null || { echo \"Staged files modified during commit\" ; rm .pre_format_hash ; rm .post_format_hash ; exit 1; }",
-            "rm .pre_format_hash ; rm .post_format_hash",
-        ],
-    ],
-    ])
-#endif
