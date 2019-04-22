@@ -1,117 +1,117 @@
 [
   {
-    "property": "user_profile_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "user_profile_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "login_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "login_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "bio",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "bio",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "gender",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "gender",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "birth_month",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "birth_month",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "birth_day",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "birth_day",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "birth_year",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "birth_year",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "join_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "join_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "materials",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "materials",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "country_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "country_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "region",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "region",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "city",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "city",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "location",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "location",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "avatar_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "avatar_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "lat",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "lat",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "lon",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "lon",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "transaction_buy_count",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "transaction_buy_count",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "transaction_sold_count",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "transaction_sold_count",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "is_seller",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_seller",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "image_url_75x75",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "image_url_75x75",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "first_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "first_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "last_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "last_name",
+    "type": "string",
+    "genericType": "string"
   }
 ]

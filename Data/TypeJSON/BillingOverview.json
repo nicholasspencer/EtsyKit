@@ -1,37 +1,37 @@
 [
   {
-    "property": "is_overdue",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_overdue",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "currency_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "currency_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "overdue_balance",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "overdue_balance",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "balance_due",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "balance_due",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "total_balance",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "total_balance",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "date_due",
-    "typeInformation": "epoch",
-    "secondaryInformation": null
+    "name": "date_due",
+    "type": "epoch",
+    "genericType": "epoch"
   },
   {
-    "property": "date_overdue",
-    "typeInformation": "epoch",
-    "secondaryInformation": null
+    "name": "date_overdue",
+    "type": "epoch",
+    "genericType": "epoch"
   }
 ]

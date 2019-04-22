@@ -1,47 +1,47 @@
 [
   {
-    "property": "ledger_entry_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "ledger_entry_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "ledger_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "ledger_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "sequence",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "sequence",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "credit_amount",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "credit_amount",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "debit_amount",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "debit_amount",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "entry_type",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "entry_type",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "reference_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "reference_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "running_balance",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "running_balance",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "create_date",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "create_date",
+    "type": "int",
+    "genericType": "int"
   }
 ]

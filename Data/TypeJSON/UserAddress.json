@@ -1,57 +1,57 @@
 [
   {
-    "property": "user_address_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "user_address_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "name",
-    "typeInformation": "text",
-    "secondaryInformation": null
+    "name": "name",
+    "type": "text",
+    "genericType": "text"
   },
   {
-    "property": "first_line",
-    "typeInformation": "text",
-    "secondaryInformation": null
+    "name": "first_line",
+    "type": "text",
+    "genericType": "text"
   },
   {
-    "property": "second_line",
-    "typeInformation": "text",
-    "secondaryInformation": null
+    "name": "second_line",
+    "type": "text",
+    "genericType": "text"
   },
   {
-    "property": "city",
-    "typeInformation": "text",
-    "secondaryInformation": null
+    "name": "city",
+    "type": "text",
+    "genericType": "text"
   },
   {
-    "property": "state",
-    "typeInformation": "text",
-    "secondaryInformation": null
+    "name": "state",
+    "type": "text",
+    "genericType": "text"
   },
   {
-    "property": "zip",
-    "typeInformation": "text",
-    "secondaryInformation": null
+    "name": "zip",
+    "type": "text",
+    "genericType": "text"
   },
   {
-    "property": "country_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "country_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "country_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "country_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "is_default_shipping",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_default_shipping",
+    "type": "boolean",
+    "genericType": "boolean"
   }
 ]

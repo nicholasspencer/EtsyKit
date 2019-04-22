@@ -1,57 +1,57 @@
 [
   {
-    "property": "category_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "category_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "meta_title",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "meta_title",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "meta_keywords",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "meta_keywords",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "meta_description",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "meta_description",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "page_description",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "page_description",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "page_title",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "page_title",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "category_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "category_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "short_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "short_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "long_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "long_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "num_children",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "num_children",
+    "type": "int",
+    "genericType": "int"
   }
 ]

@@ -1,27 +1,27 @@
 [
   {
-    "property": "offering_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "offering_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "price",
-    "typeInformation": "Money",
-    "secondaryInformation": null
+    "name": "price",
+    "type": "Money",
+    "genericType": "Money"
   },
   {
-    "property": "quantity",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "quantity",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "is_enabled",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_enabled",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "is_deleted",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_deleted",
+    "type": "boolean",
+    "genericType": "boolean"
   }
 ]

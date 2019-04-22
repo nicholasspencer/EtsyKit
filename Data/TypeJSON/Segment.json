@@ -1,42 +1,42 @@
 [
   {
-    "property": "name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "path",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "path",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "short_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "short_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "has_children",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "has_children",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "image_url",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "image_url",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "shop_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shop_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "shop_name",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shop_name",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "listing_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "listing_id",
+    "type": "int",
+    "genericType": "int"
   }
 ]

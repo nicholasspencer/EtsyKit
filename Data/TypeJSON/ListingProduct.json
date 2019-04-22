@@ -1,27 +1,27 @@
 [
   {
-    "property": "product_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "product_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "property_values",
-    "typeInformation": "PropertyValue",
-    "secondaryInformation": "array"
+    "name": "property_values",
+    "type": "PropertyValue",
+    "genericType": "array"
   },
   {
-    "property": "sku",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "sku",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "offerings",
-    "typeInformation": "ListingOffering",
-    "secondaryInformation": "array"
+    "name": "offerings",
+    "type": "ListingOffering",
+    "genericType": "array"
   },
   {
-    "property": "is_deleted",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_deleted",
+    "type": "boolean",
+    "genericType": "boolean"
   }
 ]

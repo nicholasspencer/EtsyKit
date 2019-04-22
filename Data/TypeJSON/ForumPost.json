@@ -1,32 +1,32 @@
 [
   {
-    "property": "thread_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "thread_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "post_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "post_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "post",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "post",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "user_id",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "user_id",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "last_edit_time",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "last_edit_time",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "create_date",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "create_date",
+    "type": "int",
+    "genericType": "int"
   }
 ]

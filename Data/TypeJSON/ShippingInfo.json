@@ -1,52 +1,52 @@
 [
   {
-    "property": "shipping_info_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shipping_info_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "origin_country_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "origin_country_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "destination_country_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "destination_country_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "currency_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "currency_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "primary_cost",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "primary_cost",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "secondary_cost",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "secondary_cost",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "listing_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "listing_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "region_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "region_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "origin_country_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "origin_country_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "destination_country_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "destination_country_name",
+    "type": "string",
+    "genericType": "string"
   }
 ]

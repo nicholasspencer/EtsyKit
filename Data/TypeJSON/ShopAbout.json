@@ -1,37 +1,37 @@
 [
   {
-    "property": "shop_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shop_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "status",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "status",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "story_headline",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "story_headline",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "story_leading_paragraph",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "story_leading_paragraph",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "story",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "story",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "related_links",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "related_links",
+    "type": "string",
+    "genericType": "array"
   },
   {
-    "property": "url",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "url",
+    "type": "string",
+    "genericType": "string"
   }
 ]

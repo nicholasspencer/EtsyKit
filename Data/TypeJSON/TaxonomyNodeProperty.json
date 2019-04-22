@@ -1,52 +1,52 @@
 [
   {
-    "property": "property_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "property_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "display_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "display_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "scales",
-    "typeInformation": "TaxonomyPropertyScale",
-    "secondaryInformation": "array"
+    "name": "scales",
+    "type": "TaxonomyPropertyScale",
+    "genericType": "array"
   },
   {
-    "property": "is_required",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_required",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "supports_attributes",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "supports_attributes",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "supports_variations",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "supports_variations",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "is_multivalued",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_multivalued",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "possible_values",
-    "typeInformation": "TaxonomyPropertyValue",
-    "secondaryInformation": "array"
+    "name": "possible_values",
+    "type": "TaxonomyPropertyValue",
+    "genericType": "array"
   },
   {
-    "property": "selected_values",
-    "typeInformation": "TaxonomyPropertyValue",
-    "secondaryInformation": "array"
+    "name": "selected_values",
+    "type": "TaxonomyPropertyValue",
+    "genericType": "array"
   }
 ]

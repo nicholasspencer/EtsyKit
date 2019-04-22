@@ -1,262 +1,262 @@
 [
   {
-    "property": "listing_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "listing_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "state",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "state",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "category_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "category_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "title",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "title",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "description",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "description",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "creation_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "creation_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "ending_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "ending_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "original_creation_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "original_creation_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "last_modified_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "last_modified_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "price",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "price",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "currency_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "currency_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "quantity",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "quantity",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "sku",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "sku",
+    "type": "string",
+    "genericType": "array"
   },
   {
-    "property": "tags",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "tags",
+    "type": "string",
+    "genericType": "array"
   },
   {
-    "property": "category_path",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "category_path",
+    "type": "string",
+    "genericType": "array"
   },
   {
-    "property": "category_path_ids",
-    "typeInformation": "int",
-    "secondaryInformation": "array"
+    "name": "category_path_ids",
+    "type": "int",
+    "genericType": "array"
   },
   {
-    "property": "taxonomy_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "taxonomy_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "suggested_taxonomy_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "suggested_taxonomy_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "taxonomy_path",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "taxonomy_path",
+    "type": "string",
+    "genericType": "array"
   },
   {
-    "property": "materials",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "materials",
+    "type": "string",
+    "genericType": "array"
   },
   {
-    "property": "shop_section_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shop_section_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "featured_rank",
-    "typeInformation": "featured_rank",
-    "secondaryInformation": null
+    "name": "featured_rank",
+    "type": "featured_rank",
+    "genericType": "featured_rank"
   },
   {
-    "property": "state_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "state_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "url",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "url",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "views",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "views",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "num_favorers",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "num_favorers",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "shipping_template_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shipping_template_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "shipping_profile_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shipping_profile_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "processing_min",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "processing_min",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "processing_max",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "processing_max",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "who_made",
-    "typeInformation": "enum",
-    "secondaryInformation": "i_did,collective,someone_else"
+    "name": "who_made",
+    "type": "enum",
+    "genericType": "i_did,collective,someone_else"
   },
   {
-    "property": "is_supply",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_supply",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "when_made",
-    "typeInformation": "enum",
-    "secondaryInformation": "made_to_order,2010_2019,2000_2009,before_2000,1990s,1980s,1970s,1960s,1950s,1940s,1930s,1920s,1910s,1900s,1800s,1700s,before_1700"
+    "name": "when_made",
+    "type": "enum",
+    "genericType": "made_to_order,2010_2019,2000_2009,before_2000,1990s,1980s,1970s,1960s,1950s,1940s,1930s,1920s,1910s,1900s,1800s,1700s,before_1700"
   },
   {
-    "property": "item_weight",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "item_weight",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "item_weight_unit",
-    "typeInformation": "enum",
-    "secondaryInformation": "oz,lb,g,kg"
+    "name": "item_weight_unit",
+    "type": "enum",
+    "genericType": "oz,lb,g,kg"
   },
   {
-    "property": "item_length",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "item_length",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "item_width",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "item_width",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "item_height",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "item_height",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "item_dimensions_unit",
-    "typeInformation": "enum",
-    "secondaryInformation": "in,ft,mm,cm,m"
+    "name": "item_dimensions_unit",
+    "type": "enum",
+    "genericType": "in,ft,mm,cm,m"
   },
   {
-    "property": "is_private",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_private",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "recipient",
-    "typeInformation": "enum",
-    "secondaryInformation": "men,women,unisex_adults,teen_boys,teen_girls,teens,boys,girls,children,baby_boys,baby_girls,babies,birds,cats,dogs,pets,not_specified"
+    "name": "recipient",
+    "type": "enum",
+    "genericType": "men,women,unisex_adults,teen_boys,teen_girls,teens,boys,girls,children,baby_boys,baby_girls,babies,birds,cats,dogs,pets,not_specified"
   },
   {
-    "property": "occasion",
-    "typeInformation": "enum",
-    "secondaryInformation": "anniversary,baptism,bar_or_bat_mitzvah,birthday,canada_day,chinese_new_year,cinco_de_mayo,confirmation,christmas,day_of_the_dead,easter,eid,engagement,fathers_day,get_well,graduation,halloween,hanukkah,housewarming,kwanzaa,prom,july_4th,mothers_day,new_baby,new_years,quinceanera,retirement,st_patricks_day,sweet_16,sympathy,thanksgiving,valentines,wedding"
+    "name": "occasion",
+    "type": "enum",
+    "genericType": "anniversary,baptism,bar_or_bat_mitzvah,birthday,canada_day,chinese_new_year,cinco_de_mayo,confirmation,christmas,day_of_the_dead,easter,eid,engagement,fathers_day,get_well,graduation,halloween,hanukkah,housewarming,kwanzaa,prom,july_4th,mothers_day,new_baby,new_years,quinceanera,retirement,st_patricks_day,sweet_16,sympathy,thanksgiving,valentines,wedding"
   },
   {
-    "property": "style",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "style",
+    "type": "string",
+    "genericType": "array"
   },
   {
-    "property": "non_taxable",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "non_taxable",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "is_customizable",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_customizable",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "is_digital",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_digital",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "file_data",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "file_data",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "can_write_inventory",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "can_write_inventory",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "has_variations",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "has_variations",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "should_auto_renew",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "should_auto_renew",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "language",
-    "typeInformation": "language",
-    "secondaryInformation": null
+    "name": "language",
+    "type": "language",
+    "genericType": "language"
   }
 ]

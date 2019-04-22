@@ -1,92 +1,92 @@
 [
   {
-    "property": "id",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "id",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "title",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "title",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "description",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "description",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "homepage",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "homepage",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "mature",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "mature",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "private",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "private",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "locale",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "locale",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "comment_count",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "comment_count",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "tags",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "tags",
+    "type": "string",
+    "genericType": "array"
   },
   {
-    "property": "counts",
-    "typeInformation": "TreasuryCounts",
-    "secondaryInformation": null
+    "name": "counts",
+    "type": "TreasuryCounts",
+    "genericType": null
   },
   {
-    "property": "hotness",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "hotness",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "hotness_color",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "hotness_color",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "user_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "user_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "user_avatar_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "user_avatar_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "listings",
-    "typeInformation": "TreasuryListing",
-    "secondaryInformation": null
+    "name": "listings",
+    "type": "TreasuryListing",
+    "genericType": "array"
   },
   {
-    "property": "creation_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "creation_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "became_public_date",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "became_public_date",
+    "type": "int",
+    "genericType": "int"
   }
 ]

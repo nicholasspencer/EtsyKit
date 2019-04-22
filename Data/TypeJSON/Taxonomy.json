@@ -1,52 +1,52 @@
 [
   {
-    "property": "id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "level",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "level",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "parent",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "parent",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "parent_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "parent_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "path",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "path",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "category_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "category_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "children",
-    "typeInformation": "taxonomy",
-    "secondaryInformation": "array"
+    "name": "children",
+    "type": "taxonomy",
+    "genericType": "array"
   },
   {
-    "property": "children_ids",
-    "typeInformation": "int",
-    "secondaryInformation": "array"
+    "name": "children_ids",
+    "type": "int",
+    "genericType": "array"
   },
   {
-    "property": "full_path_taxonomy_ids",
-    "typeInformation": "int",
-    "secondaryInformation": "array"
+    "name": "full_path_taxonomy_ids",
+    "type": "int",
+    "genericType": "array"
   }
 ]

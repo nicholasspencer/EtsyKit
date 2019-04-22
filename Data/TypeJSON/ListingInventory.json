@@ -1,22 +1,22 @@
 [
   {
-    "property": "products",
-    "typeInformation": "ListingProduct",
-    "secondaryInformation": "array"
+    "name": "products",
+    "type": "ListingProduct",
+    "genericType": "array"
   },
   {
-    "property": "price_on_property",
-    "typeInformation": "int",
-    "secondaryInformation": "array"
+    "name": "price_on_property",
+    "type": "int",
+    "genericType": "array"
   },
   {
-    "property": "quantity_on_property",
-    "typeInformation": "int",
-    "secondaryInformation": "array"
+    "name": "quantity_on_property",
+    "type": "int",
+    "genericType": "array"
   },
   {
-    "property": "sku_on_property",
-    "typeInformation": "int",
-    "secondaryInformation": "array"
+    "name": "sku_on_property",
+    "type": "int",
+    "genericType": "array"
   }
 ]

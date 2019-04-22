@@ -1,17 +1,17 @@
 [
   {
-    "property": "region_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "region_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "region_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "region_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "is_dead",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_dead",
+    "type": "boolean",
+    "genericType": "boolean"
   }
 ]

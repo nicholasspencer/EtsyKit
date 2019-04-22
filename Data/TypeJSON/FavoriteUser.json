@@ -1,22 +1,22 @@
 [
   {
-    "property": "user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "favorite_user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "favorite_user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "target_user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "target_user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "creation_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "creation_tsz",
+    "type": "float",
+    "genericType": "float"
   }
 ]

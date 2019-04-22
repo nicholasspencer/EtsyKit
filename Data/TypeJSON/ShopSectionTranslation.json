@@ -1,17 +1,17 @@
 [
   {
-    "property": "shop_section_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shop_section_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "language",
-    "typeInformation": "language",
-    "secondaryInformation": null
+    "name": "language",
+    "type": "language",
+    "genericType": "language"
   },
   {
-    "property": "title",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "title",
+    "type": "string",
+    "genericType": "string"
   }
 ]

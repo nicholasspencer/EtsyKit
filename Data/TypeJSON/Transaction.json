@@ -1,132 +1,132 @@
 [
   {
-    "property": "transaction_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "transaction_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "title",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "title",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "description",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "description",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "seller_user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "seller_user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "buyer_user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "buyer_user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "creation_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "creation_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "paid_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "paid_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "shipped_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "shipped_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "price",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "price",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "currency_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "currency_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "quantity",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "quantity",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "tags",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "tags",
+    "type": "string",
+    "genericType": "array"
   },
   {
-    "property": "materials",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "materials",
+    "type": "string",
+    "genericType": "array"
   },
   {
-    "property": "image_listing_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "image_listing_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "receipt_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "receipt_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "shipping_cost",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "shipping_cost",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "is_digital",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_digital",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "file_data",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "file_data",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "listing_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "listing_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "is_quick_sale",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_quick_sale",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "seller_feedback_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "seller_feedback_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "buyer_feedback_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "buyer_feedback_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "transaction_type",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "transaction_type",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "url",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "url",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "variations",
-    "typeInformation": "ListingInventory",
-    "secondaryInformation": null
+    "name": "variations",
+    "type": "ListingInventory",
+    "genericType": "array"
   },
   {
-    "property": "product_data",
-    "typeInformation": "ListingProduct",
-    "secondaryInformation": null
+    "name": "product_data",
+    "type": "ListingProduct",
+    "genericType": "ListingProduct"
   }
 ]

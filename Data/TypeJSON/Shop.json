@@ -1,237 +1,237 @@
 [
   {
-    "property": "shop_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shop_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "shop_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "shop_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "first_line",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "first_line",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "second_line",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "second_line",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "city",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "city",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "state",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "state",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "zip",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "zip",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "country_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "country_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "creation_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "creation_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "title",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "title",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "announcement",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "announcement",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "currency_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "currency_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "is_vacation",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_vacation",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "vacation_message",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "vacation_message",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "sale_message",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "sale_message",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "digital_sale_message",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "digital_sale_message",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "last_updated_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "last_updated_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "listing_active_count",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "listing_active_count",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "digital_listing_count",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "digital_listing_count",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "login_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "login_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "lat",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "lat",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "lon",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "lon",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "accepts_custom_requests",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "accepts_custom_requests",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "policy_welcome",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "policy_welcome",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "policy_payment",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "policy_payment",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "policy_shipping",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "policy_shipping",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "policy_refunds",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "policy_refunds",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "policy_additional",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "policy_additional",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "policy_seller_info",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "policy_seller_info",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "policy_updated_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "policy_updated_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "policy_has_private_receipt_info",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "policy_has_private_receipt_info",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "vacation_autoreply",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "vacation_autoreply",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "ga_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "ga_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "url",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "url",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "image_url_760x100",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "image_url_760x100",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "num_favorers",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "num_favorers",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "languages",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "languages",
+    "type": "string",
+    "genericType": "array"
   },
   {
-    "property": "upcoming_local_event_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "upcoming_local_event_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "icon_url_fullxfull",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "icon_url_fullxfull",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "is_using_structured_policies",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_using_structured_policies",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "has_onboarded_structured_policies",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "has_onboarded_structured_policies",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "has_unstructured_policies",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "has_unstructured_policies",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "policy_privacy",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "policy_privacy",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "use_new_inventory_endpoints",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "use_new_inventory_endpoints",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "include_dispute_form_link",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "include_dispute_form_link",
+    "type": "boolean",
+    "genericType": "boolean"
   }
 ]

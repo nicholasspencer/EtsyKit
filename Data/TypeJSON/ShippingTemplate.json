@@ -1,37 +1,37 @@
 [
   {
-    "property": "shipping_template_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shipping_template_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "title",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "title",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "min_processing_days",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "min_processing_days",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "max_processing_days",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "max_processing_days",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "processing_days_display_label",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "processing_days_display_label",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "origin_country_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "origin_country_id",
+    "type": "int",
+    "genericType": "int"
   }
 ]

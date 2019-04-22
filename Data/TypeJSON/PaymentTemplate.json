@@ -1,87 +1,87 @@
 [
   {
-    "property": "payment_template_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "payment_template_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "allow_bt",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "allow_bt",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "allow_check",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "allow_check",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "allow_mo",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "allow_mo",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "allow_other",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "allow_other",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "allow_paypal",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "allow_paypal",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "allow_cc",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "allow_cc",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "paypal_email",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "paypal_email",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "first_line",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "first_line",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "second_line",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "second_line",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "city",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "city",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "state",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "state",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "zip",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "zip",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "country_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "country_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "listing_payment_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "listing_payment_id",
+    "type": "int",
+    "genericType": "int"
   }
 ]

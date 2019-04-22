@@ -1,12 +1,12 @@
 [
   {
-    "property": "type",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "type",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "values",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "values",
+    "type": "string",
+    "genericType": "array"
   }
 ]

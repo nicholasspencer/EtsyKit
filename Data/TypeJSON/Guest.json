@@ -1,12 +1,12 @@
 [
   {
-    "property": "guest_id",
-    "typeInformation": "guest_id",
-    "secondaryInformation": null
+    "name": "guest_id",
+    "type": "guest_id",
+    "genericType": "guest_id"
   },
   {
-    "property": "checkout_url",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "checkout_url",
+    "type": "string",
+    "genericType": "string"
   }
 ]

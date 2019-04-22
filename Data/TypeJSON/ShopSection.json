@@ -1,27 +1,27 @@
 [
   {
-    "property": "shop_section_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shop_section_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "title",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "title",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "rank",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "rank",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "active_listing_count",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "active_listing_count",
+    "type": "int",
+    "genericType": "int"
   }
 ]

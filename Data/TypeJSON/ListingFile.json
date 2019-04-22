@@ -1,42 +1,42 @@
 [
   {
-    "property": "listing_file_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "listing_file_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "listing_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "listing_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "rank",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "rank",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "filename",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "filename",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "filesize",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "filesize",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "size_bytes",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "size_bytes",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "filetype",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "filetype",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "create_date",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "create_date",
+    "type": "int",
+    "genericType": "int"
   }
 ]

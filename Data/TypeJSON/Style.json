@@ -1,12 +1,12 @@
 [
   {
-    "property": "style_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "style_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "style",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "style",
+    "type": "string",
+    "genericType": "string"
   }
 ]

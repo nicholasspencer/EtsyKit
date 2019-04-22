@@ -1,47 +1,47 @@
 [
   {
-    "property": "shipping_profile_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shipping_profile_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "value_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "value_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "value",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "value",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "price",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "price",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "secondary_price",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "secondary_price",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "currency_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "currency_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "type",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "type",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "order",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "order",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "language",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "language",
+    "type": "int",
+    "genericType": "int"
   }
 ]

@@ -1,12 +1,12 @@
 [
   {
-    "property": "data",
-    "typeInformation": "TreasuryListingData",
-    "secondaryInformation": null
+    "name": "data",
+    "type": "TreasuryListingData",
+    "genericType": null
   },
   {
-    "property": "creation_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "creation_tsz",
+    "type": "float",
+    "genericType": "float"
   }
 ]

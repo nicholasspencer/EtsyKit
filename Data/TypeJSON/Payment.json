@@ -1,117 +1,117 @@
 [
   {
-    "property": "payment_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "payment_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "buyer_user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "buyer_user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "shop_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shop_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "receipt_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "receipt_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "amount_gross",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "amount_gross",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "amount_fees",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "amount_fees",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "amount_net",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "amount_net",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "posted_gross",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "posted_gross",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "posted_fees",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "posted_fees",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "posted_net",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "posted_net",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "adjusted_gross",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "adjusted_gross",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "adjusted_fees",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "adjusted_fees",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "adjusted_net",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "adjusted_net",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "currency",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "currency",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "shop_currency",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "shop_currency",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "buyer_currency",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "buyer_currency",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "shipping_user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shipping_user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "shipping_address_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shipping_address_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "billing_address_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "billing_address_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "status",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "status",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "shipped_date",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shipped_date",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "create_date",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "create_date",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "update_date",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "update_date",
+    "type": "int",
+    "genericType": "int"
   }
 ]

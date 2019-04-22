@@ -1,37 +1,37 @@
 [
   {
-    "property": "country_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "country_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "iso_country_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "iso_country_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "world_bank_country_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "world_bank_country_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "slug",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "slug",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "lat",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "lat",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "lon",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "lon",
+    "type": "float",
+    "genericType": "float"
   }
 ]

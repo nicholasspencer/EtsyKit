@@ -1,192 +1,192 @@
 [
   {
-    "property": "receipt_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "receipt_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "receipt_type",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "receipt_type",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "order_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "order_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "seller_user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "seller_user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "buyer_user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "buyer_user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "creation_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "creation_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "last_modified_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "last_modified_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "first_line",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "first_line",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "second_line",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "second_line",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "city",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "city",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "state",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "state",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "zip",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "zip",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "formatted_address",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "formatted_address",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "country_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "country_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "payment_method",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "payment_method",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "payment_email",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "payment_email",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "message_from_seller",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "message_from_seller",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "message_from_buyer",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "message_from_buyer",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "was_paid",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "was_paid",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "total_tax_cost",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "total_tax_cost",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "total_vat_cost",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "total_vat_cost",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "total_price",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "total_price",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "total_shipping_cost",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "total_shipping_cost",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "currency_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "currency_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "message_from_payment",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "message_from_payment",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "was_shipped",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "was_shipped",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "buyer_email",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "buyer_email",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "seller_email",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "seller_email",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "is_gift",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_gift",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "needs_gift_wrap",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "needs_gift_wrap",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "gift_message",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "gift_message",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "gift_wrap_price",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "gift_wrap_price",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "discount_amt",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "discount_amt",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "subtotal",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "subtotal",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "grandtotal",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "grandtotal",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "adjusted_grandtotal",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "adjusted_grandtotal",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "shipments",
-    "typeInformation": "ReceiptShipment",
-    "secondaryInformation": null
+    "name": "shipments",
+    "type": "ReceiptShipment",
+    "genericType": "array"
   }
 ]

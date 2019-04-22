@@ -1,47 +1,47 @@
 [
   {
-    "property": "user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "login_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "login_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "primary_email",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "primary_email",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "creation_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "creation_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "user_pub_key",
-    "typeInformation": "stringJSON",
-    "secondaryInformation": null
+    "name": "user_pub_key",
+    "type": "stringJSON",
+    "genericType": "stringJSON"
   },
   {
-    "property": "referred_by_user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "referred_by_user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "feedback_info",
-    "typeInformation": "FeedbackInfo",
-    "secondaryInformation": null
+    "name": "feedback_info",
+    "type": "FeedbackInfo",
+    "genericType": null
   },
   {
-    "property": "awaiting_feedback_count",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "awaiting_feedback_count",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "use_new_inventory_endpoints",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "use_new_inventory_endpoints",
+    "type": "boolean",
+    "genericType": "boolean"
   }
 ]

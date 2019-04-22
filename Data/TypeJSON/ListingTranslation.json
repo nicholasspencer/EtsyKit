@@ -1,27 +1,27 @@
 [
   {
-    "property": "listing_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "listing_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "language",
-    "typeInformation": "language",
-    "secondaryInformation": null
+    "name": "language",
+    "type": "language",
+    "genericType": "language"
   },
   {
-    "property": "title",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "title",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "description",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "description",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "tags",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "tags",
+    "type": "string",
+    "genericType": "array"
   }
 ]

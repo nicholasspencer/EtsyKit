@@ -1,42 +1,42 @@
 [
   {
-    "property": "shipping_template_entry_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shipping_template_entry_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "shipping_template_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shipping_template_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "currency_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "currency_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "origin_country_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "origin_country_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "destination_country_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "destination_country_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "destination_region_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "destination_region_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "primary_cost",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "primary_cost",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "secondary_cost",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "secondary_cost",
+    "type": "float",
+    "genericType": "float"
   }
 ]

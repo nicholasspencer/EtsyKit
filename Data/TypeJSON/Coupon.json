@@ -1,57 +1,57 @@
 [
   {
-    "property": "coupon_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "coupon_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "coupon_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "coupon_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "seller_active",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "seller_active",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "pct_discount",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "pct_discount",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "free_shipping",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "free_shipping",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "domestic_only",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "domestic_only",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "currency_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "currency_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "fixed_discount",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "fixed_discount",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "minimum_purchase_price",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "minimum_purchase_price",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "expiration_date",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "expiration_date",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "coupon_type",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "coupon_type",
+    "type": "string",
+    "genericType": "string"
   }
 ]

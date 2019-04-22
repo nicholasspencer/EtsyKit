@@ -1,37 +1,37 @@
 [
   {
-    "property": "name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "uri",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "uri",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "params",
-    "typeInformation": "ParamList",
-    "secondaryInformation": null
+    "name": "params",
+    "type": "ParamList",
+    "genericType": null
   },
   {
-    "property": "defaults",
-    "typeInformation": "ParamList",
-    "secondaryInformation": null
+    "name": "defaults",
+    "type": "ParamList",
+    "genericType": null
   },
   {
-    "property": "type",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "type",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "visibility",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "visibility",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "http_method",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "http_method",
+    "type": "string",
+    "genericType": "string"
   }
 ]

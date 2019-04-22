@@ -1,57 +1,57 @@
 [
   {
-    "property": "avatar_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "avatar_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "hex_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "hex_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "red",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "red",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "green",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "green",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "blue",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "blue",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "hue",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "hue",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "saturation",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "saturation",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "brightness",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "brightness",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "is_black_and_white",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_black_and_white",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "creation_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "creation_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "user_id",
+    "type": "int",
+    "genericType": "int"
   }
 ]

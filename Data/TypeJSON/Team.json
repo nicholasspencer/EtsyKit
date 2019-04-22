@@ -1,27 +1,27 @@
 [
   {
-    "property": "group_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "group_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "create_date",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "create_date",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "update_date",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "update_date",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "tags",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "tags",
+    "type": "string",
+    "genericType": "array"
   }
 ]

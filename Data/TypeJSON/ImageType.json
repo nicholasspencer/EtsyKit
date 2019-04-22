@@ -1,17 +1,17 @@
 [
   {
-    "property": "code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "desc",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "desc",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "sizes",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "sizes",
+    "type": "string",
+    "genericType": "array"
   }
 ]

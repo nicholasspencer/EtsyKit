@@ -1,77 +1,77 @@
 [
   {
-    "property": "shop_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "shop_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "language",
-    "typeInformation": "language",
-    "secondaryInformation": null
+    "name": "language",
+    "type": "language",
+    "genericType": "language"
   },
   {
-    "property": "announcement",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "announcement",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "policy_welcome",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "policy_welcome",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "policy_payment",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "policy_payment",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "policy_shipping",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "policy_shipping",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "policy_refunds",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "policy_refunds",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "policy_additional",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "policy_additional",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "policy_privacy",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "policy_privacy",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "policy_seller_info",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "policy_seller_info",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "sale_message",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "sale_message",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "digital_sale_message",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "digital_sale_message",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "title",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "title",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "vacation_autoreply",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "vacation_autoreply",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "vacation_message",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "vacation_message",
+    "type": "string",
+    "genericType": "string"
   }
 ]

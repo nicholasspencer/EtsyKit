@@ -1,32 +1,32 @@
 [
   {
-    "property": "property_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "property_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "property_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "property_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "scale_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "scale_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "scale_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "scale_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "value_ids",
-    "typeInformation": "int",
-    "secondaryInformation": "array"
+    "name": "value_ids",
+    "type": "int",
+    "genericType": "array"
   },
   {
-    "property": "values",
-    "typeInformation": "string",
-    "secondaryInformation": "array"
+    "name": "values",
+    "type": "string",
+    "genericType": "array"
   }
 ]

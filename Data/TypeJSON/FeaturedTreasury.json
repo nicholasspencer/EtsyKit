@@ -1,32 +1,32 @@
 [
   {
-    "property": "treasury_key",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "treasury_key",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "treasury_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "treasury_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "treasury_owner_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "treasury_owner_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "url",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "url",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "region",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "region",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "active_date",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "active_date",
+    "type": "float",
+    "genericType": "float"
   }
 ]

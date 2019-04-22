@@ -1,67 +1,67 @@
 [
   {
-    "property": "feedback_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "feedback_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "transaction_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "transaction_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "creator_user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "creator_user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "target_user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "target_user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "seller_user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "seller_user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "buyer_user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "buyer_user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "creation_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "creation_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "message",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "message",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "value",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "value",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "image_feedback_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "image_feedback_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "image_url_25x25",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "image_url_25x25",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "image_url_155x125",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "image_url_155x125",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "image_url_fullxfull",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "image_url_fullxfull",
+    "type": "string",
+    "genericType": "string"
   }
 ]

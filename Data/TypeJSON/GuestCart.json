@@ -1,92 +1,92 @@
 [
   {
-    "property": "cart_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "cart_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "shop_name",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "shop_name",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "message_to_seller",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "message_to_seller",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "destination_country_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "destination_country_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "coupon_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "coupon_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "currency_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "currency_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "total",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "total",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "subtotal",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "subtotal",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "shipping_cost",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "shipping_cost",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "tax_cost",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "tax_cost",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "discount_amount",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "discount_amount",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "shipping_discount_amount",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "shipping_discount_amount",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "tax_discount_amount",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "tax_discount_amount",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "url",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "url",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "listings",
-    "typeInformation": "CartListing",
-    "secondaryInformation": null
+    "name": "listings",
+    "type": "CartListing",
+    "genericType": "array"
   },
   {
-    "property": "is_download_only",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "is_download_only",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "has_vat",
-    "typeInformation": "boolean",
-    "secondaryInformation": null
+    "name": "has_vat",
+    "type": "boolean",
+    "genericType": "boolean"
   },
   {
-    "property": "shipping_option",
-    "typeInformation": "ShippingOption",
-    "secondaryInformation": null
+    "name": "shipping_option",
+    "type": "ShippingOption",
+    "genericType": null
   }
 ]

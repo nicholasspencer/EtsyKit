@@ -1,42 +1,42 @@
 [
   {
-    "property": "entry_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "entry_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "ledger_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "ledger_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "sequence_number",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "sequence_number",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "amount",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "amount",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "currency",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "currency",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "description",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "description",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "balance",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "balance",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "create_date",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "create_date",
+    "type": "int",
+    "genericType": "int"
   }
 ]

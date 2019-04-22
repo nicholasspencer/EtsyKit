@@ -1,52 +1,52 @@
 [
   {
-    "property": "bill_charge_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "bill_charge_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "creation_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "creation_tsz",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "type",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "type",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "type_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "type_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "user_id",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "user_id",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "amount",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "amount",
+    "type": "float",
+    "genericType": "float"
   },
   {
-    "property": "currency_code",
-    "typeInformation": "string",
-    "secondaryInformation": null
+    "name": "currency_code",
+    "type": "string",
+    "genericType": "string"
   },
   {
-    "property": "creation_year",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "creation_year",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "creation_month",
-    "typeInformation": "int",
-    "secondaryInformation": null
+    "name": "creation_month",
+    "type": "int",
+    "genericType": "int"
   },
   {
-    "property": "last_modified_tsz",
-    "typeInformation": "float",
-    "secondaryInformation": null
+    "name": "last_modified_tsz",
+    "type": "float",
+    "genericType": "float"
   }
 ]
