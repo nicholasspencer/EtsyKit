@@ -1,0 +1,1 @@
+[ .[].results[].type? ] | unique | map( select( . as $in | $blacklist | all(. != $in) ) )
