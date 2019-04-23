@@ -11,11 +11,13 @@ xcode:
 	swift package generate-xcode
 
 ## Etsy Data Generation
-.PHONY: type_names type_json type_structs types
+.PHONY: generate type_names type_json type_structs sourcery types
 
 ApiMethodResponse=Data/ApiMethod.response.json
 ApiTypeNames=Data/ApiTypeNames.json
 ApiTypeInformationLocation=Data/TypeJSON/
+TemplatesDirectory=Templates/EtsyStencil/
+EtsySwiftGeneratedDirectory=Sources/EtsySwift/Generated
 
 scrape: type_names type_properties
 
@@ -26,13 +28,18 @@ type_properties:
 	bin/scrape_types.sh $(ApiTypeNames) $(ApiTypeInformationLocation)
 
 type_structs:
-	swift run swiftgen json -p ~/Development/Etsy.swift/Templates/EtsyStencil/EtsyType.stencil $(ApiTypeInformationLocation) > Sources/EtsySwift/Types.swift \
-	& sourcery
+	swift run swiftgen json -p $(TemplatesDirectory)/EtsyType.stencil $(ApiTypeInformationLocation) > Sources/EtsySwift/Generated/SwiftGen/Types.generated.swift
 
-types: scrape type_structs
+sourcery:
+	sourcery
+
+generate: type_structs sourcery
+
+types: scrape generate
 
 ## House keeping
 .PHONY: clean
 
 clean:
-	rm $(ApiTypeInformationLocation)/*.json
+	rm $(ApiTypeInformationLocation)/*.json \
+	& rm -r $(EtsySwiftGeneratedDirectory)/**/*.generated.swift

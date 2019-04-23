@@ -16,14 +16,13 @@ public typealias FeaturedRank = Int
 public typealias StringJSON = String
 public typealias Boolean = Bool
 
-public protocol EtsyType: Codable, Hashable {}
+public protocol Type: Codable, Hashable {}
 
 {% if files %}
-
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
 {% for file in files %}
-public struct {{ file.name|swiftIdentifier:"pretty"|escapeReservedKeywords }}: EtsyType {
+public struct {{ file.name|swiftIdentifier:"pretty"|escapeReservedKeywords }}: Type {
     {% for property in file.documents[0].data where not property.type.type %} {# weird hack #}
     let {{ property.name|snakeToCamelCase|lowerFirstWord }}: {{ property.type|swiftIdentifier:"pretty"|escapeReservedKeywords }}?
     {% endfor %}

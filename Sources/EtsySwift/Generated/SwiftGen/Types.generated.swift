@@ -16,12 +16,11 @@ public typealias FeaturedRank = Int
 public typealias StringJSON = String
 public typealias Boolean = Bool
 
-public protocol EtsyType: Codable, Hashable {}
-
+public protocol Type: Codable, Hashable {}
 
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
-public struct ApiMethod: EtsyType {
+public struct ApiMethod: Type {
     let name: String?
     let uri: String?
     let params: ParamList?
@@ -31,7 +30,7 @@ public struct ApiMethod: EtsyType {
     let httpMethod: String?
 }
 
-public struct Avatar: EtsyType {
+public struct Avatar: Type {
     let avatarId: Int?
     let hexCode: String?
     let red: Int?
@@ -45,7 +44,7 @@ public struct Avatar: EtsyType {
     let userId: Int?
 }
 
-public struct BillCharge: EtsyType {
+public struct BillCharge: Type {
     let billChargeId: Int?
     let creationTsz: Float?
     let type: String?
@@ -58,7 +57,7 @@ public struct BillCharge: EtsyType {
     let lastModifiedTsz: Float?
 }
 
-public struct BillPayment: EtsyType {
+public struct BillPayment: Type {
     let billPaymentId: Int?
     let creationTsz: Float?
     let type: String?
@@ -70,7 +69,7 @@ public struct BillPayment: EtsyType {
     let creationYear: Int?
 }
 
-public struct BillingOverview: EtsyType {
+public struct BillingOverview: Type {
     let isOverdue: Boolean?
     let currencyCode: String?
     let overdueBalance: Float?
@@ -80,7 +79,7 @@ public struct BillingOverview: EtsyType {
     let dateOverdue: Epoch?
 }
 
-public struct Cart: EtsyType {
+public struct Cart: Type {
     let cartId: Int?
     let shopName: String?
     let messageToSeller: String?
@@ -101,7 +100,7 @@ public struct Cart: EtsyType {
     let shippingOption: ShippingOption?
 }
 
-public struct CartListing: EtsyType {
+public struct CartListing: Type {
     let listingId: Int?
     let purchaseQuantity: Int?
     let purchaseState: String?
@@ -113,7 +112,7 @@ public struct CartListing: EtsyType {
     let selectedVariations: VariationsSelectedProperty?
 }
 
-public struct Category: EtsyType {
+public struct Category: Type {
     let categoryId: Int?
     let name: String?
     let metaTitle: String?
@@ -127,7 +126,7 @@ public struct Category: EtsyType {
     let numChildren: Int?
 }
 
-public struct Country: EtsyType {
+public struct Country: Type {
     let countryId: Int?
     let isoCountryCode: String?
     let worldBankCountryCode: String?
@@ -137,7 +136,7 @@ public struct Country: EtsyType {
     let lon: Float?
 }
 
-public struct Coupon: EtsyType {
+public struct Coupon: Type {
     let couponId: Int?
     let couponCode: String?
     let sellerActive: Boolean?
@@ -151,26 +150,26 @@ public struct Coupon: EtsyType {
     let couponType: String?
 }
 
-public struct DataType: EtsyType {
+public struct DataType: Type {
     let type: String?
     let values: String?
 }
 
-public struct FavoriteListing: EtsyType {
+public struct FavoriteListing: Type {
     let listingId: Int?
     let userId: Int?
     let listingState: String?
     let createDate: Int?
 }
 
-public struct FavoriteUser: EtsyType {
+public struct FavoriteUser: Type {
     let userId: Int?
     let favoriteUserId: Int?
     let targetUserId: Int?
     let creationTsz: Float?
 }
 
-public struct FeaturedTreasury: EtsyType {
+public struct FeaturedTreasury: Type {
     let treasuryKey: String?
     let treasuryId: Int?
     let treasuryOwnerId: Int?
@@ -179,7 +178,7 @@ public struct FeaturedTreasury: EtsyType {
     let activeDate: Float?
 }
 
-public struct Feedback: EtsyType {
+public struct Feedback: Type {
     let feedbackId: Int?
     let transactionId: Int?
     let creatorUserId: Int?
@@ -195,12 +194,12 @@ public struct Feedback: EtsyType {
     let imageUrlFullxfull: String?
 }
 
-public struct FeedbackInfo: EtsyType {
+public struct FeedbackInfo: Type {
     let count: Int?
     let score: Int?
 }
 
-public struct ForumPost: EtsyType {
+public struct ForumPost: Type {
     let threadId: Int?
     let postId: Int?
     let post: String?
@@ -209,12 +208,12 @@ public struct ForumPost: EtsyType {
     let createDate: Int?
 }
 
-public struct Guest: EtsyType {
+public struct Guest: Type {
     let guestId: GuestId?
     let checkoutUrl: String?
 }
 
-public struct GuestCart: EtsyType {
+public struct GuestCart: Type {
     let cartId: Int?
     let shopName: String?
     let messageToSeller: String?
@@ -235,13 +234,13 @@ public struct GuestCart: EtsyType {
     let shippingOption: ShippingOption?
 }
 
-public struct ImageType: EtsyType {
+public struct ImageType: Type {
     let code: String?
     let desc: String?
     let sizes: String?
 }
 
-public struct Ledger: EtsyType {
+public struct Ledger: Type {
     let ledgerId: Int?
     let shopId: String?
     let currency: String?
@@ -249,7 +248,7 @@ public struct Ledger: EtsyType {
     let updateDate: Int?
 }
 
-public struct LedgerEntry: EtsyType {
+public struct LedgerEntry: Type {
     let ledgerEntryId: Int?
     let ledgerId: Int?
     let sequence: Int?
@@ -261,7 +260,7 @@ public struct LedgerEntry: EtsyType {
     let createDate: Int?
 }
 
-public struct Listing: EtsyType {
+public struct Listing: Type {
     let listingId: Int?
     let state: String?
     let userId: Int?
@@ -316,7 +315,7 @@ public struct Listing: EtsyType {
     let language: Language?
 }
 
-public struct ListingFile: EtsyType {
+public struct ListingFile: Type {
     let listingFileId: Int?
     let listingId: Int?
     let rank: Int?
@@ -327,7 +326,7 @@ public struct ListingFile: EtsyType {
     let createDate: Int?
 }
 
-public struct ListingImage: EtsyType {
+public struct ListingImage: Type {
     let listingImageId: Int?
     let hexCode: String?
     let red: Int?
@@ -348,14 +347,14 @@ public struct ListingImage: EtsyType {
     let fullWidth: Int?
 }
 
-public struct ListingInventory: EtsyType {
+public struct ListingInventory: Type {
     let products: ListingProduct?
     let priceOnProperty: Int?
     let quantityOnProperty: Int?
     let skuOnProperty: Int?
 }
 
-public struct ListingOffering: EtsyType {
+public struct ListingOffering: Type {
     let offeringId: Int?
     let price: Money?
     let quantity: Int?
@@ -363,7 +362,7 @@ public struct ListingOffering: EtsyType {
     let isDeleted: Boolean?
 }
 
-public struct ListingProduct: EtsyType {
+public struct ListingProduct: Type {
     let productId: Int?
     let propertyValues: PropertyValue?
     let sku: String?
@@ -371,7 +370,7 @@ public struct ListingProduct: EtsyType {
     let isDeleted: Boolean?
 }
 
-public struct ListingTranslation: EtsyType {
+public struct ListingTranslation: Type {
     let listingId: Int?
     let language: Language?
     let title: String?
@@ -379,7 +378,7 @@ public struct ListingTranslation: EtsyType {
     let tags: String?
 }
 
-public struct Money: EtsyType {
+public struct Money: Type {
     let amount: Int?
     let divisor: Int?
     let currencyCode: String?
@@ -390,11 +389,11 @@ public struct Money: EtsyType {
     let beforeConversion: Money?
 }
 
-public struct ParamList: EtsyType {
+public struct ParamList: Type {
     let paramName: String?
 }
 
-public struct Payment: EtsyType {
+public struct Payment: Type {
     let paymentId: Int?
     let buyerUserId: Int?
     let shopId: Int?
@@ -420,7 +419,7 @@ public struct Payment: EtsyType {
     let updateDate: Int?
 }
 
-public struct PaymentAccountLedgerEntry: EtsyType {
+public struct PaymentAccountLedgerEntry: Type {
     let entryId: Int?
     let ledgerId: Int?
     let sequenceNumber: Int?
@@ -431,7 +430,7 @@ public struct PaymentAccountLedgerEntry: EtsyType {
     let createDate: Int?
 }
 
-public struct PaymentAdjustment: EtsyType {
+public struct PaymentAdjustment: Type {
     let paymentAdjustmentId: Int?
     let paymentId: Int?
     let status: String?
@@ -446,7 +445,7 @@ public struct PaymentAdjustment: EtsyType {
     let updateDate: Int?
 }
 
-public struct PaymentAdjustmentItem: EtsyType {
+public struct PaymentAdjustmentItem: Type {
     let paymentAdjustmentItemId: Int?
     let paymentAdjustmentId: Int?
     let adjustmentType: String?
@@ -455,7 +454,7 @@ public struct PaymentAdjustmentItem: EtsyType {
     let createDate: Int?
 }
 
-public struct PaymentTemplate: EtsyType {
+public struct PaymentTemplate: Type {
     let paymentTemplateId: Int?
     let allowBt: Boolean?
     let allowCheck: Boolean?
@@ -475,7 +474,7 @@ public struct PaymentTemplate: EtsyType {
     let listingPaymentId: Int?
 }
 
-public struct PropertyValue: EtsyType {
+public struct PropertyValue: Type {
     let propertyId: Int?
     let propertyName: String?
     let scaleId: Int?
@@ -484,7 +483,7 @@ public struct PropertyValue: EtsyType {
     let values: String?
 }
 
-public struct Receipt: EtsyType {
+public struct Receipt: Type {
     let receiptId: Int?
     let receiptType: Int?
     let orderId: Int?
@@ -525,7 +524,7 @@ public struct Receipt: EtsyType {
     let shipments: ReceiptShipment?
 }
 
-public struct ReceiptShipment: EtsyType {
+public struct ReceiptShipment: Type {
     let carrierName: String?
     let receiptShippingId: Int?
     let trackingCode: String?
@@ -534,13 +533,13 @@ public struct ReceiptShipment: EtsyType {
     let notificationDate: Int?
 }
 
-public struct Region: EtsyType {
+public struct Region: Type {
     let regionId: Int?
     let regionName: String?
     let isDead: Boolean?
 }
 
-public struct Segment: EtsyType {
+public struct Segment: Type {
     let name: String?
     let path: String?
     let shortName: String?
@@ -551,7 +550,7 @@ public struct Segment: EtsyType {
     let listingId: Int?
 }
 
-public struct SegmentPoster: EtsyType {
+public struct SegmentPoster: Type {
     let name: String?
     let path: String?
     let imageUrl: String?
@@ -561,7 +560,7 @@ public struct SegmentPoster: EtsyType {
     let listingId: Int?
 }
 
-public struct ShippingInfo: EtsyType {
+public struct ShippingInfo: Type {
     let shippingInfoId: Int?
     let originCountryId: Int?
     let destinationCountryId: Int?
@@ -574,7 +573,7 @@ public struct ShippingInfo: EtsyType {
     let destinationCountryName: String?
 }
 
-public struct ShippingOption: EtsyType {
+public struct ShippingOption: Type {
     let optionId: String?
     let name: String?
     let optionType: Int?
@@ -582,7 +581,7 @@ public struct ShippingOption: EtsyType {
     let currencyCode: String?
 }
 
-public struct ShippingTemplate: EtsyType {
+public struct ShippingTemplate: Type {
     let shippingTemplateId: Int?
     let title: String?
     let userId: Int?
@@ -592,7 +591,7 @@ public struct ShippingTemplate: EtsyType {
     let originCountryId: Int?
 }
 
-public struct ShippingTemplateEntry: EtsyType {
+public struct ShippingTemplateEntry: Type {
     let shippingTemplateEntryId: Int?
     let shippingTemplateId: Int?
     let currencyCode: String?
@@ -603,7 +602,7 @@ public struct ShippingTemplateEntry: EtsyType {
     let secondaryCost: Float?
 }
 
-public struct ShippingUpgrade: EtsyType {
+public struct ShippingUpgrade: Type {
     let shippingProfileId: Int?
     let valueId: Int?
     let value: String?
@@ -615,7 +614,7 @@ public struct ShippingUpgrade: EtsyType {
     let language: Int?
 }
 
-public struct Shop: EtsyType {
+public struct Shop: Type {
     let shopId: Int?
     let shopName: String?
     let firstLine: String?
@@ -665,7 +664,7 @@ public struct Shop: EtsyType {
     let includeDisputeFormLink: Boolean?
 }
 
-public struct ShopAbout: EtsyType {
+public struct ShopAbout: Type {
     let shopId: Int?
     let status: String?
     let storyHeadline: String?
@@ -675,7 +674,7 @@ public struct ShopAbout: EtsyType {
     let url: String?
 }
 
-public struct ShopAboutImage: EtsyType {
+public struct ShopAboutImage: Type {
     let shopId: Int?
     let imageId: Int?
     let caption: String?
@@ -686,7 +685,7 @@ public struct ShopAboutImage: EtsyType {
     let urlFullxfull: String?
 }
 
-public struct ShopAboutMember: EtsyType {
+public struct ShopAboutMember: Type {
     let shopAboutMemberId: Int?
     let shopId: Int?
     let name: String?
@@ -699,7 +698,7 @@ public struct ShopAboutMember: EtsyType {
     let hasStaleTranslations: Boolean?
 }
 
-public struct ShopSection: EtsyType {
+public struct ShopSection: Type {
     let shopSectionId: Int?
     let title: String?
     let rank: Int?
@@ -707,13 +706,13 @@ public struct ShopSection: EtsyType {
     let activeListingCount: Int?
 }
 
-public struct ShopSectionTranslation: EtsyType {
+public struct ShopSectionTranslation: Type {
     let shopSectionId: Int?
     let language: Language?
     let title: String?
 }
 
-public struct ShopTranslation: EtsyType {
+public struct ShopTranslation: Type {
     let shopId: Int?
     let language: Language?
     let announcement: String?
@@ -731,7 +730,7 @@ public struct ShopTranslation: EtsyType {
     let vacationMessage: String?
 }
 
-public struct StructuredPolicies: EtsyType {
+public struct StructuredPolicies: Type {
     let structuredPoliciesId: Int?
     let createDate: Int?
     let updateDate: Int?
@@ -743,12 +742,12 @@ public struct StructuredPolicies: EtsyType {
     let includeDisputeFormLink: Boolean?
 }
 
-public struct Style: EtsyType {
+public struct Style: Type {
     let styleId: Int?
     let style: String?
 }
 
-public struct Taxonomy: EtsyType {
+public struct Taxonomy: Type {
     let id: Int?
     let level: Int?
     let name: String?
@@ -761,7 +760,7 @@ public struct Taxonomy: EtsyType {
     let fullPathTaxonomyIds: Int?
 }
 
-public struct TaxonomyNodeProperty: EtsyType {
+public struct TaxonomyNodeProperty: Type {
     let propertyId: Int?
     let name: String?
     let displayName: String?
@@ -774,13 +773,13 @@ public struct TaxonomyNodeProperty: EtsyType {
     let selectedValues: TaxonomyPropertyValue?
 }
 
-public struct TaxonomyPropertyScale: EtsyType {
+public struct TaxonomyPropertyScale: Type {
     let scaleId: Int?
     let displayName: String?
     let description: String?
 }
 
-public struct TaxonomyPropertyValue: EtsyType {
+public struct TaxonomyPropertyValue: Type {
     let valueId: Int?
     let name: String?
     let scaleId: Int?
@@ -788,7 +787,7 @@ public struct TaxonomyPropertyValue: EtsyType {
     let equalTo: Int?
 }
 
-public struct Team: EtsyType {
+public struct Team: Type {
     let groupId: Int?
     let name: String?
     let createDate: Int?
@@ -796,7 +795,7 @@ public struct Team: EtsyType {
     let tags: String?
 }
 
-public struct Transaction: EtsyType {
+public struct Transaction: Type {
     let transactionId: Int?
     let title: String?
     let description: String?
@@ -825,7 +824,7 @@ public struct Transaction: EtsyType {
     let productData: ListingProduct?
 }
 
-public struct Treasury: EtsyType {
+public struct Treasury: Type {
     let id: String?
     let title: String?
     let description: String?
@@ -846,19 +845,19 @@ public struct Treasury: EtsyType {
     let becamePublicDate: Int?
 }
 
-public struct TreasuryCounts: EtsyType {
+public struct TreasuryCounts: Type {
     let clicks: Int?
     let views: Int?
     let shares: Int?
     let reports: Int?
 }
 
-public struct TreasuryListing: EtsyType {
+public struct TreasuryListing: Type {
     let data: TreasuryListingData?
     let creationTsz: Float?
 }
 
-public struct TreasuryListingData: EtsyType {
+public struct TreasuryListingData: Type {
     let userId: Int?
     let title: String?
     let price: Float?
@@ -871,7 +870,7 @@ public struct TreasuryListingData: EtsyType {
     let imageUrl170x135: String?
 }
 
-public struct User: EtsyType {
+public struct User: Type {
     let userId: Int?
     let loginName: String?
     let primaryEmail: String?
@@ -883,7 +882,7 @@ public struct User: EtsyType {
     let useNewInventoryEndpoints: Boolean?
 }
 
-public struct UserAddress: EtsyType {
+public struct UserAddress: Type {
     let userAddressId: Int?
     let userId: Int?
     let name: Text?
@@ -897,7 +896,7 @@ public struct UserAddress: EtsyType {
     let isDefaultShipping: Boolean?
 }
 
-public struct UserProfile: EtsyType {
+public struct UserProfile: Type {
     let userProfileId: Int?
     let userId: Int?
     let loginName: String?
