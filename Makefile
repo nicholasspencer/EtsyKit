@@ -16,7 +16,6 @@ xcode:
 ApiMethodResponse=Data/ApiMethod.response.json
 ApiTypeNames=Data/ApiTypeNames.json
 ApiTypeInformationLocation=Data/TypeJSON
-GeneratedDirectory=Sources/EtsySwift/Generated
 
 # type_names:
 # 	bin/collect_type_names.sh $(ApiMethodResponse) '[null,"Array","Collection","CollectionListing","Dict","Int","Page","PageImage","String","Variations_PropertySet","Variations_PropertySetOption","Variations_PropertySetOptionModifier","array"]' > $(ApiTypeNames)
@@ -30,7 +29,7 @@ type_properties:
 scrape: type_names type_properties
 
 type_structs:
-	swift run swiftgen json -p ~/Development/Etsy.swift/Templates/EtsyStencil/EtsyType.stencil Data/TypeJSON/ > $(GeneratedDirectory)/Types.generated.swift \
+	swift run swiftgen json -p ~/Development/Etsy.swift/Templates/EtsyStencil/EtsyType.stencil Data/TypeJSON/ > Sources/EtsySwift/Types.swift \
 	& sourcery
 
 types: scrape type_structs
