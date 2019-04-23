@@ -6,15 +6,12 @@ import Foundation
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
 {% for file in files %}
-public struct {{ file.name|swiftIdentifier:"pretty"|escapeReservedKeywords }}: Type {
-    {% for property in file.documents[0].data %}
-        let {{property.name}}: {{property.type|snakeToCamelCase}}?
-    {%endfor%}
+public struct {{ file.name|swiftIdentifier:"pretty"|escapeReservedKeywords }}: EtsyType {
+    {% for property in file.documents[0].data where not property.type.type %}
+    let {{ property.name|snakeToCamelCase|lowerFirstWord }}: {{ property.type|swiftIdentifier:"pretty"|escapeReservedKeywords }}?
+    {% endfor %}
 }
 
-{# {{accessModifier}} enum {{file.name|swiftIdentifier:"pretty"|escapeReservedKeywords}} {
-  {% filter indent:2 %}{% call fileBlock file %}{% endfilter %}
-} #}
 {% endfor %}
 {% else %}
 // No files found

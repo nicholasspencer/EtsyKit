@@ -1,0 +1,27 @@
+[
+  {
+    "name": "value_id",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "name",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "scale_id",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "order",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "equal_to",
+    "type": "int",
+    "genericType": "array"
+  }
+]

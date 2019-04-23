@@ -1,0 +1,42 @@
+[
+  {
+    "name": "shop_id",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "image_id",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "caption",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "rank",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "url_178x178",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "url_545xN",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "url_760xN",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "url_fullxfull",
+    "type": "string",
+    "genericType": "string"
+  }
+]

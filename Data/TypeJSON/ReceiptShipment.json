@@ -1,0 +1,32 @@
+[
+  {
+    "name": "carrier_name",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "receipt_shipping_id",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "tracking_code",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "tracking_url",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "buyer_note",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "notification_date",
+    "type": "int",
+    "genericType": "int"
+  }
+]

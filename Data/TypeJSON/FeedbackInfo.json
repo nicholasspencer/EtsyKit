@@ -1,0 +1,12 @@
+[
+  {
+    "name": "count",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "score",
+    "type": "int",
+    "genericType": "int"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "name": "listing_id",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "purchase_quantity",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "purchase_state",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "is_digital",
+    "type": "boolean",
+    "genericType": "boolean"
+  },
+  {
+    "name": "file_data",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "listing_customization_id",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "variations_available",
+    "type": "boolean",
+    "genericType": "boolean"
+  },
+  {
+    "name": "has_variations",
+    "type": "boolean",
+    "genericType": "boolean"
+  },
+  {
+    "name": "selected_variations",
+    "type": "Variations_SelectedProperty",
+    "genericType": "array"
+  }
+]

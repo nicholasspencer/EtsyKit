@@ -1,0 +1,52 @@
+[
+  {
+    "name": "user_id",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "title",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "price",
+    "type": "float",
+    "genericType": "float"
+  },
+  {
+    "name": "currency_code",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "listing_id",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "state",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "shop_name",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "image_id",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "image_url_75x75",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "image_url_170x135",
+    "type": "string",
+    "genericType": "string"
+  }
+]

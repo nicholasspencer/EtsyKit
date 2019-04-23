@@ -1,0 +1,17 @@
+[
+  {
+    "name": "scale_id",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "display_name",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "description",
+    "type": "string",
+    "genericType": "string"
+  }
+]

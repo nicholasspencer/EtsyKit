@@ -1,794 +1,909 @@
 // Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
 
 import Foundation
-import EtsyStencil
 
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
-public struct ApiMethod: Type {
-        let name: String?
-        let uri: String?
-        let params: ParamList?
-        let defaults: ParamList?
-        let type: String?
-        let visibility: String?
-        let http_method: String?
+public struct ApiMethod: EtsyType {
+    let name: String?
+    let uri: String?
+    let params: ParamList?
+    let defaults: ParamList?
+    let type: String?
+    let visibility: String?
+    let httpMethod: String?
 }
 
-public struct Avatar: Type {
-        let avatar_id: Int?
-        let hex_code: String?
-        let red: Int?
-        let green: Int?
-        let blue: Int?
-        let hue: Int?
-        let saturation: Int?
-        let brightness: Int?
-        let is_black_and_white: Boolean?
-        let creation_tsz: Float?
-        let user_id: Int?
+public struct Avatar: EtsyType {
+    let avatarId: Int?
+    let hexCode: String?
+    let red: Int?
+    let green: Int?
+    let blue: Int?
+    let hue: Int?
+    let saturation: Int?
+    let brightness: Int?
+    let isBlackAndWhite: Boolean?
+    let creationTsz: Float?
+    let userId: Int?
 }
 
-public struct BillCharge: Type {
-        let bill_charge_id: Int?
-        let creation_tsz: Float?
-        let type: String?
-        let type_id: Int?
-        let user_id: Int?
-        let amount: Float?
-        let currency_code: String?
-        let creation_year: Int?
-        let creation_month: Int?
-        let last_modified_tsz: Float?
+public struct BillCharge: EtsyType {
+    let billChargeId: Int?
+    let creationTsz: Float?
+    let type: String?
+    let typeId: Int?
+    let userId: Int?
+    let amount: Float?
+    let currencyCode: String?
+    let creationYear: Int?
+    let creationMonth: Int?
+    let lastModifiedTsz: Float?
 }
 
-public struct BillPayment: Type {
-        let bill_payment_id: Int?
-        let creation_tsz: Float?
-        let type: String?
-        let type_id: Int?
-        let user_id: Int?
-        let amount: Float?
-        let currency_code: String?
-        let creation_month: Int?
-        let creation_year: Int?
+public struct BillPayment: EtsyType {
+    let billPaymentId: Int?
+    let creationTsz: Float?
+    let type: String?
+    let typeId: Int?
+    let userId: Int?
+    let amount: Float?
+    let currencyCode: String?
+    let creationMonth: Int?
+    let creationYear: Int?
 }
 
-public struct BillingOverview: Type {
-        let is_overdue: Boolean?
-        let currency_code: String?
-        let overdue_balance: Float?
-        let balance_due: Float?
-        let total_balance: Float?
-        let date_due: Epoch?
-        let date_overdue: Epoch?
+public struct BillingOverview: EtsyType {
+    let isOverdue: Boolean?
+    let currencyCode: String?
+    let overdueBalance: Float?
+    let balanceDue: Float?
+    let totalBalance: Float?
+    let dateDue: Epoch?
+    let dateOverdue: Epoch?
 }
 
-public struct Cart: Type {
-        let cart_id: Int?
-        let shop_name: String?
-        let message_to_seller: String?
-        let destination_country_id: Int?
-        let coupon_code: String?
-        let currency_code: String?
-        let total: String?
-        let subtotal: String?
-        let shipping_cost: String?
-        let tax_cost: String?
-        let discount_amount: String?
-        let shipping_discount_amount: String?
-        let tax_discount_amount: String?
-        let url: String?
-        let listings: CartListing?
-        let is_download_only: Boolean?
-        let has_vat: Boolean?
-        let shipping_option: ShippingOption?
+public struct Cart: EtsyType {
+    let cartId: Int?
+    let shopName: String?
+    let messageToSeller: String?
+    let destinationCountryId: Int?
+    let couponCode: String?
+    let currencyCode: String?
+    let total: String?
+    let subtotal: String?
+    let shippingCost: String?
+    let taxCost: String?
+    let discountAmount: String?
+    let shippingDiscountAmount: String?
+    let taxDiscountAmount: String?
+    let url: String?
+    let listings: CartListing?
+    let isDownloadOnly: Boolean?
+    let hasVat: Boolean?
+    let shippingOption: ShippingOption?
 }
 
-public struct Category: Type {
-        let category_id: Int?
-        let name: String?
-        let meta_title: String?
-        let meta_keywords: String?
-        let meta_description: String?
-        let page_description: String?
-        let page_title: String?
-        let category_name: String?
-        let short_name: String?
-        let long_name: String?
-        let num_children: Int?
+public struct CartListing: EtsyType {
+    let listingId: Int?
+    let purchaseQuantity: Int?
+    let purchaseState: String?
+    let isDigital: Boolean?
+    let fileData: String?
+    let listingCustomizationId: Int?
+    let variationsAvailable: Boolean?
+    let hasVariations: Boolean?
+    let selectedVariations: VariationsSelectedProperty?
 }
 
-public struct Country: Type {
-        let country_id: Int?
-        let iso_country_code: String?
-        let world_bank_country_code: String?
-        let name: String?
-        let slug: String?
-        let lat: Float?
-        let lon: Float?
+public struct Category: EtsyType {
+    let categoryId: Int?
+    let name: String?
+    let metaTitle: String?
+    let metaKeywords: String?
+    let metaDescription: String?
+    let pageDescription: String?
+    let pageTitle: String?
+    let categoryName: String?
+    let shortName: String?
+    let longName: String?
+    let numChildren: Int?
 }
 
-public struct Coupon: Type {
-        let coupon_id: Int?
-        let coupon_code: String?
-        let seller_active: Boolean?
-        let pct_discount: Int?
-        let free_shipping: Boolean?
-        let domestic_only: Boolean?
-        let currency_code: String?
-        let fixed_discount: String?
-        let minimum_purchase_price: String?
-        let expiration_date: Int?
-        let coupon_type: String?
+public struct Country: EtsyType {
+    let countryId: Int?
+    let isoCountryCode: String?
+    let worldBankCountryCode: String?
+    let name: String?
+    let slug: String?
+    let lat: Float?
+    let lon: Float?
 }
 
-public struct DataType: Type {
-        let type: String?
-        let values: String?
+public struct Coupon: EtsyType {
+    let couponId: Int?
+    let couponCode: String?
+    let sellerActive: Boolean?
+    let pctDiscount: Int?
+    let freeShipping: Boolean?
+    let domesticOnly: Boolean?
+    let currencyCode: String?
+    let fixedDiscount: String?
+    let minimumPurchasePrice: String?
+    let expirationDate: Int?
+    let couponType: String?
 }
 
-public struct FavoriteListing: Type {
-        let listing_id: Int?
-        let user_id: Int?
-        let listing_state: String?
-        let create_date: Int?
+public struct DataType: EtsyType {
+    let type: String?
+    let values: String?
 }
 
-public struct FavoriteUser: Type {
-        let user_id: Int?
-        let favorite_user_id: Int?
-        let target_user_id: Int?
-        let creation_tsz: Float?
+public struct FavoriteListing: EtsyType {
+    let listingId: Int?
+    let userId: Int?
+    let listingState: String?
+    let createDate: Int?
 }
 
-public struct FeaturedTreasury: Type {
-        let treasury_key: String?
-        let treasury_id: Int?
-        let treasury_owner_id: Int?
-        let url: String?
-        let region: String?
-        let active_date: Float?
+public struct FavoriteUser: EtsyType {
+    let userId: Int?
+    let favoriteUserId: Int?
+    let targetUserId: Int?
+    let creationTsz: Float?
 }
 
-public struct Feedback: Type {
-        let feedback_id: Int?
-        let transaction_id: Int?
-        let creator_user_id: Int?
-        let target_user_id: Int?
-        let seller_user_id: Int?
-        let buyer_user_id: Int?
-        let creation_tsz: Float?
-        let message: String?
-        let value: Int?
-        let image_feedback_id: Int?
-        let image_url_25x25: String?
-        let image_url_155x125: String?
-        let image_url_fullxfull: String?
+public struct FeaturedTreasury: EtsyType {
+    let treasuryKey: String?
+    let treasuryId: Int?
+    let treasuryOwnerId: Int?
+    let url: String?
+    let region: String?
+    let activeDate: Float?
 }
 
-public struct ForumPost: Type {
-        let thread_id: Int?
-        let post_id: Int?
-        let post: String?
-        let user_id: String?
-        let last_edit_time: Int?
-        let create_date: Int?
+public struct Feedback: EtsyType {
+    let feedbackId: Int?
+    let transactionId: Int?
+    let creatorUserId: Int?
+    let targetUserId: Int?
+    let sellerUserId: Int?
+    let buyerUserId: Int?
+    let creationTsz: Float?
+    let message: String?
+    let value: Int?
+    let imageFeedbackId: Int?
+    let imageUrl25x25: String?
+    let imageUrl155x125: String?
+    let imageUrlFullxfull: String?
 }
 
-public struct Guest: Type {
-        let guest_id: GuestId?
-        let checkout_url: String?
+public struct FeedbackInfo: EtsyType {
+    let count: Int?
+    let score: Int?
 }
 
-public struct GuestCart: Type {
-        let cart_id: Int?
-        let shop_name: String?
-        let message_to_seller: String?
-        let destination_country_id: Int?
-        let coupon_code: String?
-        let currency_code: String?
-        let total: String?
-        let subtotal: String?
-        let shipping_cost: String?
-        let tax_cost: String?
-        let discount_amount: String?
-        let shipping_discount_amount: String?
-        let tax_discount_amount: String?
-        let url: String?
-        let listings: CartListing?
-        let is_download_only: Boolean?
-        let has_vat: Boolean?
-        let shipping_option: ShippingOption?
+public struct ForumPost: EtsyType {
+    let threadId: Int?
+    let postId: Int?
+    let post: String?
+    let userId: String?
+    let lastEditTime: Int?
+    let createDate: Int?
 }
 
-public struct ImageType: Type {
-        let code: String?
-        let desc: String?
-        let sizes: String?
+public struct Guest: EtsyType {
+    let guestId: GuestId?
+    let checkoutUrl: String?
 }
 
-public struct Ledger: Type {
-        let ledger_id: Int?
-        let shop_id: String?
-        let currency: String?
-        let create_date: Int?
-        let update_date: Int?
+public struct GuestCart: EtsyType {
+    let cartId: Int?
+    let shopName: String?
+    let messageToSeller: String?
+    let destinationCountryId: Int?
+    let couponCode: String?
+    let currencyCode: String?
+    let total: String?
+    let subtotal: String?
+    let shippingCost: String?
+    let taxCost: String?
+    let discountAmount: String?
+    let shippingDiscountAmount: String?
+    let taxDiscountAmount: String?
+    let url: String?
+    let listings: CartListing?
+    let isDownloadOnly: Boolean?
+    let hasVat: Boolean?
+    let shippingOption: ShippingOption?
 }
 
-public struct LedgerEntry: Type {
-        let ledger_entry_id: Int?
-        let ledger_id: Int?
-        let sequence: Int?
-        let credit_amount: Int?
-        let debit_amount: Int?
-        let entry_type: String?
-        let reference_id: Int?
-        let running_balance: Int?
-        let create_date: Int?
+public struct ImageType: EtsyType {
+    let code: String?
+    let desc: String?
+    let sizes: String?
 }
 
-public struct Listing: Type {
-        let listing_id: Int?
-        let state: String?
-        let user_id: Int?
-        let category_id: Int?
-        let title: String?
-        let description: String?
-        let creation_tsz: Float?
-        let ending_tsz: Float?
-        let original_creation_tsz: Float?
-        let last_modified_tsz: Float?
-        let price: String?
-        let currency_code: String?
-        let quantity: Int?
-        let sku: String?
-        let tags: String?
-        let category_path: String?
-        let category_path_ids: Int?
-        let taxonomy_id: Int?
-        let suggested_taxonomy_id: Int?
-        let taxonomy_path: String?
-        let materials: String?
-        let shop_section_id: Int?
-        let featured_rank: FeaturedRank?
-        let state_tsz: Float?
-        let url: String?
-        let views: Int?
-        let num_favorers: Int?
-        let shipping_template_id: Int?
-        let shipping_profile_id: Int?
-        let processing_min: Int?
-        let processing_max: Int?
-        let who_made: Enum?
-        let is_supply: Boolean?
-        let when_made: Enum?
-        let item_weight: Int?
-        let item_weight_unit: Enum?
-        let item_length: Int?
-        let item_width: Int?
-        let item_height: Int?
-        let item_dimensions_unit: Enum?
-        let is_private: Boolean?
-        let recipient: Enum?
-        let occasion: Enum?
-        let style: String?
-        let non_taxable: Boolean?
-        let is_customizable: Boolean?
-        let is_digital: Boolean?
-        let file_data: String?
-        let can_write_inventory: Boolean?
-        let has_variations: Boolean?
-        let should_auto_renew: Boolean?
-        let language: Language?
+public struct Ledger: EtsyType {
+    let ledgerId: Int?
+    let shopId: String?
+    let currency: String?
+    let createDate: Int?
+    let updateDate: Int?
 }
 
-public struct ListingFile: Type {
-        let listing_file_id: Int?
-        let listing_id: Int?
-        let rank: Int?
-        let filename: String?
-        let filesize: String?
-        let size_bytes: Int?
-        let filetype: String?
-        let create_date: Int?
+public struct LedgerEntry: EtsyType {
+    let ledgerEntryId: Int?
+    let ledgerId: Int?
+    let sequence: Int?
+    let creditAmount: Int?
+    let debitAmount: Int?
+    let entryType: String?
+    let referenceId: Int?
+    let runningBalance: Int?
+    let createDate: Int?
 }
 
-public struct ListingImage: Type {
-        let listing_image_id: Int?
-        let hex_code: String?
-        let red: Int?
-        let green: Int?
-        let blue: Int?
-        let hue: Int?
-        let saturation: Int?
-        let brightness: Int?
-        let is_black_and_white: Boolean?
-        let creation_tsz: Float?
-        let listing_id: Int?
-        let rank: Int?
-        let url_75x75: String?
-        let url_170x135: String?
-        let url_570xN: String?
-        let url_fullxfull: String?
-        let full_height: Int?
-        let full_width: Int?
+public struct Listing: EtsyType {
+    let listingId: Int?
+    let state: String?
+    let userId: Int?
+    let categoryId: Int?
+    let title: String?
+    let description: String?
+    let creationTsz: Float?
+    let endingTsz: Float?
+    let originalCreationTsz: Float?
+    let lastModifiedTsz: Float?
+    let price: String?
+    let currencyCode: String?
+    let quantity: Int?
+    let sku: String?
+    let tags: String?
+    let categoryPath: String?
+    let categoryPathIds: Int?
+    let taxonomyId: Int?
+    let suggestedTaxonomyId: Int?
+    let taxonomyPath: String?
+    let materials: String?
+    let shopSectionId: Int?
+    let featuredRank: FeaturedRank?
+    let stateTsz: Float?
+    let url: String?
+    let views: Int?
+    let numFavorers: Int?
+    let shippingTemplateId: Int?
+    let shippingProfileId: Int?
+    let processingMin: Int?
+    let processingMax: Int?
+    let whoMade: Enum?
+    let isSupply: Boolean?
+    let whenMade: Enum?
+    let itemWeight: Int?
+    let itemWeightUnit: Enum?
+    let itemLength: Int?
+    let itemWidth: Int?
+    let itemHeight: Int?
+    let itemDimensionsUnit: Enum?
+    let isPrivate: Boolean?
+    let recipient: Enum?
+    let occasion: Enum?
+    let style: String?
+    let nonTaxable: Boolean?
+    let isCustomizable: Boolean?
+    let isDigital: Boolean?
+    let fileData: String?
+    let canWriteInventory: Boolean?
+    let hasVariations: Boolean?
+    let shouldAutoRenew: Boolean?
+    let language: Language?
 }
 
-public struct ListingInventory: Type {
-        let products: ListingProduct?
-        let price_on_property: Int?
-        let quantity_on_property: Int?
-        let sku_on_property: Int?
+public struct ListingFile: EtsyType {
+    let listingFileId: Int?
+    let listingId: Int?
+    let rank: Int?
+    let filename: String?
+    let filesize: String?
+    let sizeBytes: Int?
+    let filetype: String?
+    let createDate: Int?
 }
 
-public struct ListingOffering: Type {
-        let offering_id: Int?
-        let price: Money?
-        let quantity: Int?
-        let is_enabled: Boolean?
-        let is_deleted: Boolean?
+public struct ListingImage: EtsyType {
+    let listingImageId: Int?
+    let hexCode: String?
+    let red: Int?
+    let green: Int?
+    let blue: Int?
+    let hue: Int?
+    let saturation: Int?
+    let brightness: Int?
+    let isBlackAndWhite: Boolean?
+    let creationTsz: Float?
+    let listingId: Int?
+    let rank: Int?
+    let url75x75: String?
+    let url170x135: String?
+    let url570xN: String?
+    let urlFullxfull: String?
+    let fullHeight: Int?
+    let fullWidth: Int?
 }
 
-public struct ListingProduct: Type {
-        let product_id: Int?
-        let property_values: PropertyValue?
-        let sku: String?
-        let offerings: ListingOffering?
-        let is_deleted: Boolean?
+public struct ListingInventory: EtsyType {
+    let products: ListingProduct?
+    let priceOnProperty: Int?
+    let quantityOnProperty: Int?
+    let skuOnProperty: Int?
 }
 
-public struct ListingTranslation: Type {
-        let listing_id: Int?
-        let language: Language?
-        let title: String?
-        let description: String?
-        let tags: String?
+public struct ListingOffering: EtsyType {
+    let offeringId: Int?
+    let price: Money?
+    let quantity: Int?
+    let isEnabled: Boolean?
+    let isDeleted: Boolean?
 }
 
-public struct Payment: Type {
-        let payment_id: Int?
-        let buyer_user_id: Int?
-        let shop_id: Int?
-        let receipt_id: Int?
-        let amount_gross: Int?
-        let amount_fees: Int?
-        let amount_net: Int?
-        let posted_gross: Int?
-        let posted_fees: Int?
-        let posted_net: Int?
-        let adjusted_gross: Int?
-        let adjusted_fees: Int?
-        let adjusted_net: Int?
-        let currency: String?
-        let shop_currency: String?
-        let buyer_currency: String?
-        let shipping_user_id: Int?
-        let shipping_address_id: Int?
-        let billing_address_id: Int?
-        let status: String?
-        let shipped_date: Int?
-        let create_date: Int?
-        let update_date: Int?
+public struct ListingProduct: EtsyType {
+    let productId: Int?
+    let propertyValues: PropertyValue?
+    let sku: String?
+    let offerings: ListingOffering?
+    let isDeleted: Boolean?
 }
 
-public struct PaymentAccountLedgerEntry: Type {
-        let entry_id: Int?
-        let ledger_id: Int?
-        let sequence_number: Int?
-        let amount: Int?
-        let currency: String?
-        let description: String?
-        let balance: Int?
-        let create_date: Int?
+public struct ListingTranslation: EtsyType {
+    let listingId: Int?
+    let language: Language?
+    let title: String?
+    let description: String?
+    let tags: String?
 }
 
-public struct PaymentAdjustment: Type {
-        let payment_adjustment_id: Int?
-        let payment_id: Int?
-        let status: String?
-        let is_success: Boolean?
-        let user_id: Int?
-        let reason_code: String?
-        let total_adjustment_amount: Int?
-        let shop_total_adjustment_amount: Int?
-        let buyer_total_adjustment_amount: Int?
-        let total_fee_adjustment_amount: Int?
-        let create_date: Int?
-        let update_date: Int?
+public struct Money: EtsyType {
+    let amount: Int?
+    let divisor: Int?
+    let currencyCode: String?
+    let formattedRaw: String?
+    let formattedShort: String?
+    let formattedLong: String?
+    let originalCurrencyCode: String?
+    let beforeConversion: Money?
 }
 
-public struct PaymentAdjustmentItem: Type {
-        let payment_adjustment_item_id: Int?
-        let payment_adjustment_id: Int?
-        let adjustment_type: String?
-        let amount: Int?
-        let transaction_id: Int?
-        let create_date: Int?
+public struct ParamList: EtsyType {
+    let paramName: String?
 }
 
-public struct PaymentTemplate: Type {
-        let payment_template_id: Int?
-        let allow_bt: Boolean?
-        let allow_check: Boolean?
-        let allow_mo: Boolean?
-        let allow_other: Boolean?
-        let allow_paypal: Boolean?
-        let allow_cc: Boolean?
-        let paypal_email: String?
-        let name: String?
-        let first_line: String?
-        let second_line: String?
-        let city: String?
-        let state: String?
-        let zip: String?
-        let country_id: Int?
-        let user_id: Int?
-        let listing_payment_id: Int?
+public struct Payment: EtsyType {
+    let paymentId: Int?
+    let buyerUserId: Int?
+    let shopId: Int?
+    let receiptId: Int?
+    let amountGross: Int?
+    let amountFees: Int?
+    let amountNet: Int?
+    let postedGross: Int?
+    let postedFees: Int?
+    let postedNet: Int?
+    let adjustedGross: Int?
+    let adjustedFees: Int?
+    let adjustedNet: Int?
+    let currency: String?
+    let shopCurrency: String?
+    let buyerCurrency: String?
+    let shippingUserId: Int?
+    let shippingAddressId: Int?
+    let billingAddressId: Int?
+    let status: String?
+    let shippedDate: Int?
+    let createDate: Int?
+    let updateDate: Int?
 }
 
-public struct PropertyValue: Type {
-        let property_id: Int?
-        let property_name: String?
-        let scale_id: Int?
-        let scale_name: String?
-        let value_ids: Int?
-        let values: String?
+public struct PaymentAccountLedgerEntry: EtsyType {
+    let entryId: Int?
+    let ledgerId: Int?
+    let sequenceNumber: Int?
+    let amount: Int?
+    let currency: String?
+    let description: String?
+    let balance: Int?
+    let createDate: Int?
 }
 
-public struct Receipt: Type {
-        let receipt_id: Int?
-        let receipt_type: Int?
-        let order_id: Int?
-        let seller_user_id: Int?
-        let buyer_user_id: Int?
-        let creation_tsz: Float?
-        let last_modified_tsz: Float?
-        let name: String?
-        let first_line: String?
-        let second_line: String?
-        let city: String?
-        let state: String?
-        let zip: String?
-        let formatted_address: String?
-        let country_id: Int?
-        let payment_method: String?
-        let payment_email: String?
-        let message_from_seller: String?
-        let message_from_buyer: String?
-        let was_paid: Boolean?
-        let total_tax_cost: Float?
-        let total_vat_cost: Float?
-        let total_price: Float?
-        let total_shipping_cost: Float?
-        let currency_code: String?
-        let message_from_payment: String?
-        let was_shipped: Boolean?
-        let buyer_email: String?
-        let seller_email: String?
-        let is_gift: Boolean?
-        let needs_gift_wrap: Boolean?
-        let gift_message: String?
-        let gift_wrap_price: Float?
-        let discount_amt: Float?
-        let subtotal: Float?
-        let grandtotal: Float?
-        let adjusted_grandtotal: Float?
-        let shipments: ReceiptShipment?
+public struct PaymentAdjustment: EtsyType {
+    let paymentAdjustmentId: Int?
+    let paymentId: Int?
+    let status: String?
+    let isSuccess: Boolean?
+    let userId: Int?
+    let reasonCode: String?
+    let totalAdjustmentAmount: Int?
+    let shopTotalAdjustmentAmount: Int?
+    let buyerTotalAdjustmentAmount: Int?
+    let totalFeeAdjustmentAmount: Int?
+    let createDate: Int?
+    let updateDate: Int?
 }
 
-public struct ReceiptReviews: Type {
+public struct PaymentAdjustmentItem: EtsyType {
+    let paymentAdjustmentItemId: Int?
+    let paymentAdjustmentId: Int?
+    let adjustmentType: String?
+    let amount: Int?
+    let transactionId: Int?
+    let createDate: Int?
 }
 
-public struct Region: Type {
-        let region_id: Int?
-        let region_name: String?
-        let is_dead: Boolean?
+public struct PaymentTemplate: EtsyType {
+    let paymentTemplateId: Int?
+    let allowBt: Boolean?
+    let allowCheck: Boolean?
+    let allowMo: Boolean?
+    let allowOther: Boolean?
+    let allowPaypal: Boolean?
+    let allowCc: Boolean?
+    let paypalEmail: String?
+    let name: String?
+    let firstLine: String?
+    let secondLine: String?
+    let city: String?
+    let state: String?
+    let zip: String?
+    let countryId: Int?
+    let userId: Int?
+    let listingPaymentId: Int?
 }
 
-public struct Segment: Type {
-        let name: String?
-        let path: String?
-        let short_name: String?
-        let has_children: Boolean?
-        let image_url: String?
-        let shop_id: Int?
-        let shop_name: Int?
-        let listing_id: Int?
+public struct PropertyValue: EtsyType {
+    let propertyId: Int?
+    let propertyName: String?
+    let scaleId: Int?
+    let scaleName: String?
+    let valueIds: Int?
+    let values: String?
 }
 
-public struct SegmentPoster: Type {
-        let name: String?
-        let path: String?
-        let image_url: String?
-        let shop_id: Int?
-        let shop_name: Int?
-        let weight: Int?
-        let listing_id: Int?
+public struct Receipt: EtsyType {
+    let receiptId: Int?
+    let receiptType: Int?
+    let orderId: Int?
+    let sellerUserId: Int?
+    let buyerUserId: Int?
+    let creationTsz: Float?
+    let lastModifiedTsz: Float?
+    let name: String?
+    let firstLine: String?
+    let secondLine: String?
+    let city: String?
+    let state: String?
+    let zip: String?
+    let formattedAddress: String?
+    let countryId: Int?
+    let paymentMethod: String?
+    let paymentEmail: String?
+    let messageFromSeller: String?
+    let messageFromBuyer: String?
+    let wasPaid: Boolean?
+    let totalTaxCost: Float?
+    let totalVatCost: Float?
+    let totalPrice: Float?
+    let totalShippingCost: Float?
+    let currencyCode: String?
+    let messageFromPayment: String?
+    let wasShipped: Boolean?
+    let buyerEmail: String?
+    let sellerEmail: String?
+    let isGift: Boolean?
+    let needsGiftWrap: Boolean?
+    let giftMessage: String?
+    let giftWrapPrice: Float?
+    let discountAmt: Float?
+    let subtotal: Float?
+    let grandtotal: Float?
+    let adjustedGrandtotal: Float?
+    let shipments: ReceiptShipment?
 }
 
-public struct ShippingInfo: Type {
-        let shipping_info_id: Int?
-        let origin_country_id: Int?
-        let destination_country_id: Int?
-        let currency_code: String?
-        let primary_cost: Float?
-        let secondary_cost: Float?
-        let listing_id: Int?
-        let region_id: Int?
-        let origin_country_name: String?
-        let destination_country_name: String?
+public struct ReceiptShipment: EtsyType {
+    let carrierName: String?
+    let receiptShippingId: Int?
+    let trackingCode: String?
+    let trackingUrl: String?
+    let buyerNote: String?
+    let notificationDate: Int?
 }
 
-public struct ShippingTemplate: Type {
-        let shipping_template_id: Int?
-        let title: String?
-        let user_id: Int?
-        let min_processing_days: Int?
-        let max_processing_days: Int?
-        let processing_days_display_label: String?
-        let origin_country_id: Int?
+public struct Region: EtsyType {
+    let regionId: Int?
+    let regionName: String?
+    let isDead: Boolean?
 }
 
-public struct ShippingTemplateEntry: Type {
-        let shipping_template_entry_id: Int?
-        let shipping_template_id: Int?
-        let currency_code: String?
-        let origin_country_id: Int?
-        let destination_country_id: Int?
-        let destination_region_id: Int?
-        let primary_cost: Float?
-        let secondary_cost: Float?
+public struct Segment: EtsyType {
+    let name: String?
+    let path: String?
+    let shortName: String?
+    let hasChildren: Boolean?
+    let imageUrl: String?
+    let shopId: Int?
+    let shopName: Int?
+    let listingId: Int?
 }
 
-public struct ShippingUpgrade: Type {
-        let shipping_profile_id: Int?
-        let value_id: Int?
-        let value: String?
-        let price: Float?
-        let secondary_price: Float?
-        let currency_code: String?
-        let type: Int?
-        let order: Int?
-        let language: Int?
+public struct SegmentPoster: EtsyType {
+    let name: String?
+    let path: String?
+    let imageUrl: String?
+    let shopId: Int?
+    let shopName: Int?
+    let weight: Int?
+    let listingId: Int?
 }
 
-public struct Shop: Type {
-        let shop_id: Int?
-        let shop_name: String?
-        let first_line: String?
-        let second_line: String?
-        let city: String?
-        let state: String?
-        let zip: String?
-        let country_id: Int?
-        let user_id: Int?
-        let creation_tsz: Float?
-        let title: String?
-        let announcement: String?
-        let currency_code: String?
-        let is_vacation: Boolean?
-        let vacation_message: String?
-        let sale_message: String?
-        let digital_sale_message: String?
-        let last_updated_tsz: Float?
-        let listing_active_count: Int?
-        let digital_listing_count: Int?
-        let login_name: String?
-        let lat: Float?
-        let lon: Float?
-        let accepts_custom_requests: Boolean?
-        let policy_welcome: String?
-        let policy_payment: String?
-        let policy_shipping: String?
-        let policy_refunds: String?
-        let policy_additional: String?
-        let policy_seller_info: String?
-        let policy_updated_tsz: Float?
-        let policy_has_private_receipt_info: Boolean?
-        let vacation_autoreply: String?
-        let ga_code: String?
-        let name: String?
-        let url: String?
-        let image_url_760x100: String?
-        let num_favorers: Int?
-        let languages: String?
-        let upcoming_local_event_id: Int?
-        let icon_url_fullxfull: String?
-        let is_using_structured_policies: Boolean?
-        let has_onboarded_structured_policies: Boolean?
-        let has_unstructured_policies: Boolean?
-        let policy_privacy: String?
-        let use_new_inventory_endpoints: Boolean?
-        let include_dispute_form_link: Boolean?
+public struct ShippingInfo: EtsyType {
+    let shippingInfoId: Int?
+    let originCountryId: Int?
+    let destinationCountryId: Int?
+    let currencyCode: String?
+    let primaryCost: Float?
+    let secondaryCost: Float?
+    let listingId: Int?
+    let regionId: Int?
+    let originCountryName: String?
+    let destinationCountryName: String?
 }
 
-public struct ShopAbout: Type {
-        let shop_id: Int?
-        let status: String?
-        let story_headline: String?
-        let story_leading_paragraph: String?
-        let story: String?
-        let related_links: String?
-        let url: String?
+public struct ShippingOption: EtsyType {
+    let optionId: String?
+    let name: String?
+    let optionType: Int?
+    let cost: String?
+    let currencyCode: String?
 }
 
-public struct ShopSection: Type {
-        let shop_section_id: Int?
-        let title: String?
-        let rank: Int?
-        let user_id: Int?
-        let active_listing_count: Int?
+public struct ShippingTemplate: EtsyType {
+    let shippingTemplateId: Int?
+    let title: String?
+    let userId: Int?
+    let minProcessingDays: Int?
+    let maxProcessingDays: Int?
+    let processingDaysDisplayLabel: String?
+    let originCountryId: Int?
 }
 
-public struct ShopSectionTranslation: Type {
-        let shop_section_id: Int?
-        let language: Language?
-        let title: String?
+public struct ShippingTemplateEntry: EtsyType {
+    let shippingTemplateEntryId: Int?
+    let shippingTemplateId: Int?
+    let currencyCode: String?
+    let originCountryId: Int?
+    let destinationCountryId: Int?
+    let destinationRegionId: Int?
+    let primaryCost: Float?
+    let secondaryCost: Float?
 }
 
-public struct ShopTranslation: Type {
-        let shop_id: Int?
-        let language: Language?
-        let announcement: String?
-        let policy_welcome: String?
-        let policy_payment: String?
-        let policy_shipping: String?
-        let policy_refunds: String?
-        let policy_additional: String?
-        let policy_privacy: String?
-        let policy_seller_info: String?
-        let sale_message: String?
-        let digital_sale_message: String?
-        let title: String?
-        let vacation_autoreply: String?
-        let vacation_message: String?
+public struct ShippingUpgrade: EtsyType {
+    let shippingProfileId: Int?
+    let valueId: Int?
+    let value: String?
+    let price: Float?
+    let secondaryPrice: Float?
+    let currencyCode: String?
+    let type: Int?
+    let order: Int?
+    let language: Int?
 }
 
-public struct Style: Type {
-        let style_id: Int?
-        let style: String?
+public struct Shop: EtsyType {
+    let shopId: Int?
+    let shopName: String?
+    let firstLine: String?
+    let secondLine: String?
+    let city: String?
+    let state: String?
+    let zip: String?
+    let countryId: Int?
+    let userId: Int?
+    let creationTsz: Float?
+    let title: String?
+    let announcement: String?
+    let currencyCode: String?
+    let isVacation: Boolean?
+    let vacationMessage: String?
+    let saleMessage: String?
+    let digitalSaleMessage: String?
+    let lastUpdatedTsz: Float?
+    let listingActiveCount: Int?
+    let digitalListingCount: Int?
+    let loginName: String?
+    let lat: Float?
+    let lon: Float?
+    let acceptsCustomRequests: Boolean?
+    let policyWelcome: String?
+    let policyPayment: String?
+    let policyShipping: String?
+    let policyRefunds: String?
+    let policyAdditional: String?
+    let policySellerInfo: String?
+    let policyUpdatedTsz: Float?
+    let policyHasPrivateReceiptInfo: Boolean?
+    let vacationAutoreply: String?
+    let gaCode: String?
+    let name: String?
+    let url: String?
+    let imageUrl760x100: String?
+    let numFavorers: Int?
+    let languages: String?
+    let upcomingLocalEventId: Int?
+    let iconUrlFullxfull: String?
+    let isUsingStructuredPolicies: Boolean?
+    let hasOnboardedStructuredPolicies: Boolean?
+    let hasUnstructuredPolicies: Boolean?
+    let policyPrivacy: String?
+    let useNewInventoryEndpoints: Boolean?
+    let includeDisputeFormLink: Boolean?
 }
 
-public struct Taxonomy: Type {
-        let id: Int?
-        let level: Int?
-        let name: String?
-        let parent: String?
-        let parent_id: Int?
-        let path: String?
-        let category_id: Int?
-        let children: Taxonomy?
-        let children_ids: Int?
-        let full_path_taxonomy_ids: Int?
+public struct ShopAbout: EtsyType {
+    let shopId: Int?
+    let status: String?
+    let storyHeadline: String?
+    let storyLeadingParagraph: String?
+    let story: String?
+    let relatedLinks: String?
+    let url: String?
 }
 
-public struct TaxonomyNodeProperty: Type {
-        let property_id: Int?
-        let name: String?
-        let display_name: String?
-        let scales: TaxonomyPropertyScale?
-        let is_required: Boolean?
-        let supports_attributes: Boolean?
-        let supports_variations: Boolean?
-        let is_multivalued: Boolean?
-        let possible_values: TaxonomyPropertyValue?
-        let selected_values: TaxonomyPropertyValue?
+public struct ShopAboutImage: EtsyType {
+    let shopId: Int?
+    let imageId: Int?
+    let caption: String?
+    let rank: Int?
+    let url178x178: String?
+    let url545xN: String?
+    let url760xN: String?
+    let urlFullxfull: String?
 }
 
-public struct Team: Type {
-        let group_id: Int?
-        let name: String?
-        let create_date: Int?
-        let update_date: Int?
-        let tags: String?
+public struct ShopAboutMember: EtsyType {
+    let shopAboutMemberId: Int?
+    let shopId: Int?
+    let name: String?
+    let role: String?
+    let bio: String?
+    let rank: Int?
+    let isOwner: Boolean?
+    let url90x90: String?
+    let url190x190: String?
+    let hasStaleTranslations: Boolean?
 }
 
-public struct Transaction: Type {
-        let transaction_id: Int?
-        let title: String?
-        let description: String?
-        let seller_user_id: Int?
-        let buyer_user_id: Int?
-        let creation_tsz: Float?
-        let paid_tsz: Float?
-        let shipped_tsz: Float?
-        let price: Float?
-        let currency_code: String?
-        let quantity: Int?
-        let tags: String?
-        let materials: String?
-        let image_listing_id: Int?
-        let receipt_id: Int?
-        let shipping_cost: Float?
-        let is_digital: Boolean?
-        let file_data: String?
-        let listing_id: Int?
-        let is_quick_sale: Boolean?
-        let seller_feedback_id: Int?
-        let buyer_feedback_id: Int?
-        let transaction_type: String?
-        let url: String?
-        let variations: ListingInventory?
-        let product_data: ListingProduct?
+public struct ShopSection: EtsyType {
+    let shopSectionId: Int?
+    let title: String?
+    let rank: Int?
+    let userId: Int?
+    let activeListingCount: Int?
 }
 
-public struct Treasury: Type {
-        let id: String?
-        let title: String?
-        let description: String?
-        let homepage: Int?
-        let mature: Boolean?
-        let private: Boolean?
-        let locale: String?
-        let comment_count: Int?
-        let tags: String?
-        let counts: TreasuryCounts?
-        let hotness: Float?
-        let hotness_color: String?
-        let user_id: Int?
-        let user_name: String?
-        let user_avatar_id: Int?
-        let listings: TreasuryListing?
-        let creation_tsz: Float?
-        let became_public_date: Int?
+public struct ShopSectionTranslation: EtsyType {
+    let shopSectionId: Int?
+    let language: Language?
+    let title: String?
 }
 
-public struct TreasuryListing: Type {
-        let data: TreasuryListingData?
-        let creation_tsz: Float?
+public struct ShopTranslation: EtsyType {
+    let shopId: Int?
+    let language: Language?
+    let announcement: String?
+    let policyWelcome: String?
+    let policyPayment: String?
+    let policyShipping: String?
+    let policyRefunds: String?
+    let policyAdditional: String?
+    let policyPrivacy: String?
+    let policySellerInfo: String?
+    let saleMessage: String?
+    let digitalSaleMessage: String?
+    let title: String?
+    let vacationAutoreply: String?
+    let vacationMessage: String?
 }
 
-public struct User: Type {
-        let user_id: Int?
-        let login_name: String?
-        let primary_email: String?
-        let creation_tsz: Float?
-        let user_pub_key: StringJSON?
-        let referred_by_user_id: Int?
-        let feedback_info: FeedbackInfo?
-        let awaiting_feedback_count: Int?
-        let use_new_inventory_endpoints: Boolean?
+public struct StructuredPolicies: EtsyType {
+    let structuredPoliciesId: Int?
+    let createDate: Int?
+    let updateDate: Int?
+    let createDateFormatted: String?
+    let updateDateFormatted: String?
+    let hasUnstructuredPolicies: Boolean?
+    let additionalTermsAndConditions: String?
+    let shopInGermany: Boolean?
+    let includeDisputeFormLink: Boolean?
 }
 
-public struct UserAddress: Type {
-        let user_address_id: Int?
-        let user_id: Int?
-        let name: Text?
-        let first_line: Text?
-        let second_line: Text?
-        let city: Text?
-        let state: Text?
-        let zip: Text?
-        let country_id: Int?
-        let country_name: String?
-        let is_default_shipping: Boolean?
+public struct Style: EtsyType {
+    let styleId: Int?
+    let style: String?
 }
 
-public struct UserProfile: Type {
-        let user_profile_id: Int?
-        let user_id: Int?
-        let login_name: String?
-        let bio: String?
-        let gender: String?
-        let birth_month: String?
-        let birth_day: String?
-        let birth_year: String?
-        let join_tsz: Float?
-        let materials: String?
-        let country_id: Int?
-        let region: String?
-        let city: String?
-        let location: String?
-        let avatar_id: Int?
-        let lat: Float?
-        let lon: Float?
-        let transaction_buy_count: Int?
-        let transaction_sold_count: Int?
-        let is_seller: Boolean?
-        let image_url_75x75: String?
-        let first_name: String?
-        let last_name: String?
+public struct Taxonomy: EtsyType {
+    let id: Int?
+    let level: Int?
+    let name: String?
+    let parent: String?
+    let parentId: Int?
+    let path: String?
+    let categoryId: Int?
+    let children: Taxonomy?
+    let childrenIds: Int?
+    let fullPathTaxonomyIds: Int?
+}
+
+public struct TaxonomyNodeProperty: EtsyType {
+    let propertyId: Int?
+    let name: String?
+    let displayName: String?
+    let scales: TaxonomyPropertyScale?
+    let isRequired: Boolean?
+    let supportsAttributes: Boolean?
+    let supportsVariations: Boolean?
+    let isMultivalued: Boolean?
+    let possibleValues: TaxonomyPropertyValue?
+    let selectedValues: TaxonomyPropertyValue?
+}
+
+public struct TaxonomyPropertyScale: EtsyType {
+    let scaleId: Int?
+    let displayName: String?
+    let description: String?
+}
+
+public struct TaxonomyPropertyValue: EtsyType {
+    let valueId: Int?
+    let name: String?
+    let scaleId: Int?
+    let order: Int?
+    let equalTo: Int?
+}
+
+public struct Team: EtsyType {
+    let groupId: Int?
+    let name: String?
+    let createDate: Int?
+    let updateDate: Int?
+    let tags: String?
+}
+
+public struct Transaction: EtsyType {
+    let transactionId: Int?
+    let title: String?
+    let description: String?
+    let sellerUserId: Int?
+    let buyerUserId: Int?
+    let creationTsz: Float?
+    let paidTsz: Float?
+    let shippedTsz: Float?
+    let price: Float?
+    let currencyCode: String?
+    let quantity: Int?
+    let tags: String?
+    let materials: String?
+    let imageListingId: Int?
+    let receiptId: Int?
+    let shippingCost: Float?
+    let isDigital: Boolean?
+    let fileData: String?
+    let listingId: Int?
+    let isQuickSale: Boolean?
+    let sellerFeedbackId: Int?
+    let buyerFeedbackId: Int?
+    let transactionType: String?
+    let url: String?
+    let variations: ListingInventory?
+    let productData: ListingProduct?
+}
+
+public struct Treasury: EtsyType {
+    let id: String?
+    let title: String?
+    let description: String?
+    let homepage: Int?
+    let mature: Boolean?
+    let private: Boolean?
+    let locale: String?
+    let commentCount: Int?
+    let tags: String?
+    let counts: TreasuryCounts?
+    let hotness: Float?
+    let hotnessColor: String?
+    let userId: Int?
+    let userName: String?
+    let userAvatarId: Int?
+    let listings: TreasuryListing?
+    let creationTsz: Float?
+    let becamePublicDate: Int?
+}
+
+public struct TreasuryCounts: EtsyType {
+    let clicks: Int?
+    let views: Int?
+    let shares: Int?
+    let reports: Int?
+}
+
+public struct TreasuryListing: EtsyType {
+    let data: TreasuryListingData?
+    let creationTsz: Float?
+}
+
+public struct TreasuryListingData: EtsyType {
+    let userId: Int?
+    let title: String?
+    let price: Float?
+    let currencyCode: String?
+    let listingId: Int?
+    let state: String?
+    let shopName: String?
+    let imageId: Int?
+    let imageUrl75x75: String?
+    let imageUrl170x135: String?
+}
+
+public struct User: EtsyType {
+    let userId: Int?
+    let loginName: String?
+    let primaryEmail: String?
+    let creationTsz: Float?
+    let userPubKey: StringJSON?
+    let referredByUserId: Int?
+    let feedbackInfo: FeedbackInfo?
+    let awaitingFeedbackCount: Int?
+    let useNewInventoryEndpoints: Boolean?
+}
+
+public struct UserAddress: EtsyType {
+    let userAddressId: Int?
+    let userId: Int?
+    let name: Text?
+    let firstLine: Text?
+    let secondLine: Text?
+    let city: Text?
+    let state: Text?
+    let zip: Text?
+    let countryId: Int?
+    let countryName: String?
+    let isDefaultShipping: Boolean?
+}
+
+public struct UserProfile: EtsyType {
+    let userProfileId: Int?
+    let userId: Int?
+    let loginName: String?
+    let bio: String?
+    let gender: String?
+    let birthMonth: String?
+    let birthDay: String?
+    let birthYear: String?
+    let joinTsz: Float?
+    let materials: String?
+    let countryId: Int?
+    let region: String?
+    let city: String?
+    let location: String?
+    let avatarId: Int?
+    let lat: Float?
+    let lon: Float?
+    let transactionBuyCount: Int?
+    let transactionSoldCount: Int?
+    let isSeller: Boolean?
+    let imageUrl75x75: String?
+    let firstName: String?
+    let lastName: String?
 }
 
 

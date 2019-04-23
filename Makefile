@@ -18,18 +18,23 @@ ApiTypeNames=Data/ApiTypeNames.json
 ApiTypeInformationLocation=Data/TypeJSON
 GeneratedDirectory=Sources/EtsySwift/Generated
 
+# type_names:
+# 	bin/collect_type_names.sh $(ApiMethodResponse) '[null,"Array","Collection","CollectionListing","Dict","Int","Page","PageImage","String","Variations_PropertySet","Variations_PropertySetOption","Variations_PropertySetOptionModifier","array"]' > $(ApiTypeNames)
 
 type_names:
-	bin/collect_type_names.sh $(ApiMethodResponse) '[null,"Array","Collection","CollectionListing","Dict","Int","Page","PageImage","String","Variations_PropertySet","Variations_PropertySetOption","Variations_PropertySetOptionModifier","array"]' > $(ApiTypeNames)
+	bin/scrape_type_names.sh > $(ApiTypeNames)
 
-type_properties_json:
+type_properties:
 	bin/scrape_types.sh $(ApiTypeNames) $(ApiTypeInformationLocation)
 
-type_structs:
-	swift run swiftgen json -p ~/Development/Etsy.swift/Templates/EtsyStencil/EtsyType.stencil Data/TypeJSON/
+scrape: type_names type_properties
 
-types: type_names type_properties_json
-	swift run swiftgen json -p ~/Development/Etsy.swift/Templates/EtsyStencil/EtsyType.stencil Data/TypeJSON/ > $(GeneratedDirectory)/Types.generated.swift
+type_structs:
+	swift run swiftgen json -p ~/Development/Etsy.swift/Templates/EtsyStencil/EtsyType.stencil Data/TypeJSON/ > $(GeneratedDirectory)/Types.generated.swift \
+	& sourcery
+
+types: scrape type_structs
+
 ## House keeping
 .PHONY: clean
 

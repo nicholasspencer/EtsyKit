@@ -1,0 +1,52 @@
+[
+  {
+    "name": "shop_about_member_id",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "shop_id",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "name",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "role",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "bio",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "rank",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "is_owner",
+    "type": "boolean",
+    "genericType": "boolean"
+  },
+  {
+    "name": "url_90x90",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "url_190x190",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "has_stale_translations",
+    "type": "boolean",
+    "genericType": "boolean"
+  }
+]

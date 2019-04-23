@@ -1,4 +1,5 @@
 {% for type in types.based.Codable|!enum|!protocol %}
+{% if type.variables.length %}
 public extension {{ type.name }} {
     enum CodingKeys: String, CodingKey {
     {% for variable in type.variables|instance %}
@@ -11,4 +12,5 @@ public extension {{ type.name }} {
     }
 }
 
+{% endif %}
 {% endfor %}

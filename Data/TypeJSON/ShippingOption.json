@@ -1,0 +1,27 @@
+[
+  {
+    "name": "option_id",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "name",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "option_type",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "cost",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "currency_code",
+    "type": "string",
+    "genericType": "string"
+  }
+]

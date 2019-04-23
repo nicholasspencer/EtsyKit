@@ -1,6 +1,6 @@
 sources:
-  - Sources/Etsy.swift/
+  - Sources/EtsySwift/
 templates:
-  - Templates/Sourcery/
+  - Templates/EtsySwift/Sourcery/
 output:
-  Sources/Etsy.swift/Generated/
+  Sources/EtsySwift/Generated/

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "structured_policies_id",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "payments",
+    "type": null,
+    "genericType": null
+  },
+  {
+    "name": "refunds",
+    "type": null,
+    "genericType": null
+  },
+  {
+    "name": "shipping",
+    "type": null,
+    "genericType": null
+  },
+  {
+    "name": "create_date",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "update_date",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "create_date_formatted",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "update_date_formatted",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "has_unstructured_policies",
+    "type": "boolean",
+    "genericType": "boolean"
+  },
+  {
+    "name": "additional_terms_and_conditions",
+    "type": "string",
+    "genericType": "string"
+  },
+  {
+    "name": "shop_in_germany",
+    "type": "boolean",
+    "genericType": "boolean"
+  },
+  {
+    "name": "char_limits",
+    "type": null,
+    "genericType": null
+  },
+  {
+    "name": "include_dispute_form_link",
+    "type": "boolean",
+    "genericType": "boolean"
+  },
+  {
+    "name": "privacy",
+    "type": null,
+    "genericType": null
+  }
+]

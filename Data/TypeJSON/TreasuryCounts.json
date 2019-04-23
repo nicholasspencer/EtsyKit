@@ -1,0 +1,22 @@
+[
+  {
+    "name": "clicks",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "views",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "shares",
+    "type": "int",
+    "genericType": "int"
+  },
+  {
+    "name": "reports",
+    "type": "int",
+    "genericType": "int"
+  }
+]
