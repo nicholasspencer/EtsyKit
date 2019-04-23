@@ -1,3 +1,3 @@
 # Etsy.swift
 
-A description of this package.
+An Etsy library codegen'd from the Etsy API documentation for swift.
