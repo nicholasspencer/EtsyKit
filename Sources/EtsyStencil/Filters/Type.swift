@@ -32,7 +32,7 @@ public enum Type: String {
 extension Type {
 
     static func etsyType(_ value: Any?, arguments: [Any?]) throws -> Any? {
-        let string = try Filters.parseString(from: value)
+        let string = try StencilSwiftKit.Filters.parseString(from: value)
         return nil
     }
     
