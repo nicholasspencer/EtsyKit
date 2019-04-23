@@ -42,4 +42,11 @@ types: scrape generate
 
 clean:
 	rm $(ApiTypeInformationLocation)/*.json \
-	& rm -r $(EtsySwiftGeneratedDirectory)/**/*.generated.swift
+	& rm -r $(EtsySwiftGeneratedDirectory)/**/*.generated.swift \
+	& swift package clean
+
+format:
+	swift run swiftformat .
+
+lint:
+	swift run swiftlint autocorrect --path Sources/

@@ -1,4 +1,5 @@
 import Foundation
+import StencilSwiftKit
 
 public enum Type: String {
     case string
@@ -26,4 +27,13 @@ public enum Type: String {
     case listing_variation
     case featured_rank
     case stringJSON
+}
+
+extension Type {
+
+    static func etsyType(_ value: Any?, arguments: [Any?]) throws -> Any? {
+        let string = try Filters.parseString(from: value)
+        return nil
+    }
+    
 }

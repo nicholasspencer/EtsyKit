@@ -84,11 +84,11 @@
       },
       {
         "package": "StencilSwiftKit",
-        "repositoryURL": "https://github.com/SwiftGen/StencilSwiftKit.git",
+        "repositoryURL": "https://github.com/nicholasspencer/StencilSwiftKit.git",
         "state": {
-          "branch": null,
-          "revision": "dbf02bd6afe71b65ead2bd250aaf974abc688094",
-          "version": "2.7.2"
+          "branch": "master",
+          "revision": "53f2060cb927821ecf75818739fa48632b86c796",
+          "version": null
         }
       },
       {

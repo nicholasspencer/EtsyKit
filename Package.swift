@@ -15,7 +15,7 @@ let package = Package(
         .package(url: "https://github.com/nicklockwood/SwiftFormat.git", from: "0.35.8"),
         .package(url: "https://github.com/Realm/SwiftLint.git", from: "0.28.1"),
         .package(url: "https://github.com/stencilproject/Stencil.git", from: "0.13.1"),
-        .package(url: "https://github.com/SwiftGen/StencilSwiftKit.git", from: "2.7.0"),
+        .package(url: "https://github.com/nicholasspencer/StencilSwiftKit.git", .branch("master")),
         .package(url: "https://github.com/SwiftGen/SwiftGen.git", from: "6.1.0"),
     ],
     targets: [
