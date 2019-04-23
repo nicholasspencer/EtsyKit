@@ -30,10 +30,8 @@ public enum Type: String {
 }
 
 extension Type {
-
-    static func etsyType(_ value: Any?, arguments: [Any?]) throws -> Any? {
+    static func etsyType(_ value: Any?, arguments _: [Any?]) throws -> Any? {
         let string = try StencilSwiftKit.Filters.parseString(from: value)
         return nil
     }
-    
 }

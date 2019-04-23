@@ -1,5 +1,5 @@
-import XCTest
 @testable import Etsy_swift
+import XCTest
 
 final class Etsy_swiftTests: XCTestCase {
     func testExample() {

@@ -17,20 +17,20 @@ public extension Shop.Request {
         switch self {
         case .findAllShops:
             return "/shops"
-        case .getShop(let shopId):
+        case let .getShop(shopId):
             return "/shops/\(shopId)"
-        case .getListingShop(let listingId):
+        case let .getListingShop(listingId):
             return "/shops/listing/\(listingId)"
-        case .findAllUserShops(let userId):
+        case let .findAllUserShops(userId):
             return "/users/\(userId)/shops"
         }
     }
 
     var queryItems: [URLQueryItem]? {
         switch self {
-        case .findAllShops(let page):
+        case let .findAllShops(page):
             return page.queryItems
-        case .findAllUserShops(_, let page):
+        case let .findAllUserShops(_, page):
             return page.queryItems
         default:
             return nil

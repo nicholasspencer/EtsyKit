@@ -1,15 +1,14 @@
 // Generated using Sourcery 0.16.0 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
-
 public extension ApiMethod {
     enum CodingKeys: String, CodingKey {
-        case name = "name"
-        case uri = "uri"
-        case params = "params"
-        case defaults = "defaults"
-        case type = "type"
-        case visibility = "visibility"
+        case name
+        case uri
+        case params
+        case defaults
+        case type
+        case visibility
         case httpMethod = "http_method"
     }
 }
@@ -18,12 +17,12 @@ public extension Avatar {
     enum CodingKeys: String, CodingKey {
         case avatarId = "avatar_id"
         case hexCode = "hex_code"
-        case red = "red"
-        case green = "green"
-        case blue = "blue"
-        case hue = "hue"
-        case saturation = "saturation"
-        case brightness = "brightness"
+        case red
+        case green
+        case blue
+        case hue
+        case saturation
+        case brightness
         case isBlackAndWhite = "is_black_and_white"
         case creationTsz = "creation_tsz"
         case userId = "user_id"
@@ -34,10 +33,10 @@ public extension BillCharge {
     enum CodingKeys: String, CodingKey {
         case billChargeId = "bill_charge_id"
         case creationTsz = "creation_tsz"
-        case type = "type"
+        case type
         case typeId = "type_id"
         case userId = "user_id"
-        case amount = "amount"
+        case amount
         case currencyCode = "currency_code"
         case creationYear = "creation_year"
         case creationMonth = "creation_month"
@@ -49,10 +48,10 @@ public extension BillPayment {
     enum CodingKeys: String, CodingKey {
         case billPaymentId = "bill_payment_id"
         case creationTsz = "creation_tsz"
-        case type = "type"
+        case type
         case typeId = "type_id"
         case userId = "user_id"
-        case amount = "amount"
+        case amount
         case currencyCode = "currency_code"
         case creationMonth = "creation_month"
         case creationYear = "creation_year"
@@ -79,15 +78,15 @@ public extension Cart {
         case destinationCountryId = "destination_country_id"
         case couponCode = "coupon_code"
         case currencyCode = "currency_code"
-        case total = "total"
-        case subtotal = "subtotal"
+        case total
+        case subtotal
         case shippingCost = "shipping_cost"
         case taxCost = "tax_cost"
         case discountAmount = "discount_amount"
         case shippingDiscountAmount = "shipping_discount_amount"
         case taxDiscountAmount = "tax_discount_amount"
-        case url = "url"
-        case listings = "listings"
+        case url
+        case listings
         case isDownloadOnly = "is_download_only"
         case hasVat = "has_vat"
         case shippingOption = "shipping_option"
@@ -111,7 +110,7 @@ public extension CartListing {
 public extension Category {
     enum CodingKeys: String, CodingKey {
         case categoryId = "category_id"
-        case name = "name"
+        case name
         case metaTitle = "meta_title"
         case metaKeywords = "meta_keywords"
         case metaDescription = "meta_description"
@@ -129,10 +128,10 @@ public extension Country {
         case countryId = "country_id"
         case isoCountryCode = "iso_country_code"
         case worldBankCountryCode = "world_bank_country_code"
-        case name = "name"
-        case slug = "slug"
-        case lat = "lat"
-        case lon = "lon"
+        case name
+        case slug
+        case lat
+        case lon
     }
 }
 
@@ -154,8 +153,8 @@ public extension Coupon {
 
 public extension DataType {
     enum CodingKeys: String, CodingKey {
-        case type = "type"
-        case values = "values"
+        case type
+        case values
     }
 }
 
@@ -182,8 +181,8 @@ public extension FeaturedTreasury {
         case treasuryKey = "treasury_key"
         case treasuryId = "treasury_id"
         case treasuryOwnerId = "treasury_owner_id"
-        case url = "url"
-        case region = "region"
+        case url
+        case region
         case activeDate = "active_date"
     }
 }
@@ -197,8 +196,8 @@ public extension Feedback {
         case sellerUserId = "seller_user_id"
         case buyerUserId = "buyer_user_id"
         case creationTsz = "creation_tsz"
-        case message = "message"
-        case value = "value"
+        case message
+        case value
         case imageFeedbackId = "image_feedback_id"
         case imageUrl25x25 = "image_url25x25"
         case imageUrl155x125 = "image_url155x125"
@@ -208,8 +207,8 @@ public extension Feedback {
 
 public extension FeedbackInfo {
     enum CodingKeys: String, CodingKey {
-        case count = "count"
-        case score = "score"
+        case count
+        case score
     }
 }
 
@@ -217,7 +216,7 @@ public extension ForumPost {
     enum CodingKeys: String, CodingKey {
         case threadId = "thread_id"
         case postId = "post_id"
-        case post = "post"
+        case post
         case userId = "user_id"
         case lastEditTime = "last_edit_time"
         case createDate = "create_date"
@@ -239,15 +238,15 @@ public extension GuestCart {
         case destinationCountryId = "destination_country_id"
         case couponCode = "coupon_code"
         case currencyCode = "currency_code"
-        case total = "total"
-        case subtotal = "subtotal"
+        case total
+        case subtotal
         case shippingCost = "shipping_cost"
         case taxCost = "tax_cost"
         case discountAmount = "discount_amount"
         case shippingDiscountAmount = "shipping_discount_amount"
         case taxDiscountAmount = "tax_discount_amount"
-        case url = "url"
-        case listings = "listings"
+        case url
+        case listings
         case isDownloadOnly = "is_download_only"
         case hasVat = "has_vat"
         case shippingOption = "shipping_option"
@@ -256,9 +255,9 @@ public extension GuestCart {
 
 public extension ImageType {
     enum CodingKeys: String, CodingKey {
-        case code = "code"
-        case desc = "desc"
-        case sizes = "sizes"
+        case code
+        case desc
+        case sizes
     }
 }
 
@@ -266,7 +265,7 @@ public extension Ledger {
     enum CodingKeys: String, CodingKey {
         case ledgerId = "ledger_id"
         case shopId = "shop_id"
-        case currency = "currency"
+        case currency
         case createDate = "create_date"
         case updateDate = "update_date"
     }
@@ -276,7 +275,7 @@ public extension LedgerEntry {
     enum CodingKeys: String, CodingKey {
         case ledgerEntryId = "ledger_entry_id"
         case ledgerId = "ledger_id"
-        case sequence = "sequence"
+        case sequence
         case creditAmount = "credit_amount"
         case debitAmount = "debit_amount"
         case entryType = "entry_type"
@@ -289,31 +288,31 @@ public extension LedgerEntry {
 public extension Listing {
     enum CodingKeys: String, CodingKey {
         case listingId = "listing_id"
-        case state = "state"
+        case state
         case userId = "user_id"
         case categoryId = "category_id"
-        case title = "title"
-        case description = "description"
+        case title
+        case description
         case creationTsz = "creation_tsz"
         case endingTsz = "ending_tsz"
         case originalCreationTsz = "original_creation_tsz"
         case lastModifiedTsz = "last_modified_tsz"
-        case price = "price"
+        case price
         case currencyCode = "currency_code"
-        case quantity = "quantity"
-        case sku = "sku"
-        case tags = "tags"
+        case quantity
+        case sku
+        case tags
         case categoryPath = "category_path"
         case categoryPathIds = "category_path_ids"
         case taxonomyId = "taxonomy_id"
         case suggestedTaxonomyId = "suggested_taxonomy_id"
         case taxonomyPath = "taxonomy_path"
-        case materials = "materials"
+        case materials
         case shopSectionId = "shop_section_id"
         case featuredRank = "featured_rank"
         case stateTsz = "state_tsz"
-        case url = "url"
-        case views = "views"
+        case url
+        case views
         case numFavorers = "num_favorers"
         case shippingTemplateId = "shipping_template_id"
         case shippingProfileId = "shipping_profile_id"
@@ -329,9 +328,9 @@ public extension Listing {
         case itemHeight = "item_height"
         case itemDimensionsUnit = "item_dimensions_unit"
         case isPrivate = "is_private"
-        case recipient = "recipient"
-        case occasion = "occasion"
-        case style = "style"
+        case recipient
+        case occasion
+        case style
         case nonTaxable = "non_taxable"
         case isCustomizable = "is_customizable"
         case isDigital = "is_digital"
@@ -339,7 +338,7 @@ public extension Listing {
         case canWriteInventory = "can_write_inventory"
         case hasVariations = "has_variations"
         case shouldAutoRenew = "should_auto_renew"
-        case language = "language"
+        case language
     }
 }
 
@@ -347,11 +346,11 @@ public extension ListingFile {
     enum CodingKeys: String, CodingKey {
         case listingFileId = "listing_file_id"
         case listingId = "listing_id"
-        case rank = "rank"
-        case filename = "filename"
-        case filesize = "filesize"
+        case rank
+        case filename
+        case filesize
         case sizeBytes = "size_bytes"
-        case filetype = "filetype"
+        case filetype
         case createDate = "create_date"
     }
 }
@@ -360,18 +359,18 @@ public extension ListingImage {
     enum CodingKeys: String, CodingKey {
         case listingImageId = "listing_image_id"
         case hexCode = "hex_code"
-        case red = "red"
-        case green = "green"
-        case blue = "blue"
-        case hue = "hue"
-        case saturation = "saturation"
-        case brightness = "brightness"
+        case red
+        case green
+        case blue
+        case hue
+        case saturation
+        case brightness
         case isBlackAndWhite = "is_black_and_white"
         case creationTsz = "creation_tsz"
         case listingId = "listing_id"
-        case rank = "rank"
-        case url75x75 = "url75x75"
-        case url170x135 = "url170x135"
+        case rank
+        case url75x75
+        case url170x135
         case url570xN = "url570x_n"
         case urlFullxfull = "url_fullxfull"
         case fullHeight = "full_height"
@@ -381,7 +380,7 @@ public extension ListingImage {
 
 public extension ListingInventory {
     enum CodingKeys: String, CodingKey {
-        case products = "products"
+        case products
         case priceOnProperty = "price_on_property"
         case quantityOnProperty = "quantity_on_property"
         case skuOnProperty = "sku_on_property"
@@ -391,8 +390,8 @@ public extension ListingInventory {
 public extension ListingOffering {
     enum CodingKeys: String, CodingKey {
         case offeringId = "offering_id"
-        case price = "price"
-        case quantity = "quantity"
+        case price
+        case quantity
         case isEnabled = "is_enabled"
         case isDeleted = "is_deleted"
     }
@@ -402,8 +401,8 @@ public extension ListingProduct {
     enum CodingKeys: String, CodingKey {
         case productId = "product_id"
         case propertyValues = "property_values"
-        case sku = "sku"
-        case offerings = "offerings"
+        case sku
+        case offerings
         case isDeleted = "is_deleted"
     }
 }
@@ -411,17 +410,17 @@ public extension ListingProduct {
 public extension ListingTranslation {
     enum CodingKeys: String, CodingKey {
         case listingId = "listing_id"
-        case language = "language"
-        case title = "title"
-        case description = "description"
-        case tags = "tags"
+        case language
+        case title
+        case description
+        case tags
     }
 }
 
 public extension Money {
     enum CodingKeys: String, CodingKey {
-        case amount = "amount"
-        case divisor = "divisor"
+        case amount
+        case divisor
         case currencyCode = "currency_code"
         case formattedRaw = "formatted_raw"
         case formattedShort = "formatted_short"
@@ -452,13 +451,13 @@ public extension Payment {
         case adjustedGross = "adjusted_gross"
         case adjustedFees = "adjusted_fees"
         case adjustedNet = "adjusted_net"
-        case currency = "currency"
+        case currency
         case shopCurrency = "shop_currency"
         case buyerCurrency = "buyer_currency"
         case shippingUserId = "shipping_user_id"
         case shippingAddressId = "shipping_address_id"
         case billingAddressId = "billing_address_id"
-        case status = "status"
+        case status
         case shippedDate = "shipped_date"
         case createDate = "create_date"
         case updateDate = "update_date"
@@ -470,10 +469,10 @@ public extension PaymentAccountLedgerEntry {
         case entryId = "entry_id"
         case ledgerId = "ledger_id"
         case sequenceNumber = "sequence_number"
-        case amount = "amount"
-        case currency = "currency"
-        case description = "description"
-        case balance = "balance"
+        case amount
+        case currency
+        case description
+        case balance
         case createDate = "create_date"
     }
 }
@@ -482,7 +481,7 @@ public extension PaymentAdjustment {
     enum CodingKeys: String, CodingKey {
         case paymentAdjustmentId = "payment_adjustment_id"
         case paymentId = "payment_id"
-        case status = "status"
+        case status
         case isSuccess = "is_success"
         case userId = "user_id"
         case reasonCode = "reason_code"
@@ -500,7 +499,7 @@ public extension PaymentAdjustmentItem {
         case paymentAdjustmentItemId = "payment_adjustment_item_id"
         case paymentAdjustmentId = "payment_adjustment_id"
         case adjustmentType = "adjustment_type"
-        case amount = "amount"
+        case amount
         case transactionId = "transaction_id"
         case createDate = "create_date"
     }
@@ -516,12 +515,12 @@ public extension PaymentTemplate {
         case allowPaypal = "allow_paypal"
         case allowCc = "allow_cc"
         case paypalEmail = "paypal_email"
-        case name = "name"
+        case name
         case firstLine = "first_line"
         case secondLine = "second_line"
-        case city = "city"
-        case state = "state"
-        case zip = "zip"
+        case city
+        case state
+        case zip
         case countryId = "country_id"
         case userId = "user_id"
         case listingPaymentId = "listing_payment_id"
@@ -535,7 +534,7 @@ public extension PropertyValue {
         case scaleId = "scale_id"
         case scaleName = "scale_name"
         case valueIds = "value_ids"
-        case values = "values"
+        case values
     }
 }
 
@@ -548,12 +547,12 @@ public extension Receipt {
         case buyerUserId = "buyer_user_id"
         case creationTsz = "creation_tsz"
         case lastModifiedTsz = "last_modified_tsz"
-        case name = "name"
+        case name
         case firstLine = "first_line"
         case secondLine = "second_line"
-        case city = "city"
-        case state = "state"
-        case zip = "zip"
+        case city
+        case state
+        case zip
         case formattedAddress = "formatted_address"
         case countryId = "country_id"
         case paymentMethod = "payment_method"
@@ -575,10 +574,10 @@ public extension Receipt {
         case giftMessage = "gift_message"
         case giftWrapPrice = "gift_wrap_price"
         case discountAmt = "discount_amt"
-        case subtotal = "subtotal"
-        case grandtotal = "grandtotal"
+        case subtotal
+        case grandtotal
         case adjustedGrandtotal = "adjusted_grandtotal"
-        case shipments = "shipments"
+        case shipments
     }
 }
 
@@ -603,8 +602,8 @@ public extension Region {
 
 public extension Segment {
     enum CodingKeys: String, CodingKey {
-        case name = "name"
-        case path = "path"
+        case name
+        case path
         case shortName = "short_name"
         case hasChildren = "has_children"
         case imageUrl = "image_url"
@@ -616,12 +615,12 @@ public extension Segment {
 
 public extension SegmentPoster {
     enum CodingKeys: String, CodingKey {
-        case name = "name"
-        case path = "path"
+        case name
+        case path
         case imageUrl = "image_url"
         case shopId = "shop_id"
         case shopName = "shop_name"
-        case weight = "weight"
+        case weight
         case listingId = "listing_id"
     }
 }
@@ -644,9 +643,9 @@ public extension ShippingInfo {
 public extension ShippingOption {
     enum CodingKeys: String, CodingKey {
         case optionId = "option_id"
-        case name = "name"
+        case name
         case optionType = "option_type"
-        case cost = "cost"
+        case cost
         case currencyCode = "currency_code"
     }
 }
@@ -654,7 +653,7 @@ public extension ShippingOption {
 public extension ShippingTemplate {
     enum CodingKeys: String, CodingKey {
         case shippingTemplateId = "shipping_template_id"
-        case title = "title"
+        case title
         case userId = "user_id"
         case minProcessingDays = "min_processing_days"
         case maxProcessingDays = "max_processing_days"
@@ -680,13 +679,13 @@ public extension ShippingUpgrade {
     enum CodingKeys: String, CodingKey {
         case shippingProfileId = "shipping_profile_id"
         case valueId = "value_id"
-        case value = "value"
-        case price = "price"
+        case value
+        case price
         case secondaryPrice = "secondary_price"
         case currencyCode = "currency_code"
-        case type = "type"
-        case order = "order"
-        case language = "language"
+        case type
+        case order
+        case language
     }
 }
 
@@ -696,14 +695,14 @@ public extension Shop {
         case shopName = "shop_name"
         case firstLine = "first_line"
         case secondLine = "second_line"
-        case city = "city"
-        case state = "state"
-        case zip = "zip"
+        case city
+        case state
+        case zip
         case countryId = "country_id"
         case userId = "user_id"
         case creationTsz = "creation_tsz"
-        case title = "title"
-        case announcement = "announcement"
+        case title
+        case announcement
         case currencyCode = "currency_code"
         case isVacation = "is_vacation"
         case vacationMessage = "vacation_message"
@@ -713,8 +712,8 @@ public extension Shop {
         case listingActiveCount = "listing_active_count"
         case digitalListingCount = "digital_listing_count"
         case loginName = "login_name"
-        case lat = "lat"
-        case lon = "lon"
+        case lat
+        case lon
         case acceptsCustomRequests = "accepts_custom_requests"
         case policyWelcome = "policy_welcome"
         case policyPayment = "policy_payment"
@@ -726,11 +725,11 @@ public extension Shop {
         case policyHasPrivateReceiptInfo = "policy_has_private_receipt_info"
         case vacationAutoreply = "vacation_autoreply"
         case gaCode = "ga_code"
-        case name = "name"
-        case url = "url"
+        case name
+        case url
         case imageUrl760x100 = "image_url760x100"
         case numFavorers = "num_favorers"
-        case languages = "languages"
+        case languages
         case upcomingLocalEventId = "upcoming_local_event_id"
         case iconUrlFullxfull = "icon_url_fullxfull"
         case isUsingStructuredPolicies = "is_using_structured_policies"
@@ -745,12 +744,12 @@ public extension Shop {
 public extension ShopAbout {
     enum CodingKeys: String, CodingKey {
         case shopId = "shop_id"
-        case status = "status"
+        case status
         case storyHeadline = "story_headline"
         case storyLeadingParagraph = "story_leading_paragraph"
-        case story = "story"
+        case story
         case relatedLinks = "related_links"
-        case url = "url"
+        case url
     }
 }
 
@@ -758,9 +757,9 @@ public extension ShopAboutImage {
     enum CodingKeys: String, CodingKey {
         case shopId = "shop_id"
         case imageId = "image_id"
-        case caption = "caption"
-        case rank = "rank"
-        case url178x178 = "url178x178"
+        case caption
+        case rank
+        case url178x178
         case url545xN = "url545x_n"
         case url760xN = "url760x_n"
         case urlFullxfull = "url_fullxfull"
@@ -771,13 +770,13 @@ public extension ShopAboutMember {
     enum CodingKeys: String, CodingKey {
         case shopAboutMemberId = "shop_about_member_id"
         case shopId = "shop_id"
-        case name = "name"
-        case role = "role"
-        case bio = "bio"
-        case rank = "rank"
+        case name
+        case role
+        case bio
+        case rank
         case isOwner = "is_owner"
-        case url90x90 = "url90x90"
-        case url190x190 = "url190x190"
+        case url90x90
+        case url190x190
         case hasStaleTranslations = "has_stale_translations"
     }
 }
@@ -785,8 +784,8 @@ public extension ShopAboutMember {
 public extension ShopSection {
     enum CodingKeys: String, CodingKey {
         case shopSectionId = "shop_section_id"
-        case title = "title"
-        case rank = "rank"
+        case title
+        case rank
         case userId = "user_id"
         case activeListingCount = "active_listing_count"
     }
@@ -795,16 +794,16 @@ public extension ShopSection {
 public extension ShopSectionTranslation {
     enum CodingKeys: String, CodingKey {
         case shopSectionId = "shop_section_id"
-        case language = "language"
-        case title = "title"
+        case language
+        case title
     }
 }
 
 public extension ShopTranslation {
     enum CodingKeys: String, CodingKey {
         case shopId = "shop_id"
-        case language = "language"
-        case announcement = "announcement"
+        case language
+        case announcement
         case policyWelcome = "policy_welcome"
         case policyPayment = "policy_payment"
         case policyShipping = "policy_shipping"
@@ -814,7 +813,7 @@ public extension ShopTranslation {
         case policySellerInfo = "policy_seller_info"
         case saleMessage = "sale_message"
         case digitalSaleMessage = "digital_sale_message"
-        case title = "title"
+        case title
         case vacationAutoreply = "vacation_autoreply"
         case vacationMessage = "vacation_message"
     }
@@ -837,20 +836,20 @@ public extension StructuredPolicies {
 public extension Style {
     enum CodingKeys: String, CodingKey {
         case styleId = "style_id"
-        case style = "style"
+        case style
     }
 }
 
 public extension Taxonomy {
     enum CodingKeys: String, CodingKey {
-        case id = "id"
-        case level = "level"
-        case name = "name"
-        case parent = "parent"
+        case id
+        case level
+        case name
+        case parent
         case parentId = "parent_id"
-        case path = "path"
+        case path
         case categoryId = "category_id"
-        case children = "children"
+        case children
         case childrenIds = "children_ids"
         case fullPathTaxonomyIds = "full_path_taxonomy_ids"
     }
@@ -859,9 +858,9 @@ public extension Taxonomy {
 public extension TaxonomyNodeProperty {
     enum CodingKeys: String, CodingKey {
         case propertyId = "property_id"
-        case name = "name"
+        case name
         case displayName = "display_name"
-        case scales = "scales"
+        case scales
         case isRequired = "is_required"
         case supportsAttributes = "supports_attributes"
         case supportsVariations = "supports_variations"
@@ -875,16 +874,16 @@ public extension TaxonomyPropertyScale {
     enum CodingKeys: String, CodingKey {
         case scaleId = "scale_id"
         case displayName = "display_name"
-        case description = "description"
+        case description
     }
 }
 
 public extension TaxonomyPropertyValue {
     enum CodingKeys: String, CodingKey {
         case valueId = "value_id"
-        case name = "name"
+        case name
         case scaleId = "scale_id"
-        case order = "order"
+        case order
         case equalTo = "equal_to"
     }
 }
@@ -892,28 +891,28 @@ public extension TaxonomyPropertyValue {
 public extension Team {
     enum CodingKeys: String, CodingKey {
         case groupId = "group_id"
-        case name = "name"
+        case name
         case createDate = "create_date"
         case updateDate = "update_date"
-        case tags = "tags"
+        case tags
     }
 }
 
 public extension Transaction {
     enum CodingKeys: String, CodingKey {
         case transactionId = "transaction_id"
-        case title = "title"
-        case description = "description"
+        case title
+        case description
         case sellerUserId = "seller_user_id"
         case buyerUserId = "buyer_user_id"
         case creationTsz = "creation_tsz"
         case paidTsz = "paid_tsz"
         case shippedTsz = "shipped_tsz"
-        case price = "price"
+        case price
         case currencyCode = "currency_code"
-        case quantity = "quantity"
-        case tags = "tags"
-        case materials = "materials"
+        case quantity
+        case tags
+        case materials
         case imageListingId = "image_listing_id"
         case receiptId = "receipt_id"
         case shippingCost = "shipping_cost"
@@ -924,30 +923,30 @@ public extension Transaction {
         case sellerFeedbackId = "seller_feedback_id"
         case buyerFeedbackId = "buyer_feedback_id"
         case transactionType = "transaction_type"
-        case url = "url"
-        case variations = "variations"
+        case url
+        case variations
         case productData = "product_data"
     }
 }
 
 public extension Treasury {
     enum CodingKeys: String, CodingKey {
-        case id = "id"
-        case title = "title"
-        case description = "description"
-        case homepage = "homepage"
-        case mature = "mature"
-        case `private` = "`private`"
-        case locale = "locale"
+        case id
+        case title
+        case description
+        case homepage
+        case mature
+        case `private`
+        case locale
         case commentCount = "comment_count"
-        case tags = "tags"
-        case counts = "counts"
-        case hotness = "hotness"
+        case tags
+        case counts
+        case hotness
         case hotnessColor = "hotness_color"
         case userId = "user_id"
         case userName = "user_name"
         case userAvatarId = "user_avatar_id"
-        case listings = "listings"
+        case listings
         case creationTsz = "creation_tsz"
         case becamePublicDate = "became_public_date"
     }
@@ -955,16 +954,16 @@ public extension Treasury {
 
 public extension TreasuryCounts {
     enum CodingKeys: String, CodingKey {
-        case clicks = "clicks"
-        case views = "views"
-        case shares = "shares"
-        case reports = "reports"
+        case clicks
+        case views
+        case shares
+        case reports
     }
 }
 
 public extension TreasuryListing {
     enum CodingKeys: String, CodingKey {
-        case data = "data"
+        case data
         case creationTsz = "creation_tsz"
     }
 }
@@ -972,11 +971,11 @@ public extension TreasuryListing {
 public extension TreasuryListingData {
     enum CodingKeys: String, CodingKey {
         case userId = "user_id"
-        case title = "title"
-        case price = "price"
+        case title
+        case price
         case currencyCode = "currency_code"
         case listingId = "listing_id"
-        case state = "state"
+        case state
         case shopName = "shop_name"
         case imageId = "image_id"
         case imageUrl75x75 = "image_url75x75"
@@ -1002,12 +1001,12 @@ public extension UserAddress {
     enum CodingKeys: String, CodingKey {
         case userAddressId = "user_address_id"
         case userId = "user_id"
-        case name = "name"
+        case name
         case firstLine = "first_line"
         case secondLine = "second_line"
-        case city = "city"
-        case state = "state"
-        case zip = "zip"
+        case city
+        case state
+        case zip
         case countryId = "country_id"
         case countryName = "country_name"
         case isDefaultShipping = "is_default_shipping"
@@ -1019,20 +1018,20 @@ public extension UserProfile {
         case userProfileId = "user_profile_id"
         case userId = "user_id"
         case loginName = "login_name"
-        case bio = "bio"
-        case gender = "gender"
+        case bio
+        case gender
         case birthMonth = "birth_month"
         case birthDay = "birth_day"
         case birthYear = "birth_year"
         case joinTsz = "join_tsz"
-        case materials = "materials"
+        case materials
         case countryId = "country_id"
-        case region = "region"
-        case city = "city"
-        case location = "location"
+        case region
+        case city
+        case location
         case avatarId = "avatar_id"
-        case lat = "lat"
-        case lon = "lon"
+        case lat
+        case lon
         case transactionBuyCount = "transaction_buy_count"
         case transactionSoldCount = "transaction_sold_count"
         case isSeller = "is_seller"
@@ -1041,4 +1040,3 @@ public extension UserProfile {
         case lastName = "last_name"
     }
 }
-

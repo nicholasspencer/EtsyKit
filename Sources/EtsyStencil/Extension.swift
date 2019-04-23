@@ -9,11 +9,7 @@ public extension Stencil.Extension {
 }
 
 private extension Stencil.Extension {
-    func registerFilters() {
+    func registerFilters() {}
 
-    }
-
-    func registerTags() {
-
-    }
+    func registerTags() {}
 }

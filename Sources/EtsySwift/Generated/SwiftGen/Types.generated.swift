@@ -922,5 +922,3 @@ public struct UserProfile: Type {
     let firstName: String?
     let lastName: String?
 }
-
-

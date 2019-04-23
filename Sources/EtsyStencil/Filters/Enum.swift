@@ -6,7 +6,7 @@ public enum Enum {
 }
 
 extension Filter {
-    static func `enum`(_ value: Any?, arguments: [Any?]) throws -> Any? {
+    static func `enum`(_: Any?, arguments _: [Any?]) throws -> Any? {
         return nil
     }
 }
