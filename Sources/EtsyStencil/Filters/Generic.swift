@@ -1,4 +1,5 @@
 import Foundation
+import StencilSwiftKit
 
 public enum Generic {
     case array(type: Type.Type)

@@ -1,19 +1,5 @@
 import Foundation
 
-public typealias Epoch = TimeInterval
-public typealias TreasuryDescription = String
-public typealias TreasuryId = String
-public typealias TreasurySearchString = String
-public typealias TreasuryTitle = String
-public typealias Latitude = Double
-public typealias Longitude = Double
-public typealias Region = String
-public typealias Currency = String
-public typealias Language = String
-public typealias Category = String
-public typealias FeaturedRank = Int
-public typealias StringJSON = String
-
 public enum Type: String {
     case string
     case int

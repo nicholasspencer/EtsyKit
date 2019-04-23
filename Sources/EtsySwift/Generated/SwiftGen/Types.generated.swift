@@ -15,6 +15,7 @@ public typealias Language = String
 public typealias FeaturedRank = Int
 public typealias StringJSON = String
 public typealias Boolean = Bool
+public typealias Text = String
 
 public protocol Type: Codable, Hashable {}
 
@@ -830,7 +831,7 @@ public struct Treasury: Type {
     let description: String?
     let homepage: Int?
     let mature: Boolean?
-    let private: Boolean?
+    let `private`: Boolean?
     let locale: String?
     let commentCount: Int?
     let tags: String?

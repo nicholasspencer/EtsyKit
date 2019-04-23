@@ -25,7 +25,7 @@ let package = Package(
             "EtsyStencil"
         ]),
         .target(name: "EtsyStencil", dependencies: [
-            "Stencil", 
+            "Stencil",
             "StencilSwiftKit",
             "SwiftGenKit",
         ]),

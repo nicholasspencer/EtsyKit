@@ -15,6 +15,7 @@ public typealias Language = String
 public typealias FeaturedRank = Int
 public typealias StringJSON = String
 public typealias Boolean = Bool
+public typealias Text = String
 
 public protocol Type: Codable, Hashable {}
 
@@ -24,7 +25,7 @@ public protocol Type: Codable, Hashable {}
 {% for file in files %}
 public struct {{ file.name|swiftIdentifier:"pretty"|escapeReservedKeywords }}: Type {
     {% for property in file.documents[0].data where not property.type.type %} {# weird hack #}
-    let {{ property.name|snakeToCamelCase|lowerFirstWord }}: {{ property.type|swiftIdentifier:"pretty"|escapeReservedKeywords }}?
+    let {{ property.name|snakeToCamelCase|lowerFirstWord|escapeReservedKeywords }}: {{ property.type|swiftIdentifier:"pretty"|escapeReservedKeywords }}?
     {% endfor %}
 }
 

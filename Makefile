@@ -33,7 +33,7 @@ type_structs:
 sourcery:
 	sourcery
 
-generate: type_structs sourcery
+generate: type_structs sourcery  etsy_swift
 
 types: scrape generate
 

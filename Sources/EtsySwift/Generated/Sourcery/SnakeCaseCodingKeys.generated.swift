@@ -937,6 +937,7 @@ public extension Treasury {
         case description = "description"
         case homepage = "homepage"
         case mature = "mature"
+        case `private` = "`private`"
         case locale = "locale"
         case commentCount = "comment_count"
         case tags = "tags"
