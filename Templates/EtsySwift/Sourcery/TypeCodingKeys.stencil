@@ -1,4 +1,7 @@
-{% for type in types.based.Codable|!enum|!protocol %}
+import Foundation
+
+// swiftlint:disable file_length
+{% for type in types.based.Type|!enum|!protocol %}
 public extension {{ type.name }} {
     enum CodingKeys: String, CodingKey {
     {% for variable in type.variables|instance %}

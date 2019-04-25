@@ -3,6 +3,8 @@
 
 import Foundation
 
+// swiftlint:disable file_length
+
 public typealias Epoch = TimeInterval
 public typealias TreasuryDescription = String
 public typealias TreasuryId = String
@@ -16,16 +18,46 @@ public typealias FeaturedRank = Int
 public typealias StringJSON = String
 public typealias Boolean = Bool
 public typealias Text = String
+public typealias VariationsSelectedProperty = [Int:Int]
+public typealias GuestId = Int
 
-public protocol Type: Codable, Hashable {}
+{# public protocol Type: Codable, Hashable {} #}
+public protocol Type {}
+{% macro swiftIdentifier name %}{{ name|swiftIdentifier:"pretty"|escapeReservedKeywords }}{% endmacro %}
+{% macro swiftProperty name %}{{ name|snakeToCamelCase|lowerFirstWord|escapeReservedKeywords }}{% endmacro %}
+{% macro etsyConcreteType property %}{% call swiftIdentifier property.type %}? = nil{% endmacro %}
+{% macro etsyArrayType property %}[{% call swiftIdentifier property.type %}] = [{% call swiftIdentifier property.type %}](){% endmacro %}
+{% macro etsyEnumType property %}{% call swiftIdentifier property.name %}{% endmacro %}
+{% macro etsyEnumCaseEscape caseName %}{% for prefix in 0...9 %}{% if caseName|hasPrefix:prefix %}_{% endif %}{% endfor %}{% call swiftProperty caseName %}{% endmacro %}
+{% macro etsyEnumCase caseName %}case {% call etsyEnumCaseEscape caseName %} = "{{ caseName }}"{% endmacro %}
+{% macro etsyEnumDefinition property %}
+    public enum {% call etsyEnumType property %}: String, Type {
+        {% for caseName in property.genericType|split:"," %}
+        {% call etsyEnumCase caseName %}
+        {% endfor %}
+    }
+{% endmacro %}
+{% macro etsyType property %}
+    {% if property.type == "enum" %}
+        {% call etsyEnumType property %}? = nil
+    {% elif property.genericType == "array" %}
+        {% call etsyArrayType property %}
+    {% else %}
+        {% call etsyConcreteType property %}
+    {% endif %}
+{% endmacro %}
 
 {% if files %}
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
+
 {% for file in files %}
-public struct {{ file.name|swiftIdentifier:"pretty"|escapeReservedKeywords }}: Type {
+public final class {{ file.name|swiftIdentifier:"pretty"|escapeReservedKeywords }}: Type {
     {% for property in file.documents[0].data where not property.type.type %} {# weird hack #}
-    let {{ property.name|snakeToCamelCase|lowerFirstWord|escapeReservedKeywords }}: {{ property.type|swiftIdentifier:"pretty"|escapeReservedKeywords }}?
+    var {% call swiftProperty property.name %}: {% filter removeNewlines:"leading" %}{% call etsyType property %}{% endfilter %}
+    {% if property.type == "enum" %}
+    {% call etsyEnumDefinition property %}
+    {% endif %}
     {% endfor %}
 }
 
