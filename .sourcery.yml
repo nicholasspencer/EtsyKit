@@ -1,6 +1,6 @@
 sources:
-  - Sources/EtsySwift/
+  - Sources/EtsyTypeKit/Types.swift
 templates:
-  - Templates/EtsySwift/Sourcery/
+  - Templates/EtsyStencilKit/Sourcery/
 output:
-  Sources/EtsySwift/Generated/Sourcery/
+  Sources/EtsyTypeKit/

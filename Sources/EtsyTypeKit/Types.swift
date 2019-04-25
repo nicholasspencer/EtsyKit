@@ -1,3 +1,4 @@
+
 // Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
 // DO NOT EDIT
 
@@ -21,10 +22,10 @@ public typealias Text = String
 public typealias VariationsSelectedProperty = [Int:Int]
 public typealias GuestId = Int
 
-public protocol Type {}
-
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
+
+public protocol Type: Codable, Hashable {}
 
 public final class ApiMethod: Type {
     var name: String? = nil

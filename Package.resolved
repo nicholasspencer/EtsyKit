@@ -83,15 +83,6 @@
         }
       },
       {
-        "package": "StencilSwiftKit",
-        "repositoryURL": "https://github.com/nicholasspencer/StencilSwiftKit.git",
-        "state": {
-          "branch": "master",
-          "revision": "53f2060cb927821ecf75818739fa48632b86c796",
-          "version": null
-        }
-      },
-      {
         "package": "SwiftClibxml2",
         "repositoryURL": "https://github.com/tid-kijyun/SwiftClibxml2.git",
         "state": {
