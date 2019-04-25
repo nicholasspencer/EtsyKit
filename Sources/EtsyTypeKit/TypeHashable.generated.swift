@@ -1,10 +1,12 @@
 // Generated using Sourcery 0.16.0 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
+
+import Foundation
+
 // swiftlint:disable all
 
-
-// MARK: - AutoHashable for classes, protocols, structs
+// MARK: - Hashable for `Type` classes, protocols, structs
 // MARK: - ApiMethod AutoHashable
 extension ApiMethod: Hashable {
     public func hash(into hasher: inout Hasher) {
@@ -1046,7 +1048,7 @@ extension UserProfile: Hashable {
     }
 }
 
-// MARK: - AutoHashable for Enums
+// MARK: - Hashable for `Type` enums
 
 // MARK: - Listing.ItemDimensionsUnit AutoHashable
 extension Listing.ItemDimensionsUnit: Hashable {

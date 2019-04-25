@@ -33,7 +33,7 @@ type_properties:
 	@bin/scrape_types.sh $(ApiTypeNames) $(ApiTypeInformationLocation)
 
 type_objects:
-	@swift run swiftgen json -p $(TemplatesDirectory)/EtsyTypeKit/EtsyType.stencil $(ApiTypeInformationLocation) > $(EtsySwiftGeneratedDirectory)Types.swift
+	@swift run swiftgen json -p $(TemplatesDirectory)/EtsyTypeKit/Type.stencil $(ApiTypeInformationLocation) > $(EtsySwiftGeneratedDirectory)Type.swift
 
 sourcery:
 	@sourcery

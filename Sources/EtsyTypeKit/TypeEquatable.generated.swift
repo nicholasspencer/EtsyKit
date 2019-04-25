@@ -1,7 +1,11 @@
 // Generated using Sourcery 0.16.0 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
-// swiftlint:disable file_length
+
+import Foundation
+
+// swiftlint:disable all
+
 fileprivate func compareOptionals<T>(lhs: T?, rhs: T?, compare: (_ lhs: T, _ rhs: T) -> Bool) -> Bool {
     switch (lhs, rhs) {
     case let (lValue?, rValue?):
@@ -22,8 +26,7 @@ fileprivate func compareArrays<T>(lhs: [T], rhs: [T], compare: (_ lhs: T, _ rhs:
     return true
 }
 
-
-// MARK: - AutoEquatable for classes, protocols, structs
+// MARK: - Equatable for `Type` classes, protocols, structs
 // MARK: - ApiMethod AutoEquatable
 extension ApiMethod: Equatable { 
     public static func == (lhs: ApiMethod, rhs: ApiMethod) -> Bool {
@@ -1134,7 +1137,7 @@ extension UserProfile: Equatable {
     }
 }
 
-// MARK: - AutoEquatable for Enums
+// MARK: - Equatable for `Type` enums
 // MARK: - Listing.ItemDimensionsUnit AutoEquatable
 extension Listing.ItemDimensionsUnit: Equatable {
     public static func == (lhs: Listing.ItemDimensionsUnit, rhs: Listing.ItemDimensionsUnit) -> Bool {

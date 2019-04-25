@@ -4,7 +4,7 @@
 
 import Foundation
 
-// swiftlint:disable file_length
+// swiftlint:disable all
 
 public typealias Epoch = TimeInterval
 public typealias TreasuryDescription = String

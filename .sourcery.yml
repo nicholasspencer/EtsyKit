@@ -1,5 +1,5 @@
 sources:
-  - Sources/EtsyTypeKit/Types.swift
+  - Sources/EtsyTypeKit/Type.swift
 templates:
   - Templates/EtsyStencilKit/Sourcery/
 output:

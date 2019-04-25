@@ -3,7 +3,8 @@
 
 import Foundation
 
-// swiftlint:disable file_length
+// swiftlint:disable all
+
 public extension ApiMethod {
     enum CodingKeys: String, CodingKey {
         case name = "name"
