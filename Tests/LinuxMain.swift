@@ -2,5 +2,6 @@ import XCTest
 import EtsySwiftTests
 
 var tests = [XCTestCaseEntry]()
-tests += AuthenticatorTests.allTests()
+tests += AuthenticatorScopeTests.allTests()
+tests += AuthenticatorOAuthTests.allTests()
 XCTMain(tests)

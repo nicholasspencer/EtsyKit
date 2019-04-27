@@ -3,7 +3,8 @@ import XCTest
 #if !os(macOS)
     public func allTests() -> [XCTestCaseEntry] {
         return [
-            testCase(AuthenticatorTests.allTests),
+            testCase(AuthenticatorScopeTests.allTests),
+            testCase(AuthenticatorOAuthTests.allTests),
         ]
     }
 #endif

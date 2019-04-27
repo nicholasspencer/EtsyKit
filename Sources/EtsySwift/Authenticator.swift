@@ -44,8 +44,13 @@ extension Authenticator.OAuth {
         case oauthVerifier = "oauth_verifier"
     }
 
-    var URL: URL {
-        return Foundation.URL.baseURL.appendingPathComponent(self.URLPathString)
+    var URL: URL? {
+        guard let URL = Foundation.URL.baseURL?.appendingPathComponent(self.URLPathString) else { return nil }
+
+        var components = URLComponents.init(url: URL, resolvingAgainstBaseURL: true)
+        components?.queryItems = parameters
+        
+        return components?.url
     }
 
     var URLPathString: String {
@@ -57,16 +62,16 @@ extension Authenticator.OAuth {
         }
     }
 
-    var parameters: [String: String] {
+    var parameters: [URLQueryItem] {
         switch self {
         case .requestToken(let scope, let oauthCallback):
             return [
-                QueryParameters.scope.rawValue: scope.queryString, 
-                QueryParameters.oauthCallback.rawValue: oauthCallback.absoluteString
+                URLQueryItem(name: QueryParameters.scope.rawValue, value: scope.queryString),
+                URLQueryItem(name: QueryParameters.oauthCallback.rawValue, value: oauthCallback.absoluteString),
             ]
         case .accessToken(let oauthVerifier):
             return [
-                QueryParameters.oauthVerifier.rawValue: oauthVerifier
+                URLQueryItem(name: QueryParameters.oauthVerifier.rawValue, value: oauthVerifier),
             ]
         }
     }
@@ -97,7 +102,7 @@ public extension Authenticator {
 
 extension Authenticator.Scope {
     static func queryString(_ scope: [Authenticator.Scope]) -> String {
-        return scope.map { $0.rawValue }.joined(separator: " ")
+        return scope.map{ $0.rawValue }.joined(separator: " ")
     }
 }
 
