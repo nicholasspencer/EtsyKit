@@ -1,12 +1,12 @@
 import Foundation
 
 public protocol URLConvertible {
-    var string: String? { get }
+    var urlString: String? { get }
     var url: URL? { get }
 }
 
 extension String: URLConvertible {
-    public var string: String? {
+    public var urlString: String? {
         return self
     }
 
@@ -16,7 +16,7 @@ extension String: URLConvertible {
 }
 
 extension URL: URLConvertible {
-    public var string: String? {
+    public var urlString: String? {
         return absoluteString
     }
 
@@ -25,7 +25,11 @@ extension URL: URLConvertible {
     }
 }
 
-extension URLComponents: URLConvertible {}
+extension URLComponents: URLConvertible {
+    public var urlString: String? {
+        return string
+    }
+}
 
 public protocol URLQueryItemConvertible {
     func queryItem(value: String) -> URLQueryItem
