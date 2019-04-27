@@ -1,13 +1,14 @@
 // Generated using Sourcery 0.16.0 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
-
 import Foundation
 
 // swiftlint:disable all
 
 // MARK: - Hashable for `Type` classes, protocols, structs
+
 // MARK: - ApiMethod AutoHashable
+
 extension ApiMethod: Hashable {
     public func hash(into hasher: inout Hasher) {
         name.hash(into: &hasher)
@@ -19,7 +20,9 @@ extension ApiMethod: Hashable {
         httpMethod.hash(into: &hasher)
     }
 }
+
 // MARK: - Avatar AutoHashable
+
 extension Avatar: Hashable {
     public func hash(into hasher: inout Hasher) {
         avatarId.hash(into: &hasher)
@@ -35,7 +38,9 @@ extension Avatar: Hashable {
         userId.hash(into: &hasher)
     }
 }
+
 // MARK: - BillCharge AutoHashable
+
 extension BillCharge: Hashable {
     public func hash(into hasher: inout Hasher) {
         billChargeId.hash(into: &hasher)
@@ -50,7 +55,9 @@ extension BillCharge: Hashable {
         lastModifiedTsz.hash(into: &hasher)
     }
 }
+
 // MARK: - BillPayment AutoHashable
+
 extension BillPayment: Hashable {
     public func hash(into hasher: inout Hasher) {
         billPaymentId.hash(into: &hasher)
@@ -64,7 +71,9 @@ extension BillPayment: Hashable {
         creationYear.hash(into: &hasher)
     }
 }
+
 // MARK: - BillingOverview AutoHashable
+
 extension BillingOverview: Hashable {
     public func hash(into hasher: inout Hasher) {
         isOverdue.hash(into: &hasher)
@@ -76,7 +85,9 @@ extension BillingOverview: Hashable {
         dateOverdue.hash(into: &hasher)
     }
 }
+
 // MARK: - Cart AutoHashable
+
 extension Cart: Hashable {
     public func hash(into hasher: inout Hasher) {
         cartId.hash(into: &hasher)
@@ -99,7 +110,9 @@ extension Cart: Hashable {
         shippingOption.hash(into: &hasher)
     }
 }
+
 // MARK: - CartListing AutoHashable
+
 extension CartListing: Hashable {
     public func hash(into hasher: inout Hasher) {
         listingId.hash(into: &hasher)
@@ -113,7 +126,9 @@ extension CartListing: Hashable {
         selectedVariations.hash(into: &hasher)
     }
 }
+
 // MARK: - Category AutoHashable
+
 extension Category: Hashable {
     public func hash(into hasher: inout Hasher) {
         categoryId.hash(into: &hasher)
@@ -129,7 +144,9 @@ extension Category: Hashable {
         numChildren.hash(into: &hasher)
     }
 }
+
 // MARK: - Country AutoHashable
+
 extension Country: Hashable {
     public func hash(into hasher: inout Hasher) {
         countryId.hash(into: &hasher)
@@ -141,7 +158,9 @@ extension Country: Hashable {
         lon.hash(into: &hasher)
     }
 }
+
 // MARK: - Coupon AutoHashable
+
 extension Coupon: Hashable {
     public func hash(into hasher: inout Hasher) {
         couponId.hash(into: &hasher)
@@ -157,14 +176,18 @@ extension Coupon: Hashable {
         couponType.hash(into: &hasher)
     }
 }
+
 // MARK: - DataType AutoHashable
+
 extension DataType: Hashable {
     public func hash(into hasher: inout Hasher) {
         type.hash(into: &hasher)
         values.hash(into: &hasher)
     }
 }
+
 // MARK: - FavoriteListing AutoHashable
+
 extension FavoriteListing: Hashable {
     public func hash(into hasher: inout Hasher) {
         listingId.hash(into: &hasher)
@@ -173,7 +196,9 @@ extension FavoriteListing: Hashable {
         createDate.hash(into: &hasher)
     }
 }
+
 // MARK: - FavoriteUser AutoHashable
+
 extension FavoriteUser: Hashable {
     public func hash(into hasher: inout Hasher) {
         userId.hash(into: &hasher)
@@ -182,7 +207,9 @@ extension FavoriteUser: Hashable {
         creationTsz.hash(into: &hasher)
     }
 }
+
 // MARK: - FeaturedTreasury AutoHashable
+
 extension FeaturedTreasury: Hashable {
     public func hash(into hasher: inout Hasher) {
         treasuryKey.hash(into: &hasher)
@@ -193,7 +220,9 @@ extension FeaturedTreasury: Hashable {
         activeDate.hash(into: &hasher)
     }
 }
+
 // MARK: - Feedback AutoHashable
+
 extension Feedback: Hashable {
     public func hash(into hasher: inout Hasher) {
         feedbackId.hash(into: &hasher)
@@ -211,14 +240,18 @@ extension Feedback: Hashable {
         imageUrlFullxfull.hash(into: &hasher)
     }
 }
+
 // MARK: - FeedbackInfo AutoHashable
+
 extension FeedbackInfo: Hashable {
     public func hash(into hasher: inout Hasher) {
         count.hash(into: &hasher)
         score.hash(into: &hasher)
     }
 }
+
 // MARK: - ForumPost AutoHashable
+
 extension ForumPost: Hashable {
     public func hash(into hasher: inout Hasher) {
         threadId.hash(into: &hasher)
@@ -229,14 +262,18 @@ extension ForumPost: Hashable {
         createDate.hash(into: &hasher)
     }
 }
+
 // MARK: - Guest AutoHashable
+
 extension Guest: Hashable {
     public func hash(into hasher: inout Hasher) {
         guestId.hash(into: &hasher)
         checkoutUrl.hash(into: &hasher)
     }
 }
+
 // MARK: - GuestCart AutoHashable
+
 extension GuestCart: Hashable {
     public func hash(into hasher: inout Hasher) {
         cartId.hash(into: &hasher)
@@ -259,7 +296,9 @@ extension GuestCart: Hashable {
         shippingOption.hash(into: &hasher)
     }
 }
+
 // MARK: - ImageType AutoHashable
+
 extension ImageType: Hashable {
     public func hash(into hasher: inout Hasher) {
         code.hash(into: &hasher)
@@ -267,7 +306,9 @@ extension ImageType: Hashable {
         sizes.hash(into: &hasher)
     }
 }
+
 // MARK: - Ledger AutoHashable
+
 extension Ledger: Hashable {
     public func hash(into hasher: inout Hasher) {
         ledgerId.hash(into: &hasher)
@@ -277,7 +318,9 @@ extension Ledger: Hashable {
         updateDate.hash(into: &hasher)
     }
 }
+
 // MARK: - LedgerEntry AutoHashable
+
 extension LedgerEntry: Hashable {
     public func hash(into hasher: inout Hasher) {
         ledgerEntryId.hash(into: &hasher)
@@ -291,7 +334,9 @@ extension LedgerEntry: Hashable {
         createDate.hash(into: &hasher)
     }
 }
+
 // MARK: - Listing AutoHashable
+
 extension Listing: Hashable {
     public func hash(into hasher: inout Hasher) {
         listingId.hash(into: &hasher)
@@ -348,7 +393,9 @@ extension Listing: Hashable {
         language.hash(into: &hasher)
     }
 }
+
 // MARK: - ListingFile AutoHashable
+
 extension ListingFile: Hashable {
     public func hash(into hasher: inout Hasher) {
         listingFileId.hash(into: &hasher)
@@ -361,7 +408,9 @@ extension ListingFile: Hashable {
         createDate.hash(into: &hasher)
     }
 }
+
 // MARK: - ListingImage AutoHashable
+
 extension ListingImage: Hashable {
     public func hash(into hasher: inout Hasher) {
         listingImageId.hash(into: &hasher)
@@ -384,7 +433,9 @@ extension ListingImage: Hashable {
         fullWidth.hash(into: &hasher)
     }
 }
+
 // MARK: - ListingInventory AutoHashable
+
 extension ListingInventory: Hashable {
     public func hash(into hasher: inout Hasher) {
         products.hash(into: &hasher)
@@ -393,7 +444,9 @@ extension ListingInventory: Hashable {
         skuOnProperty.hash(into: &hasher)
     }
 }
+
 // MARK: - ListingOffering AutoHashable
+
 extension ListingOffering: Hashable {
     public func hash(into hasher: inout Hasher) {
         offeringId.hash(into: &hasher)
@@ -403,7 +456,9 @@ extension ListingOffering: Hashable {
         isDeleted.hash(into: &hasher)
     }
 }
+
 // MARK: - ListingProduct AutoHashable
+
 extension ListingProduct: Hashable {
     public func hash(into hasher: inout Hasher) {
         productId.hash(into: &hasher)
@@ -413,7 +468,9 @@ extension ListingProduct: Hashable {
         isDeleted.hash(into: &hasher)
     }
 }
+
 // MARK: - ListingTranslation AutoHashable
+
 extension ListingTranslation: Hashable {
     public func hash(into hasher: inout Hasher) {
         listingId.hash(into: &hasher)
@@ -423,7 +480,9 @@ extension ListingTranslation: Hashable {
         tags.hash(into: &hasher)
     }
 }
+
 // MARK: - Money AutoHashable
+
 extension Money: Hashable {
     public func hash(into hasher: inout Hasher) {
         amount.hash(into: &hasher)
@@ -436,13 +495,17 @@ extension Money: Hashable {
         beforeConversion.hash(into: &hasher)
     }
 }
+
 // MARK: - ParamList AutoHashable
+
 extension ParamList: Hashable {
     public func hash(into hasher: inout Hasher) {
         paramName.hash(into: &hasher)
     }
 }
+
 // MARK: - Payment AutoHashable
+
 extension Payment: Hashable {
     public func hash(into hasher: inout Hasher) {
         paymentId.hash(into: &hasher)
@@ -470,7 +533,9 @@ extension Payment: Hashable {
         updateDate.hash(into: &hasher)
     }
 }
+
 // MARK: - PaymentAccountLedgerEntry AutoHashable
+
 extension PaymentAccountLedgerEntry: Hashable {
     public func hash(into hasher: inout Hasher) {
         entryId.hash(into: &hasher)
@@ -483,7 +548,9 @@ extension PaymentAccountLedgerEntry: Hashable {
         createDate.hash(into: &hasher)
     }
 }
+
 // MARK: - PaymentAdjustment AutoHashable
+
 extension PaymentAdjustment: Hashable {
     public func hash(into hasher: inout Hasher) {
         paymentAdjustmentId.hash(into: &hasher)
@@ -500,7 +567,9 @@ extension PaymentAdjustment: Hashable {
         updateDate.hash(into: &hasher)
     }
 }
+
 // MARK: - PaymentAdjustmentItem AutoHashable
+
 extension PaymentAdjustmentItem: Hashable {
     public func hash(into hasher: inout Hasher) {
         paymentAdjustmentItemId.hash(into: &hasher)
@@ -511,7 +580,9 @@ extension PaymentAdjustmentItem: Hashable {
         createDate.hash(into: &hasher)
     }
 }
+
 // MARK: - PaymentTemplate AutoHashable
+
 extension PaymentTemplate: Hashable {
     public func hash(into hasher: inout Hasher) {
         paymentTemplateId.hash(into: &hasher)
@@ -533,7 +604,9 @@ extension PaymentTemplate: Hashable {
         listingPaymentId.hash(into: &hasher)
     }
 }
+
 // MARK: - PropertyValue AutoHashable
+
 extension PropertyValue: Hashable {
     public func hash(into hasher: inout Hasher) {
         propertyId.hash(into: &hasher)
@@ -544,7 +617,9 @@ extension PropertyValue: Hashable {
         values.hash(into: &hasher)
     }
 }
+
 // MARK: - Receipt AutoHashable
+
 extension Receipt: Hashable {
     public func hash(into hasher: inout Hasher) {
         receiptId.hash(into: &hasher)
@@ -587,7 +662,9 @@ extension Receipt: Hashable {
         shipments.hash(into: &hasher)
     }
 }
+
 // MARK: - ReceiptShipment AutoHashable
+
 extension ReceiptShipment: Hashable {
     public func hash(into hasher: inout Hasher) {
         carrierName.hash(into: &hasher)
@@ -598,7 +675,9 @@ extension ReceiptShipment: Hashable {
         notificationDate.hash(into: &hasher)
     }
 }
+
 // MARK: - Region AutoHashable
+
 extension Region: Hashable {
     public func hash(into hasher: inout Hasher) {
         regionId.hash(into: &hasher)
@@ -606,7 +685,9 @@ extension Region: Hashable {
         isDead.hash(into: &hasher)
     }
 }
+
 // MARK: - Segment AutoHashable
+
 extension Segment: Hashable {
     public func hash(into hasher: inout Hasher) {
         name.hash(into: &hasher)
@@ -619,7 +700,9 @@ extension Segment: Hashable {
         listingId.hash(into: &hasher)
     }
 }
+
 // MARK: - SegmentPoster AutoHashable
+
 extension SegmentPoster: Hashable {
     public func hash(into hasher: inout Hasher) {
         name.hash(into: &hasher)
@@ -631,7 +714,9 @@ extension SegmentPoster: Hashable {
         listingId.hash(into: &hasher)
     }
 }
+
 // MARK: - ShippingInfo AutoHashable
+
 extension ShippingInfo: Hashable {
     public func hash(into hasher: inout Hasher) {
         shippingInfoId.hash(into: &hasher)
@@ -646,7 +731,9 @@ extension ShippingInfo: Hashable {
         destinationCountryName.hash(into: &hasher)
     }
 }
+
 // MARK: - ShippingOption AutoHashable
+
 extension ShippingOption: Hashable {
     public func hash(into hasher: inout Hasher) {
         optionId.hash(into: &hasher)
@@ -656,7 +743,9 @@ extension ShippingOption: Hashable {
         currencyCode.hash(into: &hasher)
     }
 }
+
 // MARK: - ShippingTemplate AutoHashable
+
 extension ShippingTemplate: Hashable {
     public func hash(into hasher: inout Hasher) {
         shippingTemplateId.hash(into: &hasher)
@@ -668,7 +757,9 @@ extension ShippingTemplate: Hashable {
         originCountryId.hash(into: &hasher)
     }
 }
+
 // MARK: - ShippingTemplateEntry AutoHashable
+
 extension ShippingTemplateEntry: Hashable {
     public func hash(into hasher: inout Hasher) {
         shippingTemplateEntryId.hash(into: &hasher)
@@ -681,7 +772,9 @@ extension ShippingTemplateEntry: Hashable {
         secondaryCost.hash(into: &hasher)
     }
 }
+
 // MARK: - ShippingUpgrade AutoHashable
+
 extension ShippingUpgrade: Hashable {
     public func hash(into hasher: inout Hasher) {
         shippingProfileId.hash(into: &hasher)
@@ -695,7 +788,9 @@ extension ShippingUpgrade: Hashable {
         language.hash(into: &hasher)
     }
 }
+
 // MARK: - Shop AutoHashable
+
 extension Shop: Hashable {
     public func hash(into hasher: inout Hasher) {
         shopId.hash(into: &hasher)
@@ -747,7 +842,9 @@ extension Shop: Hashable {
         includeDisputeFormLink.hash(into: &hasher)
     }
 }
+
 // MARK: - ShopAbout AutoHashable
+
 extension ShopAbout: Hashable {
     public func hash(into hasher: inout Hasher) {
         shopId.hash(into: &hasher)
@@ -759,7 +856,9 @@ extension ShopAbout: Hashable {
         url.hash(into: &hasher)
     }
 }
+
 // MARK: - ShopAboutImage AutoHashable
+
 extension ShopAboutImage: Hashable {
     public func hash(into hasher: inout Hasher) {
         shopId.hash(into: &hasher)
@@ -772,7 +871,9 @@ extension ShopAboutImage: Hashable {
         urlFullxfull.hash(into: &hasher)
     }
 }
+
 // MARK: - ShopAboutMember AutoHashable
+
 extension ShopAboutMember: Hashable {
     public func hash(into hasher: inout Hasher) {
         shopAboutMemberId.hash(into: &hasher)
@@ -787,7 +888,9 @@ extension ShopAboutMember: Hashable {
         hasStaleTranslations.hash(into: &hasher)
     }
 }
+
 // MARK: - ShopSection AutoHashable
+
 extension ShopSection: Hashable {
     public func hash(into hasher: inout Hasher) {
         shopSectionId.hash(into: &hasher)
@@ -797,7 +900,9 @@ extension ShopSection: Hashable {
         activeListingCount.hash(into: &hasher)
     }
 }
+
 // MARK: - ShopSectionTranslation AutoHashable
+
 extension ShopSectionTranslation: Hashable {
     public func hash(into hasher: inout Hasher) {
         shopSectionId.hash(into: &hasher)
@@ -805,7 +910,9 @@ extension ShopSectionTranslation: Hashable {
         title.hash(into: &hasher)
     }
 }
+
 // MARK: - ShopTranslation AutoHashable
+
 extension ShopTranslation: Hashable {
     public func hash(into hasher: inout Hasher) {
         shopId.hash(into: &hasher)
@@ -825,7 +932,9 @@ extension ShopTranslation: Hashable {
         vacationMessage.hash(into: &hasher)
     }
 }
+
 // MARK: - StructuredPolicies AutoHashable
+
 extension StructuredPolicies: Hashable {
     public func hash(into hasher: inout Hasher) {
         structuredPoliciesId.hash(into: &hasher)
@@ -839,14 +948,18 @@ extension StructuredPolicies: Hashable {
         includeDisputeFormLink.hash(into: &hasher)
     }
 }
+
 // MARK: - Style AutoHashable
+
 extension Style: Hashable {
     public func hash(into hasher: inout Hasher) {
         styleId.hash(into: &hasher)
         style.hash(into: &hasher)
     }
 }
+
 // MARK: - Taxonomy AutoHashable
+
 extension Taxonomy: Hashable {
     public func hash(into hasher: inout Hasher) {
         id.hash(into: &hasher)
@@ -861,7 +974,9 @@ extension Taxonomy: Hashable {
         fullPathTaxonomyIds.hash(into: &hasher)
     }
 }
+
 // MARK: - TaxonomyNodeProperty AutoHashable
+
 extension TaxonomyNodeProperty: Hashable {
     public func hash(into hasher: inout Hasher) {
         propertyId.hash(into: &hasher)
@@ -876,7 +991,9 @@ extension TaxonomyNodeProperty: Hashable {
         selectedValues.hash(into: &hasher)
     }
 }
+
 // MARK: - TaxonomyPropertyScale AutoHashable
+
 extension TaxonomyPropertyScale: Hashable {
     public func hash(into hasher: inout Hasher) {
         scaleId.hash(into: &hasher)
@@ -884,7 +1001,9 @@ extension TaxonomyPropertyScale: Hashable {
         description.hash(into: &hasher)
     }
 }
+
 // MARK: - TaxonomyPropertyValue AutoHashable
+
 extension TaxonomyPropertyValue: Hashable {
     public func hash(into hasher: inout Hasher) {
         valueId.hash(into: &hasher)
@@ -894,7 +1013,9 @@ extension TaxonomyPropertyValue: Hashable {
         equalTo.hash(into: &hasher)
     }
 }
+
 // MARK: - Team AutoHashable
+
 extension Team: Hashable {
     public func hash(into hasher: inout Hasher) {
         groupId.hash(into: &hasher)
@@ -904,7 +1025,9 @@ extension Team: Hashable {
         tags.hash(into: &hasher)
     }
 }
+
 // MARK: - Transaction AutoHashable
+
 extension Transaction: Hashable {
     public func hash(into hasher: inout Hasher) {
         transactionId.hash(into: &hasher)
@@ -935,7 +1058,9 @@ extension Transaction: Hashable {
         productData.hash(into: &hasher)
     }
 }
+
 // MARK: - Treasury AutoHashable
+
 extension Treasury: Hashable {
     public func hash(into hasher: inout Hasher) {
         id.hash(into: &hasher)
@@ -958,7 +1083,9 @@ extension Treasury: Hashable {
         becamePublicDate.hash(into: &hasher)
     }
 }
+
 // MARK: - TreasuryCounts AutoHashable
+
 extension TreasuryCounts: Hashable {
     public func hash(into hasher: inout Hasher) {
         clicks.hash(into: &hasher)
@@ -967,14 +1094,18 @@ extension TreasuryCounts: Hashable {
         reports.hash(into: &hasher)
     }
 }
+
 // MARK: - TreasuryListing AutoHashable
+
 extension TreasuryListing: Hashable {
     public func hash(into hasher: inout Hasher) {
         data.hash(into: &hasher)
         creationTsz.hash(into: &hasher)
     }
 }
+
 // MARK: - TreasuryListingData AutoHashable
+
 extension TreasuryListingData: Hashable {
     public func hash(into hasher: inout Hasher) {
         userId.hash(into: &hasher)
@@ -989,7 +1120,9 @@ extension TreasuryListingData: Hashable {
         imageUrl170x135.hash(into: &hasher)
     }
 }
+
 // MARK: - User AutoHashable
+
 extension User: Hashable {
     public func hash(into hasher: inout Hasher) {
         userId.hash(into: &hasher)
@@ -1003,7 +1136,9 @@ extension User: Hashable {
         useNewInventoryEndpoints.hash(into: &hasher)
     }
 }
+
 // MARK: - UserAddress AutoHashable
+
 extension UserAddress: Hashable {
     public func hash(into hasher: inout Hasher) {
         userAddressId.hash(into: &hasher)
@@ -1019,7 +1154,9 @@ extension UserAddress: Hashable {
         isDefaultShipping.hash(into: &hasher)
     }
 }
+
 // MARK: - UserProfile AutoHashable
+
 extension UserProfile: Hashable {
     public func hash(into hasher: inout Hasher) {
         userProfileId.hash(into: &hasher)
@@ -1051,10 +1188,11 @@ extension UserProfile: Hashable {
 // MARK: - Hashable for `Type` enums
 
 // MARK: - Listing.ItemDimensionsUnit AutoHashable
+
 extension Listing.ItemDimensionsUnit: Hashable {
     public func hash(into hasher: inout Hasher) {
         switch self {
-        case .`in`:
+        case .in:
             1.hash(into: &hasher)
         case .ft:
             2.hash(into: &hasher)
@@ -1069,6 +1207,7 @@ extension Listing.ItemDimensionsUnit: Hashable {
 }
 
 // MARK: - Listing.ItemWeightUnit AutoHashable
+
 extension Listing.ItemWeightUnit: Hashable {
     public func hash(into hasher: inout Hasher) {
         switch self {
@@ -1085,6 +1224,7 @@ extension Listing.ItemWeightUnit: Hashable {
 }
 
 // MARK: - Listing.Occasion AutoHashable
+
 extension Listing.Occasion: Hashable {
     public func hash(into hasher: inout Hasher) {
         switch self {
@@ -1159,6 +1299,7 @@ extension Listing.Occasion: Hashable {
 }
 
 // MARK: - Listing.Recipient AutoHashable
+
 extension Listing.Recipient: Hashable {
     public func hash(into hasher: inout Hasher) {
         switch self {
@@ -1201,6 +1342,7 @@ extension Listing.Recipient: Hashable {
 }
 
 // MARK: - Listing.WhenMade AutoHashable
+
 extension Listing.WhenMade: Hashable {
     public func hash(into hasher: inout Hasher) {
         switch self {
@@ -1243,6 +1385,7 @@ extension Listing.WhenMade: Hashable {
 }
 
 // MARK: - Listing.WhoMade AutoHashable
+
 extension Listing.WhoMade: Hashable {
     public func hash(into hasher: inout Hasher) {
         switch self {

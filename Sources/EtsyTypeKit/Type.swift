@@ -19,7 +19,7 @@ public typealias FeaturedRank = Int
 public typealias StringJSON = String
 public typealias Boolean = Bool
 public typealias Text = String
-public typealias VariationsSelectedProperty = [Int:Int]
+public typealias VariationsSelectedProperty = [Int: Int]
 public typealias GuestId = Int
 
 // swiftlint:disable superfluous_disable_command
@@ -28,285 +28,286 @@ public typealias GuestId = Int
 public protocol Type: Codable, Hashable {}
 
 public final class ApiMethod: Type {
-    var name: String? = nil
-    var uri: String? = nil
-    var params: ParamList? = nil
-    var defaults: ParamList? = nil
-    var type: String? = nil
-    var visibility: String? = nil
-    var httpMethod: String? = nil
+    var name: String?
+    var uri: String?
+    var params: ParamList?
+    var defaults: ParamList?
+    var type: String?
+    var visibility: String?
+    var httpMethod: String?
 }
 
 public final class Avatar: Type {
-    var avatarId: Int? = nil
-    var hexCode: String? = nil
-    var red: Int? = nil
-    var green: Int? = nil
-    var blue: Int? = nil
-    var hue: Int? = nil
-    var saturation: Int? = nil
-    var brightness: Int? = nil
-    var isBlackAndWhite: Boolean? = nil
-    var creationTsz: Float? = nil
-    var userId: Int? = nil
+    var avatarId: Int?
+    var hexCode: String?
+    var red: Int?
+    var green: Int?
+    var blue: Int?
+    var hue: Int?
+    var saturation: Int?
+    var brightness: Int?
+    var isBlackAndWhite: Boolean?
+    var creationTsz: Float?
+    var userId: Int?
 }
 
 public final class BillCharge: Type {
-    var billChargeId: Int? = nil
-    var creationTsz: Float? = nil
-    var type: String? = nil
-    var typeId: Int? = nil
-    var userId: Int? = nil
-    var amount: Float? = nil
-    var currencyCode: String? = nil
-    var creationYear: Int? = nil
-    var creationMonth: Int? = nil
-    var lastModifiedTsz: Float? = nil
+    var billChargeId: Int?
+    var creationTsz: Float?
+    var type: String?
+    var typeId: Int?
+    var userId: Int?
+    var amount: Float?
+    var currencyCode: String?
+    var creationYear: Int?
+    var creationMonth: Int?
+    var lastModifiedTsz: Float?
 }
 
 public final class BillPayment: Type {
-    var billPaymentId: Int? = nil
-    var creationTsz: Float? = nil
-    var type: String? = nil
-    var typeId: Int? = nil
-    var userId: Int? = nil
-    var amount: Float? = nil
-    var currencyCode: String? = nil
-    var creationMonth: Int? = nil
-    var creationYear: Int? = nil
+    var billPaymentId: Int?
+    var creationTsz: Float?
+    var type: String?
+    var typeId: Int?
+    var userId: Int?
+    var amount: Float?
+    var currencyCode: String?
+    var creationMonth: Int?
+    var creationYear: Int?
 }
 
 public final class BillingOverview: Type {
-    var isOverdue: Boolean? = nil
-    var currencyCode: String? = nil
-    var overdueBalance: Float? = nil
-    var balanceDue: Float? = nil
-    var totalBalance: Float? = nil
-    var dateDue: Epoch? = nil
-    var dateOverdue: Epoch? = nil
+    var isOverdue: Boolean?
+    var currencyCode: String?
+    var overdueBalance: Float?
+    var balanceDue: Float?
+    var totalBalance: Float?
+    var dateDue: Epoch?
+    var dateOverdue: Epoch?
 }
 
 public final class Cart: Type {
-    var cartId: Int? = nil
-    var shopName: String? = nil
-    var messageToSeller: String? = nil
-    var destinationCountryId: Int? = nil
-    var couponCode: String? = nil
-    var currencyCode: String? = nil
-    var total: String? = nil
-    var subtotal: String? = nil
-    var shippingCost: String? = nil
-    var taxCost: String? = nil
-    var discountAmount: String? = nil
-    var shippingDiscountAmount: String? = nil
-    var taxDiscountAmount: String? = nil
-    var url: String? = nil
+    var cartId: Int?
+    var shopName: String?
+    var messageToSeller: String?
+    var destinationCountryId: Int?
+    var couponCode: String?
+    var currencyCode: String?
+    var total: String?
+    var subtotal: String?
+    var shippingCost: String?
+    var taxCost: String?
+    var discountAmount: String?
+    var shippingDiscountAmount: String?
+    var taxDiscountAmount: String?
+    var url: String?
     var listings: [CartListing] = [CartListing]()
-    var isDownloadOnly: Boolean? = nil
-    var hasVat: Boolean? = nil
-    var shippingOption: ShippingOption? = nil
+    var isDownloadOnly: Boolean?
+    var hasVat: Boolean?
+    var shippingOption: ShippingOption?
 }
 
 public final class CartListing: Type {
-    var listingId: Int? = nil
-    var purchaseQuantity: Int? = nil
-    var purchaseState: String? = nil
-    var isDigital: Boolean? = nil
-    var fileData: String? = nil
-    var listingCustomizationId: Int? = nil
-    var variationsAvailable: Boolean? = nil
-    var hasVariations: Boolean? = nil
+    var listingId: Int?
+    var purchaseQuantity: Int?
+    var purchaseState: String?
+    var isDigital: Boolean?
+    var fileData: String?
+    var listingCustomizationId: Int?
+    var variationsAvailable: Boolean?
+    var hasVariations: Boolean?
     var selectedVariations: [VariationsSelectedProperty] = [VariationsSelectedProperty]()
 }
 
 public final class Category: Type {
-    var categoryId: Int? = nil
-    var name: String? = nil
-    var metaTitle: String? = nil
-    var metaKeywords: String? = nil
-    var metaDescription: String? = nil
-    var pageDescription: String? = nil
-    var pageTitle: String? = nil
-    var categoryName: String? = nil
-    var shortName: String? = nil
-    var longName: String? = nil
-    var numChildren: Int? = nil
+    var categoryId: Int?
+    var name: String?
+    var metaTitle: String?
+    var metaKeywords: String?
+    var metaDescription: String?
+    var pageDescription: String?
+    var pageTitle: String?
+    var categoryName: String?
+    var shortName: String?
+    var longName: String?
+    var numChildren: Int?
 }
 
 public final class Country: Type {
-    var countryId: Int? = nil
-    var isoCountryCode: String? = nil
-    var worldBankCountryCode: String? = nil
-    var name: String? = nil
-    var slug: String? = nil
-    var lat: Float? = nil
-    var lon: Float? = nil
+    var countryId: Int?
+    var isoCountryCode: String?
+    var worldBankCountryCode: String?
+    var name: String?
+    var slug: String?
+    var lat: Float?
+    var lon: Float?
 }
 
 public final class Coupon: Type {
-    var couponId: Int? = nil
-    var couponCode: String? = nil
-    var sellerActive: Boolean? = nil
-    var pctDiscount: Int? = nil
-    var freeShipping: Boolean? = nil
-    var domesticOnly: Boolean? = nil
-    var currencyCode: String? = nil
-    var fixedDiscount: String? = nil
-    var minimumPurchasePrice: String? = nil
-    var expirationDate: Int? = nil
-    var couponType: String? = nil
+    var couponId: Int?
+    var couponCode: String?
+    var sellerActive: Boolean?
+    var pctDiscount: Int?
+    var freeShipping: Boolean?
+    var domesticOnly: Boolean?
+    var currencyCode: String?
+    var fixedDiscount: String?
+    var minimumPurchasePrice: String?
+    var expirationDate: Int?
+    var couponType: String?
 }
 
 public final class DataType: Type {
-    var type: String? = nil
+    var type: String?
     var values: [String] = [String]()
 }
 
 public final class FavoriteListing: Type {
-    var listingId: Int? = nil
-    var userId: Int? = nil
-    var listingState: String? = nil
-    var createDate: Int? = nil
+    var listingId: Int?
+    var userId: Int?
+    var listingState: String?
+    var createDate: Int?
 }
 
 public final class FavoriteUser: Type {
-    var userId: Int? = nil
-    var favoriteUserId: Int? = nil
-    var targetUserId: Int? = nil
-    var creationTsz: Float? = nil
+    var userId: Int?
+    var favoriteUserId: Int?
+    var targetUserId: Int?
+    var creationTsz: Float?
 }
 
 public final class FeaturedTreasury: Type {
-    var treasuryKey: String? = nil
-    var treasuryId: Int? = nil
-    var treasuryOwnerId: Int? = nil
-    var url: String? = nil
-    var region: String? = nil
-    var activeDate: Float? = nil
+    var treasuryKey: String?
+    var treasuryId: Int?
+    var treasuryOwnerId: Int?
+    var url: String?
+    var region: String?
+    var activeDate: Float?
 }
 
 public final class Feedback: Type {
-    var feedbackId: Int? = nil
-    var transactionId: Int? = nil
-    var creatorUserId: Int? = nil
-    var targetUserId: Int? = nil
-    var sellerUserId: Int? = nil
-    var buyerUserId: Int? = nil
-    var creationTsz: Float? = nil
-    var message: String? = nil
-    var value: Int? = nil
-    var imageFeedbackId: Int? = nil
-    var imageUrl25x25: String? = nil
-    var imageUrl155x125: String? = nil
-    var imageUrlFullxfull: String? = nil
+    var feedbackId: Int?
+    var transactionId: Int?
+    var creatorUserId: Int?
+    var targetUserId: Int?
+    var sellerUserId: Int?
+    var buyerUserId: Int?
+    var creationTsz: Float?
+    var message: String?
+    var value: Int?
+    var imageFeedbackId: Int?
+    var imageUrl25x25: String?
+    var imageUrl155x125: String?
+    var imageUrlFullxfull: String?
 }
 
 public final class FeedbackInfo: Type {
-    var count: Int? = nil
-    var score: Int? = nil
+    var count: Int?
+    var score: Int?
 }
 
 public final class ForumPost: Type {
-    var threadId: Int? = nil
-    var postId: Int? = nil
-    var post: String? = nil
-    var userId: String? = nil
-    var lastEditTime: Int? = nil
-    var createDate: Int? = nil
+    var threadId: Int?
+    var postId: Int?
+    var post: String?
+    var userId: String?
+    var lastEditTime: Int?
+    var createDate: Int?
 }
 
 public final class Guest: Type {
-    var guestId: GuestId? = nil
-    var checkoutUrl: String? = nil
+    var guestId: GuestId?
+    var checkoutUrl: String?
 }
 
 public final class GuestCart: Type {
-    var cartId: Int? = nil
-    var shopName: String? = nil
-    var messageToSeller: String? = nil
-    var destinationCountryId: Int? = nil
-    var couponCode: String? = nil
-    var currencyCode: String? = nil
-    var total: String? = nil
-    var subtotal: String? = nil
-    var shippingCost: String? = nil
-    var taxCost: String? = nil
-    var discountAmount: String? = nil
-    var shippingDiscountAmount: String? = nil
-    var taxDiscountAmount: String? = nil
-    var url: String? = nil
+    var cartId: Int?
+    var shopName: String?
+    var messageToSeller: String?
+    var destinationCountryId: Int?
+    var couponCode: String?
+    var currencyCode: String?
+    var total: String?
+    var subtotal: String?
+    var shippingCost: String?
+    var taxCost: String?
+    var discountAmount: String?
+    var shippingDiscountAmount: String?
+    var taxDiscountAmount: String?
+    var url: String?
     var listings: [CartListing] = [CartListing]()
-    var isDownloadOnly: Boolean? = nil
-    var hasVat: Boolean? = nil
-    var shippingOption: ShippingOption? = nil
+    var isDownloadOnly: Boolean?
+    var hasVat: Boolean?
+    var shippingOption: ShippingOption?
 }
 
 public final class ImageType: Type {
-    var code: String? = nil
-    var desc: String? = nil
+    var code: String?
+    var desc: String?
     var sizes: [String] = [String]()
 }
 
 public final class Ledger: Type {
-    var ledgerId: Int? = nil
-    var shopId: String? = nil
-    var currency: String? = nil
-    var createDate: Int? = nil
-    var updateDate: Int? = nil
+    var ledgerId: Int?
+    var shopId: String?
+    var currency: String?
+    var createDate: Int?
+    var updateDate: Int?
 }
 
 public final class LedgerEntry: Type {
-    var ledgerEntryId: Int? = nil
-    var ledgerId: Int? = nil
-    var sequence: Int? = nil
-    var creditAmount: Int? = nil
-    var debitAmount: Int? = nil
-    var entryType: String? = nil
-    var referenceId: Int? = nil
-    var runningBalance: Int? = nil
-    var createDate: Int? = nil
+    var ledgerEntryId: Int?
+    var ledgerId: Int?
+    var sequence: Int?
+    var creditAmount: Int?
+    var debitAmount: Int?
+    var entryType: String?
+    var referenceId: Int?
+    var runningBalance: Int?
+    var createDate: Int?
 }
 
 public final class Listing: Type {
-    var listingId: Int? = nil
-    var state: String? = nil
-    var userId: Int? = nil
-    var categoryId: Int? = nil
-    var title: String? = nil
-    var description: String? = nil
-    var creationTsz: Float? = nil
-    var endingTsz: Float? = nil
-    var originalCreationTsz: Float? = nil
-    var lastModifiedTsz: Float? = nil
-    var price: String? = nil
-    var currencyCode: String? = nil
-    var quantity: Int? = nil
+    var listingId: Int?
+    var state: String?
+    var userId: Int?
+    var categoryId: Int?
+    var title: String?
+    var description: String?
+    var creationTsz: Float?
+    var endingTsz: Float?
+    var originalCreationTsz: Float?
+    var lastModifiedTsz: Float?
+    var price: String?
+    var currencyCode: String?
+    var quantity: Int?
     var sku: [String] = [String]()
     var tags: [String] = [String]()
     var categoryPath: [String] = [String]()
     var categoryPathIds: [Int] = [Int]()
-    var taxonomyId: Int? = nil
-    var suggestedTaxonomyId: Int? = nil
+    var taxonomyId: Int?
+    var suggestedTaxonomyId: Int?
     var taxonomyPath: [String] = [String]()
     var materials: [String] = [String]()
-    var shopSectionId: Int? = nil
-    var featuredRank: FeaturedRank? = nil
-    var stateTsz: Float? = nil
-    var url: String? = nil
-    var views: Int? = nil
-    var numFavorers: Int? = nil
-    var shippingTemplateId: Int? = nil
-    var shippingProfileId: Int? = nil
-    var processingMin: Int? = nil
-    var processingMax: Int? = nil
-    var whoMade: WhoMade? = nil
+    var shopSectionId: Int?
+    var featuredRank: FeaturedRank?
+    var stateTsz: Float?
+    var url: String?
+    var views: Int?
+    var numFavorers: Int?
+    var shippingTemplateId: Int?
+    var shippingProfileId: Int?
+    var processingMin: Int?
+    var processingMax: Int?
+    var whoMade: WhoMade?
     public enum WhoMade: String, Type {
         case iDid = "i_did"
-        case collective = "collective"
+        case collective
         case someoneElse = "someone_else"
     }
-    var isSupply: Boolean? = nil
-    var whenMade: WhenMade? = nil
+
+    var isSupply: Boolean?
+    var whenMade: WhenMade?
     public enum WhenMade: String, Type {
         case madeToOrder = "made_to_order"
         case _20102019 = "2010_2019"
@@ -326,123 +327,128 @@ public final class Listing: Type {
         case _1700s = "1700s"
         case before1700 = "before_1700"
     }
-    var itemWeight: Int? = nil
-    var itemWeightUnit: ItemWeightUnit? = nil
+
+    var itemWeight: Int?
+    var itemWeightUnit: ItemWeightUnit?
     public enum ItemWeightUnit: String, Type {
-        case oz = "oz"
-        case lb = "lb"
-        case g = "g"
-        case kg = "kg"
+        case oz
+        case lb
+        case g
+        case kg
     }
-    var itemLength: Int? = nil
-    var itemWidth: Int? = nil
-    var itemHeight: Int? = nil
-    var itemDimensionsUnit: ItemDimensionsUnit? = nil
+
+    var itemLength: Int?
+    var itemWidth: Int?
+    var itemHeight: Int?
+    var itemDimensionsUnit: ItemDimensionsUnit?
     public enum ItemDimensionsUnit: String, Type {
         case `in` = "in"
-        case ft = "ft"
-        case mm = "mm"
-        case cm = "cm"
-        case m = "m"
+        case ft
+        case mm
+        case cm
+        case m
     }
-    var isPrivate: Boolean? = nil
-    var recipient: Recipient? = nil
+
+    var isPrivate: Boolean?
+    var recipient: Recipient?
     public enum Recipient: String, Type {
-        case men = "men"
-        case women = "women"
+        case men
+        case women
         case unisexAdults = "unisex_adults"
         case teenBoys = "teen_boys"
         case teenGirls = "teen_girls"
-        case teens = "teens"
-        case boys = "boys"
-        case girls = "girls"
-        case children = "children"
+        case teens
+        case boys
+        case girls
+        case children
         case babyBoys = "baby_boys"
         case babyGirls = "baby_girls"
-        case babies = "babies"
-        case birds = "birds"
-        case cats = "cats"
-        case dogs = "dogs"
-        case pets = "pets"
+        case babies
+        case birds
+        case cats
+        case dogs
+        case pets
         case notSpecified = "not_specified"
     }
-    var occasion: Occasion? = nil
+
+    var occasion: Occasion?
     public enum Occasion: String, Type {
-        case anniversary = "anniversary"
-        case baptism = "baptism"
+        case anniversary
+        case baptism
         case barOrBatMitzvah = "bar_or_bat_mitzvah"
-        case birthday = "birthday"
+        case birthday
         case canadaDay = "canada_day"
         case chineseNewYear = "chinese_new_year"
         case cincoDeMayo = "cinco_de_mayo"
-        case confirmation = "confirmation"
-        case christmas = "christmas"
+        case confirmation
+        case christmas
         case dayOfTheDead = "day_of_the_dead"
-        case easter = "easter"
-        case eid = "eid"
-        case engagement = "engagement"
+        case easter
+        case eid
+        case engagement
         case fathersDay = "fathers_day"
         case getWell = "get_well"
-        case graduation = "graduation"
-        case halloween = "halloween"
-        case hanukkah = "hanukkah"
-        case housewarming = "housewarming"
-        case kwanzaa = "kwanzaa"
-        case prom = "prom"
+        case graduation
+        case halloween
+        case hanukkah
+        case housewarming
+        case kwanzaa
+        case prom
         case july4th = "july_4th"
         case mothersDay = "mothers_day"
         case newBaby = "new_baby"
         case newYears = "new_years"
-        case quinceanera = "quinceanera"
-        case retirement = "retirement"
+        case quinceanera
+        case retirement
         case stPatricksDay = "st_patricks_day"
         case sweet16 = "sweet_16"
-        case sympathy = "sympathy"
-        case thanksgiving = "thanksgiving"
-        case valentines = "valentines"
-        case wedding = "wedding"
+        case sympathy
+        case thanksgiving
+        case valentines
+        case wedding
     }
+
     var style: [String] = [String]()
-    var nonTaxable: Boolean? = nil
-    var isCustomizable: Boolean? = nil
-    var isDigital: Boolean? = nil
-    var fileData: String? = nil
-    var canWriteInventory: Boolean? = nil
-    var hasVariations: Boolean? = nil
-    var shouldAutoRenew: Boolean? = nil
-    var language: Language? = nil
+    var nonTaxable: Boolean?
+    var isCustomizable: Boolean?
+    var isDigital: Boolean?
+    var fileData: String?
+    var canWriteInventory: Boolean?
+    var hasVariations: Boolean?
+    var shouldAutoRenew: Boolean?
+    var language: Language?
 }
 
 public final class ListingFile: Type {
-    var listingFileId: Int? = nil
-    var listingId: Int? = nil
-    var rank: Int? = nil
-    var filename: String? = nil
-    var filesize: String? = nil
-    var sizeBytes: Int? = nil
-    var filetype: String? = nil
-    var createDate: Int? = nil
+    var listingFileId: Int?
+    var listingId: Int?
+    var rank: Int?
+    var filename: String?
+    var filesize: String?
+    var sizeBytes: Int?
+    var filetype: String?
+    var createDate: Int?
 }
 
 public final class ListingImage: Type {
-    var listingImageId: Int? = nil
-    var hexCode: String? = nil
-    var red: Int? = nil
-    var green: Int? = nil
-    var blue: Int? = nil
-    var hue: Int? = nil
-    var saturation: Int? = nil
-    var brightness: Int? = nil
-    var isBlackAndWhite: Boolean? = nil
-    var creationTsz: Float? = nil
-    var listingId: Int? = nil
-    var rank: Int? = nil
-    var url75x75: String? = nil
-    var url170x135: String? = nil
-    var url570xN: String? = nil
-    var urlFullxfull: String? = nil
-    var fullHeight: Int? = nil
-    var fullWidth: Int? = nil
+    var listingImageId: Int?
+    var hexCode: String?
+    var red: Int?
+    var green: Int?
+    var blue: Int?
+    var hue: Int?
+    var saturation: Int?
+    var brightness: Int?
+    var isBlackAndWhite: Boolean?
+    var creationTsz: Float?
+    var listingId: Int?
+    var rank: Int?
+    var url75x75: String?
+    var url170x135: String?
+    var url570xN: String?
+    var urlFullxfull: String?
+    var fullHeight: Int?
+    var fullWidth: Int?
 }
 
 public final class ListingInventory: Type {
@@ -453,571 +459,569 @@ public final class ListingInventory: Type {
 }
 
 public final class ListingOffering: Type {
-    var offeringId: Int? = nil
-    var price: Money? = nil
-    var quantity: Int? = nil
-    var isEnabled: Boolean? = nil
-    var isDeleted: Boolean? = nil
+    var offeringId: Int?
+    var price: Money?
+    var quantity: Int?
+    var isEnabled: Boolean?
+    var isDeleted: Boolean?
 }
 
 public final class ListingProduct: Type {
-    var productId: Int? = nil
+    var productId: Int?
     var propertyValues: [PropertyValue] = [PropertyValue]()
-    var sku: String? = nil
+    var sku: String?
     var offerings: [ListingOffering] = [ListingOffering]()
-    var isDeleted: Boolean? = nil
+    var isDeleted: Boolean?
 }
 
 public final class ListingTranslation: Type {
-    var listingId: Int? = nil
-    var language: Language? = nil
-    var title: String? = nil
-    var description: String? = nil
+    var listingId: Int?
+    var language: Language?
+    var title: String?
+    var description: String?
     var tags: [String] = [String]()
 }
 
 public final class Money: Type {
-    var amount: Int? = nil
-    var divisor: Int? = nil
-    var currencyCode: String? = nil
-    var formattedRaw: String? = nil
-    var formattedShort: String? = nil
-    var formattedLong: String? = nil
-    var originalCurrencyCode: String? = nil
-    var beforeConversion: Money? = nil
+    var amount: Int?
+    var divisor: Int?
+    var currencyCode: String?
+    var formattedRaw: String?
+    var formattedShort: String?
+    var formattedLong: String?
+    var originalCurrencyCode: String?
+    var beforeConversion: Money?
 }
 
 public final class ParamList: Type {
-    var paramName: String? = nil
+    var paramName: String?
 }
 
 public final class Payment: Type {
-    var paymentId: Int? = nil
-    var buyerUserId: Int? = nil
-    var shopId: Int? = nil
-    var receiptId: Int? = nil
-    var amountGross: Int? = nil
-    var amountFees: Int? = nil
-    var amountNet: Int? = nil
-    var postedGross: Int? = nil
-    var postedFees: Int? = nil
-    var postedNet: Int? = nil
-    var adjustedGross: Int? = nil
-    var adjustedFees: Int? = nil
-    var adjustedNet: Int? = nil
-    var currency: String? = nil
-    var shopCurrency: String? = nil
-    var buyerCurrency: String? = nil
-    var shippingUserId: Int? = nil
-    var shippingAddressId: Int? = nil
-    var billingAddressId: Int? = nil
-    var status: String? = nil
-    var shippedDate: Int? = nil
-    var createDate: Int? = nil
-    var updateDate: Int? = nil
+    var paymentId: Int?
+    var buyerUserId: Int?
+    var shopId: Int?
+    var receiptId: Int?
+    var amountGross: Int?
+    var amountFees: Int?
+    var amountNet: Int?
+    var postedGross: Int?
+    var postedFees: Int?
+    var postedNet: Int?
+    var adjustedGross: Int?
+    var adjustedFees: Int?
+    var adjustedNet: Int?
+    var currency: String?
+    var shopCurrency: String?
+    var buyerCurrency: String?
+    var shippingUserId: Int?
+    var shippingAddressId: Int?
+    var billingAddressId: Int?
+    var status: String?
+    var shippedDate: Int?
+    var createDate: Int?
+    var updateDate: Int?
 }
 
 public final class PaymentAccountLedgerEntry: Type {
-    var entryId: Int? = nil
-    var ledgerId: Int? = nil
-    var sequenceNumber: Int? = nil
-    var amount: Int? = nil
-    var currency: String? = nil
-    var description: String? = nil
-    var balance: Int? = nil
-    var createDate: Int? = nil
+    var entryId: Int?
+    var ledgerId: Int?
+    var sequenceNumber: Int?
+    var amount: Int?
+    var currency: String?
+    var description: String?
+    var balance: Int?
+    var createDate: Int?
 }
 
 public final class PaymentAdjustment: Type {
-    var paymentAdjustmentId: Int? = nil
-    var paymentId: Int? = nil
-    var status: String? = nil
-    var isSuccess: Boolean? = nil
-    var userId: Int? = nil
-    var reasonCode: String? = nil
-    var totalAdjustmentAmount: Int? = nil
-    var shopTotalAdjustmentAmount: Int? = nil
-    var buyerTotalAdjustmentAmount: Int? = nil
-    var totalFeeAdjustmentAmount: Int? = nil
-    var createDate: Int? = nil
-    var updateDate: Int? = nil
+    var paymentAdjustmentId: Int?
+    var paymentId: Int?
+    var status: String?
+    var isSuccess: Boolean?
+    var userId: Int?
+    var reasonCode: String?
+    var totalAdjustmentAmount: Int?
+    var shopTotalAdjustmentAmount: Int?
+    var buyerTotalAdjustmentAmount: Int?
+    var totalFeeAdjustmentAmount: Int?
+    var createDate: Int?
+    var updateDate: Int?
 }
 
 public final class PaymentAdjustmentItem: Type {
-    var paymentAdjustmentItemId: Int? = nil
-    var paymentAdjustmentId: Int? = nil
-    var adjustmentType: String? = nil
-    var amount: Int? = nil
-    var transactionId: Int? = nil
-    var createDate: Int? = nil
+    var paymentAdjustmentItemId: Int?
+    var paymentAdjustmentId: Int?
+    var adjustmentType: String?
+    var amount: Int?
+    var transactionId: Int?
+    var createDate: Int?
 }
 
 public final class PaymentTemplate: Type {
-    var paymentTemplateId: Int? = nil
-    var allowBt: Boolean? = nil
-    var allowCheck: Boolean? = nil
-    var allowMo: Boolean? = nil
-    var allowOther: Boolean? = nil
-    var allowPaypal: Boolean? = nil
-    var allowCc: Boolean? = nil
-    var paypalEmail: String? = nil
-    var name: String? = nil
-    var firstLine: String? = nil
-    var secondLine: String? = nil
-    var city: String? = nil
-    var state: String? = nil
-    var zip: String? = nil
-    var countryId: Int? = nil
-    var userId: Int? = nil
-    var listingPaymentId: Int? = nil
+    var paymentTemplateId: Int?
+    var allowBt: Boolean?
+    var allowCheck: Boolean?
+    var allowMo: Boolean?
+    var allowOther: Boolean?
+    var allowPaypal: Boolean?
+    var allowCc: Boolean?
+    var paypalEmail: String?
+    var name: String?
+    var firstLine: String?
+    var secondLine: String?
+    var city: String?
+    var state: String?
+    var zip: String?
+    var countryId: Int?
+    var userId: Int?
+    var listingPaymentId: Int?
 }
 
 public final class PropertyValue: Type {
-    var propertyId: Int? = nil
-    var propertyName: String? = nil
-    var scaleId: Int? = nil
-    var scaleName: String? = nil
+    var propertyId: Int?
+    var propertyName: String?
+    var scaleId: Int?
+    var scaleName: String?
     var valueIds: [Int] = [Int]()
     var values: [String] = [String]()
 }
 
 public final class Receipt: Type {
-    var receiptId: Int? = nil
-    var receiptType: Int? = nil
-    var orderId: Int? = nil
-    var sellerUserId: Int? = nil
-    var buyerUserId: Int? = nil
-    var creationTsz: Float? = nil
-    var lastModifiedTsz: Float? = nil
-    var name: String? = nil
-    var firstLine: String? = nil
-    var secondLine: String? = nil
-    var city: String? = nil
-    var state: String? = nil
-    var zip: String? = nil
-    var formattedAddress: String? = nil
-    var countryId: Int? = nil
-    var paymentMethod: String? = nil
-    var paymentEmail: String? = nil
-    var messageFromSeller: String? = nil
-    var messageFromBuyer: String? = nil
-    var wasPaid: Boolean? = nil
-    var totalTaxCost: Float? = nil
-    var totalVatCost: Float? = nil
-    var totalPrice: Float? = nil
-    var totalShippingCost: Float? = nil
-    var currencyCode: String? = nil
-    var messageFromPayment: String? = nil
-    var wasShipped: Boolean? = nil
-    var buyerEmail: String? = nil
-    var sellerEmail: String? = nil
-    var isGift: Boolean? = nil
-    var needsGiftWrap: Boolean? = nil
-    var giftMessage: String? = nil
-    var giftWrapPrice: Float? = nil
-    var discountAmt: Float? = nil
-    var subtotal: Float? = nil
-    var grandtotal: Float? = nil
-    var adjustedGrandtotal: Float? = nil
+    var receiptId: Int?
+    var receiptType: Int?
+    var orderId: Int?
+    var sellerUserId: Int?
+    var buyerUserId: Int?
+    var creationTsz: Float?
+    var lastModifiedTsz: Float?
+    var name: String?
+    var firstLine: String?
+    var secondLine: String?
+    var city: String?
+    var state: String?
+    var zip: String?
+    var formattedAddress: String?
+    var countryId: Int?
+    var paymentMethod: String?
+    var paymentEmail: String?
+    var messageFromSeller: String?
+    var messageFromBuyer: String?
+    var wasPaid: Boolean?
+    var totalTaxCost: Float?
+    var totalVatCost: Float?
+    var totalPrice: Float?
+    var totalShippingCost: Float?
+    var currencyCode: String?
+    var messageFromPayment: String?
+    var wasShipped: Boolean?
+    var buyerEmail: String?
+    var sellerEmail: String?
+    var isGift: Boolean?
+    var needsGiftWrap: Boolean?
+    var giftMessage: String?
+    var giftWrapPrice: Float?
+    var discountAmt: Float?
+    var subtotal: Float?
+    var grandtotal: Float?
+    var adjustedGrandtotal: Float?
     var shipments: [ReceiptShipment] = [ReceiptShipment]()
 }
 
 public final class ReceiptShipment: Type {
-    var carrierName: String? = nil
-    var receiptShippingId: Int? = nil
-    var trackingCode: String? = nil
-    var trackingUrl: String? = nil
-    var buyerNote: String? = nil
-    var notificationDate: Int? = nil
+    var carrierName: String?
+    var receiptShippingId: Int?
+    var trackingCode: String?
+    var trackingUrl: String?
+    var buyerNote: String?
+    var notificationDate: Int?
 }
 
 public final class Region: Type {
-    var regionId: Int? = nil
-    var regionName: String? = nil
-    var isDead: Boolean? = nil
+    var regionId: Int?
+    var regionName: String?
+    var isDead: Boolean?
 }
 
 public final class Segment: Type {
-    var name: String? = nil
-    var path: String? = nil
-    var shortName: String? = nil
-    var hasChildren: Boolean? = nil
-    var imageUrl: String? = nil
-    var shopId: Int? = nil
-    var shopName: Int? = nil
-    var listingId: Int? = nil
+    var name: String?
+    var path: String?
+    var shortName: String?
+    var hasChildren: Boolean?
+    var imageUrl: String?
+    var shopId: Int?
+    var shopName: Int?
+    var listingId: Int?
 }
 
 public final class SegmentPoster: Type {
-    var name: String? = nil
-    var path: String? = nil
-    var imageUrl: String? = nil
-    var shopId: Int? = nil
-    var shopName: Int? = nil
-    var weight: Int? = nil
-    var listingId: Int? = nil
+    var name: String?
+    var path: String?
+    var imageUrl: String?
+    var shopId: Int?
+    var shopName: Int?
+    var weight: Int?
+    var listingId: Int?
 }
 
 public final class ShippingInfo: Type {
-    var shippingInfoId: Int? = nil
-    var originCountryId: Int? = nil
-    var destinationCountryId: Int? = nil
-    var currencyCode: String? = nil
-    var primaryCost: Float? = nil
-    var secondaryCost: Float? = nil
-    var listingId: Int? = nil
-    var regionId: Int? = nil
-    var originCountryName: String? = nil
-    var destinationCountryName: String? = nil
+    var shippingInfoId: Int?
+    var originCountryId: Int?
+    var destinationCountryId: Int?
+    var currencyCode: String?
+    var primaryCost: Float?
+    var secondaryCost: Float?
+    var listingId: Int?
+    var regionId: Int?
+    var originCountryName: String?
+    var destinationCountryName: String?
 }
 
 public final class ShippingOption: Type {
-    var optionId: String? = nil
-    var name: String? = nil
-    var optionType: Int? = nil
-    var cost: String? = nil
-    var currencyCode: String? = nil
+    var optionId: String?
+    var name: String?
+    var optionType: Int?
+    var cost: String?
+    var currencyCode: String?
 }
 
 public final class ShippingTemplate: Type {
-    var shippingTemplateId: Int? = nil
-    var title: String? = nil
-    var userId: Int? = nil
-    var minProcessingDays: Int? = nil
-    var maxProcessingDays: Int? = nil
-    var processingDaysDisplayLabel: String? = nil
-    var originCountryId: Int? = nil
+    var shippingTemplateId: Int?
+    var title: String?
+    var userId: Int?
+    var minProcessingDays: Int?
+    var maxProcessingDays: Int?
+    var processingDaysDisplayLabel: String?
+    var originCountryId: Int?
 }
 
 public final class ShippingTemplateEntry: Type {
-    var shippingTemplateEntryId: Int? = nil
-    var shippingTemplateId: Int? = nil
-    var currencyCode: String? = nil
-    var originCountryId: Int? = nil
-    var destinationCountryId: Int? = nil
-    var destinationRegionId: Int? = nil
-    var primaryCost: Float? = nil
-    var secondaryCost: Float? = nil
+    var shippingTemplateEntryId: Int?
+    var shippingTemplateId: Int?
+    var currencyCode: String?
+    var originCountryId: Int?
+    var destinationCountryId: Int?
+    var destinationRegionId: Int?
+    var primaryCost: Float?
+    var secondaryCost: Float?
 }
 
 public final class ShippingUpgrade: Type {
-    var shippingProfileId: Int? = nil
-    var valueId: Int? = nil
-    var value: String? = nil
-    var price: Float? = nil
-    var secondaryPrice: Float? = nil
-    var currencyCode: String? = nil
-    var type: Int? = nil
-    var order: Int? = nil
-    var language: Int? = nil
+    var shippingProfileId: Int?
+    var valueId: Int?
+    var value: String?
+    var price: Float?
+    var secondaryPrice: Float?
+    var currencyCode: String?
+    var type: Int?
+    var order: Int?
+    var language: Int?
 }
 
 public final class Shop: Type {
-    var shopId: Int? = nil
-    var shopName: String? = nil
-    var firstLine: String? = nil
-    var secondLine: String? = nil
-    var city: String? = nil
-    var state: String? = nil
-    var zip: String? = nil
-    var countryId: Int? = nil
-    var userId: Int? = nil
-    var creationTsz: Float? = nil
-    var title: String? = nil
-    var announcement: String? = nil
-    var currencyCode: String? = nil
-    var isVacation: Boolean? = nil
-    var vacationMessage: String? = nil
-    var saleMessage: String? = nil
-    var digitalSaleMessage: String? = nil
-    var lastUpdatedTsz: Float? = nil
-    var listingActiveCount: Int? = nil
-    var digitalListingCount: Int? = nil
-    var loginName: String? = nil
-    var lat: Float? = nil
-    var lon: Float? = nil
-    var acceptsCustomRequests: Boolean? = nil
-    var policyWelcome: String? = nil
-    var policyPayment: String? = nil
-    var policyShipping: String? = nil
-    var policyRefunds: String? = nil
-    var policyAdditional: String? = nil
-    var policySellerInfo: String? = nil
-    var policyUpdatedTsz: Float? = nil
-    var policyHasPrivateReceiptInfo: Boolean? = nil
-    var vacationAutoreply: String? = nil
-    var gaCode: String? = nil
-    var name: String? = nil
-    var url: String? = nil
-    var imageUrl760x100: String? = nil
-    var numFavorers: Int? = nil
+    var shopId: Int?
+    var shopName: String?
+    var firstLine: String?
+    var secondLine: String?
+    var city: String?
+    var state: String?
+    var zip: String?
+    var countryId: Int?
+    var userId: Int?
+    var creationTsz: Float?
+    var title: String?
+    var announcement: String?
+    var currencyCode: String?
+    var isVacation: Boolean?
+    var vacationMessage: String?
+    var saleMessage: String?
+    var digitalSaleMessage: String?
+    var lastUpdatedTsz: Float?
+    var listingActiveCount: Int?
+    var digitalListingCount: Int?
+    var loginName: String?
+    var lat: Float?
+    var lon: Float?
+    var acceptsCustomRequests: Boolean?
+    var policyWelcome: String?
+    var policyPayment: String?
+    var policyShipping: String?
+    var policyRefunds: String?
+    var policyAdditional: String?
+    var policySellerInfo: String?
+    var policyUpdatedTsz: Float?
+    var policyHasPrivateReceiptInfo: Boolean?
+    var vacationAutoreply: String?
+    var gaCode: String?
+    var name: String?
+    var url: String?
+    var imageUrl760x100: String?
+    var numFavorers: Int?
     var languages: [String] = [String]()
-    var upcomingLocalEventId: Int? = nil
-    var iconUrlFullxfull: String? = nil
-    var isUsingStructuredPolicies: Boolean? = nil
-    var hasOnboardedStructuredPolicies: Boolean? = nil
-    var hasUnstructuredPolicies: Boolean? = nil
-    var policyPrivacy: String? = nil
-    var useNewInventoryEndpoints: Boolean? = nil
-    var includeDisputeFormLink: Boolean? = nil
+    var upcomingLocalEventId: Int?
+    var iconUrlFullxfull: String?
+    var isUsingStructuredPolicies: Boolean?
+    var hasOnboardedStructuredPolicies: Boolean?
+    var hasUnstructuredPolicies: Boolean?
+    var policyPrivacy: String?
+    var useNewInventoryEndpoints: Boolean?
+    var includeDisputeFormLink: Boolean?
 }
 
 public final class ShopAbout: Type {
-    var shopId: Int? = nil
-    var status: String? = nil
-    var storyHeadline: String? = nil
-    var storyLeadingParagraph: String? = nil
-    var story: String? = nil
+    var shopId: Int?
+    var status: String?
+    var storyHeadline: String?
+    var storyLeadingParagraph: String?
+    var story: String?
     var relatedLinks: [String] = [String]()
-    var url: String? = nil
+    var url: String?
 }
 
 public final class ShopAboutImage: Type {
-    var shopId: Int? = nil
-    var imageId: Int? = nil
-    var caption: String? = nil
-    var rank: Int? = nil
-    var url178x178: String? = nil
-    var url545xN: String? = nil
-    var url760xN: String? = nil
-    var urlFullxfull: String? = nil
+    var shopId: Int?
+    var imageId: Int?
+    var caption: String?
+    var rank: Int?
+    var url178x178: String?
+    var url545xN: String?
+    var url760xN: String?
+    var urlFullxfull: String?
 }
 
 public final class ShopAboutMember: Type {
-    var shopAboutMemberId: Int? = nil
-    var shopId: Int? = nil
-    var name: String? = nil
-    var role: String? = nil
-    var bio: String? = nil
-    var rank: Int? = nil
-    var isOwner: Boolean? = nil
-    var url90x90: String? = nil
-    var url190x190: String? = nil
-    var hasStaleTranslations: Boolean? = nil
+    var shopAboutMemberId: Int?
+    var shopId: Int?
+    var name: String?
+    var role: String?
+    var bio: String?
+    var rank: Int?
+    var isOwner: Boolean?
+    var url90x90: String?
+    var url190x190: String?
+    var hasStaleTranslations: Boolean?
 }
 
 public final class ShopSection: Type {
-    var shopSectionId: Int? = nil
-    var title: String? = nil
-    var rank: Int? = nil
-    var userId: Int? = nil
-    var activeListingCount: Int? = nil
+    var shopSectionId: Int?
+    var title: String?
+    var rank: Int?
+    var userId: Int?
+    var activeListingCount: Int?
 }
 
 public final class ShopSectionTranslation: Type {
-    var shopSectionId: Int? = nil
-    var language: Language? = nil
-    var title: String? = nil
+    var shopSectionId: Int?
+    var language: Language?
+    var title: String?
 }
 
 public final class ShopTranslation: Type {
-    var shopId: Int? = nil
-    var language: Language? = nil
-    var announcement: String? = nil
-    var policyWelcome: String? = nil
-    var policyPayment: String? = nil
-    var policyShipping: String? = nil
-    var policyRefunds: String? = nil
-    var policyAdditional: String? = nil
-    var policyPrivacy: String? = nil
-    var policySellerInfo: String? = nil
-    var saleMessage: String? = nil
-    var digitalSaleMessage: String? = nil
-    var title: String? = nil
-    var vacationAutoreply: String? = nil
-    var vacationMessage: String? = nil
+    var shopId: Int?
+    var language: Language?
+    var announcement: String?
+    var policyWelcome: String?
+    var policyPayment: String?
+    var policyShipping: String?
+    var policyRefunds: String?
+    var policyAdditional: String?
+    var policyPrivacy: String?
+    var policySellerInfo: String?
+    var saleMessage: String?
+    var digitalSaleMessage: String?
+    var title: String?
+    var vacationAutoreply: String?
+    var vacationMessage: String?
 }
 
 public final class StructuredPolicies: Type {
-    var structuredPoliciesId: Int? = nil
-    var createDate: Int? = nil
-    var updateDate: Int? = nil
-    var createDateFormatted: String? = nil
-    var updateDateFormatted: String? = nil
-    var hasUnstructuredPolicies: Boolean? = nil
-    var additionalTermsAndConditions: String? = nil
-    var shopInGermany: Boolean? = nil
-    var includeDisputeFormLink: Boolean? = nil
+    var structuredPoliciesId: Int?
+    var createDate: Int?
+    var updateDate: Int?
+    var createDateFormatted: String?
+    var updateDateFormatted: String?
+    var hasUnstructuredPolicies: Boolean?
+    var additionalTermsAndConditions: String?
+    var shopInGermany: Boolean?
+    var includeDisputeFormLink: Boolean?
 }
 
 public final class Style: Type {
-    var styleId: Int? = nil
-    var style: String? = nil
+    var styleId: Int?
+    var style: String?
 }
 
 public final class Taxonomy: Type {
-    var id: Int? = nil
-    var level: Int? = nil
-    var name: String? = nil
-    var parent: String? = nil
-    var parentId: Int? = nil
-    var path: String? = nil
-    var categoryId: Int? = nil
+    var id: Int?
+    var level: Int?
+    var name: String?
+    var parent: String?
+    var parentId: Int?
+    var path: String?
+    var categoryId: Int?
     var children: [Taxonomy] = [Taxonomy]()
     var childrenIds: [Int] = [Int]()
     var fullPathTaxonomyIds: [Int] = [Int]()
 }
 
 public final class TaxonomyNodeProperty: Type {
-    var propertyId: Int? = nil
-    var name: String? = nil
-    var displayName: String? = nil
+    var propertyId: Int?
+    var name: String?
+    var displayName: String?
     var scales: [TaxonomyPropertyScale] = [TaxonomyPropertyScale]()
-    var isRequired: Boolean? = nil
-    var supportsAttributes: Boolean? = nil
-    var supportsVariations: Boolean? = nil
-    var isMultivalued: Boolean? = nil
+    var isRequired: Boolean?
+    var supportsAttributes: Boolean?
+    var supportsVariations: Boolean?
+    var isMultivalued: Boolean?
     var possibleValues: [TaxonomyPropertyValue] = [TaxonomyPropertyValue]()
     var selectedValues: [TaxonomyPropertyValue] = [TaxonomyPropertyValue]()
 }
 
 public final class TaxonomyPropertyScale: Type {
-    var scaleId: Int? = nil
-    var displayName: String? = nil
-    var description: String? = nil
+    var scaleId: Int?
+    var displayName: String?
+    var description: String?
 }
 
 public final class TaxonomyPropertyValue: Type {
-    var valueId: Int? = nil
-    var name: String? = nil
-    var scaleId: Int? = nil
-    var order: Int? = nil
+    var valueId: Int?
+    var name: String?
+    var scaleId: Int?
+    var order: Int?
     var equalTo: [Int] = [Int]()
 }
 
 public final class Team: Type {
-    var groupId: Int? = nil
-    var name: String? = nil
-    var createDate: Int? = nil
-    var updateDate: Int? = nil
+    var groupId: Int?
+    var name: String?
+    var createDate: Int?
+    var updateDate: Int?
     var tags: [String] = [String]()
 }
 
 public final class Transaction: Type {
-    var transactionId: Int? = nil
-    var title: String? = nil
-    var description: String? = nil
-    var sellerUserId: Int? = nil
-    var buyerUserId: Int? = nil
-    var creationTsz: Float? = nil
-    var paidTsz: Float? = nil
-    var shippedTsz: Float? = nil
-    var price: Float? = nil
-    var currencyCode: String? = nil
-    var quantity: Int? = nil
+    var transactionId: Int?
+    var title: String?
+    var description: String?
+    var sellerUserId: Int?
+    var buyerUserId: Int?
+    var creationTsz: Float?
+    var paidTsz: Float?
+    var shippedTsz: Float?
+    var price: Float?
+    var currencyCode: String?
+    var quantity: Int?
     var tags: [String] = [String]()
     var materials: [String] = [String]()
-    var imageListingId: Int? = nil
-    var receiptId: Int? = nil
-    var shippingCost: Float? = nil
-    var isDigital: Boolean? = nil
-    var fileData: String? = nil
-    var listingId: Int? = nil
-    var isQuickSale: Boolean? = nil
-    var sellerFeedbackId: Int? = nil
-    var buyerFeedbackId: Int? = nil
-    var transactionType: String? = nil
-    var url: String? = nil
+    var imageListingId: Int?
+    var receiptId: Int?
+    var shippingCost: Float?
+    var isDigital: Boolean?
+    var fileData: String?
+    var listingId: Int?
+    var isQuickSale: Boolean?
+    var sellerFeedbackId: Int?
+    var buyerFeedbackId: Int?
+    var transactionType: String?
+    var url: String?
     var variations: [ListingInventory] = [ListingInventory]()
-    var productData: ListingProduct? = nil
+    var productData: ListingProduct?
 }
 
 public final class Treasury: Type {
-    var id: String? = nil
-    var title: String? = nil
-    var description: String? = nil
-    var homepage: Int? = nil
-    var mature: Boolean? = nil
-    var `private`: Boolean? = nil
-    var locale: String? = nil
-    var commentCount: Int? = nil
+    var id: String?
+    var title: String?
+    var description: String?
+    var homepage: Int?
+    var mature: Boolean?
+    var `private`: Boolean?
+    var locale: String?
+    var commentCount: Int?
     var tags: [String] = [String]()
-    var counts: TreasuryCounts? = nil
-    var hotness: Float? = nil
-    var hotnessColor: String? = nil
-    var userId: Int? = nil
-    var userName: String? = nil
-    var userAvatarId: Int? = nil
+    var counts: TreasuryCounts?
+    var hotness: Float?
+    var hotnessColor: String?
+    var userId: Int?
+    var userName: String?
+    var userAvatarId: Int?
     var listings: [TreasuryListing] = [TreasuryListing]()
-    var creationTsz: Float? = nil
-    var becamePublicDate: Int? = nil
+    var creationTsz: Float?
+    var becamePublicDate: Int?
 }
 
 public final class TreasuryCounts: Type {
-    var clicks: Int? = nil
-    var views: Int? = nil
-    var shares: Int? = nil
-    var reports: Int? = nil
+    var clicks: Int?
+    var views: Int?
+    var shares: Int?
+    var reports: Int?
 }
 
 public final class TreasuryListing: Type {
-    var data: TreasuryListingData? = nil
-    var creationTsz: Float? = nil
+    var data: TreasuryListingData?
+    var creationTsz: Float?
 }
 
 public final class TreasuryListingData: Type {
-    var userId: Int? = nil
-    var title: String? = nil
-    var price: Float? = nil
-    var currencyCode: String? = nil
-    var listingId: Int? = nil
-    var state: String? = nil
-    var shopName: String? = nil
-    var imageId: Int? = nil
-    var imageUrl75x75: String? = nil
-    var imageUrl170x135: String? = nil
+    var userId: Int?
+    var title: String?
+    var price: Float?
+    var currencyCode: String?
+    var listingId: Int?
+    var state: String?
+    var shopName: String?
+    var imageId: Int?
+    var imageUrl75x75: String?
+    var imageUrl170x135: String?
 }
 
 public final class User: Type {
-    var userId: Int? = nil
-    var loginName: String? = nil
-    var primaryEmail: String? = nil
-    var creationTsz: Float? = nil
-    var userPubKey: StringJSON? = nil
-    var referredByUserId: Int? = nil
-    var feedbackInfo: FeedbackInfo? = nil
-    var awaitingFeedbackCount: Int? = nil
-    var useNewInventoryEndpoints: Boolean? = nil
+    var userId: Int?
+    var loginName: String?
+    var primaryEmail: String?
+    var creationTsz: Float?
+    var userPubKey: StringJSON?
+    var referredByUserId: Int?
+    var feedbackInfo: FeedbackInfo?
+    var awaitingFeedbackCount: Int?
+    var useNewInventoryEndpoints: Boolean?
 }
 
 public final class UserAddress: Type {
-    var userAddressId: Int? = nil
-    var userId: Int? = nil
-    var name: Text? = nil
-    var firstLine: Text? = nil
-    var secondLine: Text? = nil
-    var city: Text? = nil
-    var state: Text? = nil
-    var zip: Text? = nil
-    var countryId: Int? = nil
-    var countryName: String? = nil
-    var isDefaultShipping: Boolean? = nil
+    var userAddressId: Int?
+    var userId: Int?
+    var name: Text?
+    var firstLine: Text?
+    var secondLine: Text?
+    var city: Text?
+    var state: Text?
+    var zip: Text?
+    var countryId: Int?
+    var countryName: String?
+    var isDefaultShipping: Boolean?
 }
 
 public final class UserProfile: Type {
-    var userProfileId: Int? = nil
-    var userId: Int? = nil
-    var loginName: String? = nil
-    var bio: String? = nil
-    var gender: String? = nil
-    var birthMonth: String? = nil
-    var birthDay: String? = nil
-    var birthYear: String? = nil
-    var joinTsz: Float? = nil
-    var materials: String? = nil
-    var countryId: Int? = nil
-    var region: String? = nil
-    var city: String? = nil
-    var location: String? = nil
-    var avatarId: Int? = nil
-    var lat: Float? = nil
-    var lon: Float? = nil
-    var transactionBuyCount: Int? = nil
-    var transactionSoldCount: Int? = nil
-    var isSeller: Boolean? = nil
-    var imageUrl75x75: String? = nil
-    var firstName: String? = nil
-    var lastName: String? = nil
+    var userProfileId: Int?
+    var userId: Int?
+    var loginName: String?
+    var bio: String?
+    var gender: String?
+    var birthMonth: String?
+    var birthDay: String?
+    var birthYear: String?
+    var joinTsz: Float?
+    var materials: String?
+    var countryId: Int?
+    var region: String?
+    var city: String?
+    var location: String?
+    var avatarId: Int?
+    var lat: Float?
+    var lon: Float?
+    var transactionBuyCount: Int?
+    var transactionSoldCount: Int?
+    var isSeller: Boolean?
+    var imageUrl75x75: String?
+    var firstName: String?
+    var lastName: String?
 }
-
-
