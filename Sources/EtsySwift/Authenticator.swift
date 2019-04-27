@@ -38,7 +38,7 @@ extension Authenticator {
 }
 
 extension Authenticator.OAuth {
-    enum QueryParameters: String {
+    enum QueryParameters: String, URLQueryItemConvertible {
         case scope
         case oauthCallback = "oauth_callback"
         case oauthVerifier = "oauth_verifier"
@@ -49,7 +49,7 @@ extension Authenticator.OAuth {
 
         var components = URLComponents.init(url: URL, resolvingAgainstBaseURL: true)
         components?.queryItems = parameters
-        
+
         return components?.url
     }
 
@@ -66,12 +66,12 @@ extension Authenticator.OAuth {
         switch self {
         case .requestToken(let scope, let oauthCallback):
             return [
-                URLQueryItem(name: QueryParameters.scope.rawValue, value: scope.queryString),
-                URLQueryItem(name: QueryParameters.oauthCallback.rawValue, value: oauthCallback.absoluteString),
+                QueryParameters.scope.queryItem(value: scope.queryString),
+                QueryParameters.oauthCallback.queryItem(value: oauthCallback.absoluteString),
             ]
         case .accessToken(let oauthVerifier):
             return [
-                URLQueryItem(name: QueryParameters.oauthVerifier.rawValue, value: oauthVerifier),
+                QueryParameters.oauthVerifier.queryItem(value: oauthVerifier),
             ]
         }
     }
