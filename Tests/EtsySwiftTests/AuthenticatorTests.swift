@@ -38,7 +38,3 @@ final class AuthenticatorOAuthTests: XCTestCase {
         ("test_URL_accessToken", test_URL_accessToken),
     ]
 }
-
-final class AuthenticatorOAuthHeader: XCTestCase {
-    func test_authorizationHeader() {}
-}

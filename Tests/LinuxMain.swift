@@ -1,5 +1,5 @@
-import XCTest
 import EtsySwiftTests
+import XCTest
 
 var tests = [XCTestCaseEntry]()
 tests += AuthenticatorScopeTests.allTests()

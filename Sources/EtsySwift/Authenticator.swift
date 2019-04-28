@@ -5,15 +5,13 @@ public final class Authenticator {
     let consumerSecret: String
 
     init(key: String, secret: String) {
-        self.consumerKey = key
-        self.consumerSecret = secret
+        consumerKey = key
+        consumerSecret = secret
     }
 }
 
 public extension Authenticator {
-    func authenticate(scope: [Scope], oauthCallback: URL? = nil, result: Result<Any, Error>) {
-
-    }
+    func authenticate(scope _: [Scope], oauthCallback _: URL? = nil, result _: Result<Any, Error>) {}
 }
 
 public extension Authenticator {
@@ -39,11 +37,11 @@ public extension Authenticator {
     }
 }
 
-// MARK - Internal
+// MARK: - Internal
 
 extension Authenticator.Scope {
     static func queryString(_ scope: [Authenticator.Scope]) -> String {
-        return scope.map{ $0.rawValue }.joined(separator: " ")
+        return scope.map { $0.rawValue }.joined(separator: " ")
     }
 }
 
@@ -74,7 +72,7 @@ extension Authenticator.OAuth: URLConvertible {
     var url: URL? {
         guard let URL = URL.baseURL?.appendingPathComponent(urlPathString) else { return nil }
 
-        var components = URLComponents.init(url: URL, resolvingAgainstBaseURL: true)
+        var components = URLComponents(url: URL, resolvingAgainstBaseURL: true)
         components?.queryItems = parameters
 
         return components?.url
@@ -91,12 +89,12 @@ extension Authenticator.OAuth: URLConvertible {
 
     var parameters: [URLQueryItem] {
         switch self {
-        case .requestToken(let scope, let oauthCallback):
+        case let .requestToken(scope, oauthCallback):
             return [
                 QueryParameters.scope.queryItem(value: scope.queryString),
                 QueryParameters.oauthCallback.queryItem(value: oauthCallback.absoluteString),
             ]
-        case .accessToken(let oauthVerifier):
+        case let .accessToken(oauthVerifier):
             return [
                 QueryParameters.oauthVerifier.queryItem(value: oauthVerifier),
             ]
@@ -117,20 +115,25 @@ extension Authenticator.OAuth {
 }
 
 extension Authenticator.OAuth.Header {
-    static func authorization(consumerKey: String, consumerSecret: String, accessTokenSecret: String = "", accessToken: String? = nil) -> URLRequestHeader {
+    static func authorizationValues(consumerKey: String, consumerSecret: String, accessTokenSecret: String = "", accessToken: String? = nil) -> URLRequestHeader {
         var authorization = URLRequestHeader()
-        authorization.setValue(self.version.requestHeader(value: "1.0"))
-        authorization.setValue(self.signatureMethod.requestHeader(value: "PLAINTEXT"))
-        authorization.setValue(self.timestamp.requestHeader(value: String(Date().timeIntervalSince1970/1000)))
-        authorization.setValue(self.nonce.requestHeader(value: String(Int.random(in: 0 ..< 10000))))
+        authorization.setValue(version.requestHeader(value: "1.0"))
+        authorization.setValue(signatureMethod.requestHeader(value: "PLAINTEXT"))
+        authorization.setValue(timestamp.requestHeader(value: String(Date().timeIntervalSince1970 / 1000)))
+        authorization.setValue(nonce.requestHeader(value: String(Int.random(in: 0 ..< 10000))))
 
         authorization.setValue(self.consumerKey.requestHeader(value: consumerKey))
-        authorization.setValue(self.signature.requestHeader(value: "\(consumerSecret)&\(accessTokenSecret)"))
+        authorization.setValue(signature.requestHeader(value: "\(consumerSecret)&\(accessTokenSecret)"))
 
         if let accessToken = accessToken {
-            authorization.setValue(self.token.requestHeader(value: accessToken))
+            authorization.setValue(token.requestHeader(value: accessToken))
         }
 
         return authorization
+    }
+
+    static func authorizationHeader(consumerKey: String, consumerSecret: String, accessTokenSecret: String = "", accessToken: String? = nil) -> URLRequestHeader {
+        let authorizationValues = self.authorizationValues(consumerKey: consumerKey, consumerSecret: consumerSecret, accessTokenSecret: accessTokenSecret, accessToken: accessToken)
+        return ["Authorization" : "OAuth \(authorizationValues.map{ "\($0)=\"\($1)\"" }.joined(separator: ","))"]
     }
 }

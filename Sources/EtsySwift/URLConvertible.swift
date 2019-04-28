@@ -37,7 +37,7 @@ public protocol URLQueryItemConvertible {
 
 extension URLQueryItemConvertible where Self: RawRepresentable, RawValue == String {
     func queryItem(value: String) -> URLQueryItem {
-        return URLQueryItem(name: self.rawValue, value: value)
+        return URLQueryItem(name: rawValue, value: value)
     }
 }
 
@@ -45,11 +45,11 @@ public typealias URLRequestHeader = [String: String]
 
 extension URLRequestHeader {
     mutating func addValue(_ requestHeader: URLRequestHeader) {
-        merge(requestHeader) { (current, new) in "\(current),\(new)" }
+        merge(requestHeader) { current, new in "\(current),\(new)" }
     }
 
     mutating func setValue(_ requestHeader: URLRequestHeader) {
-        merge(requestHeader) { (_, new) in new }
+        merge(requestHeader) { _, new in new }
     }
 }
 

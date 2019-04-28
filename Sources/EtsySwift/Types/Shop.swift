@@ -1,5 +1,5 @@
-import Foundation
 import EtsyTypeKit
+import Foundation
 
 public extension Shop {
     typealias ShopId = CustomStringConvertible

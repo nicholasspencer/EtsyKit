@@ -1,9 +1,7 @@
 @testable import EtsySwift
 import XCTest
 
-final class URLConvertibleTests: XCTestCase {
-    
-}
+final class URLConvertibleTests: XCTestCase {}
 
 final class URLRequestHeaderTests: XCTestCase {
     func test_addValue() {
