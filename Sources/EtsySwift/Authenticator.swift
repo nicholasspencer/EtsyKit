@@ -2,78 +2,17 @@ import Foundation
 
 public final class Authenticator {
     let consumerKey: String
-    let consumersecret: String
+    let consumerSecret: String
 
     init(key: String, secret: String) {
         self.consumerKey = key
-        self.consumersecret = secret
+        self.consumerSecret = secret
     }
 }
 
 public extension Authenticator {
     func authenticate(scope: [Scope], oauthCallback: URL? = nil, result: Result<Any, Error>) {
 
-    }
-}
-
-extension Authenticator {
-    enum OAuth {
-        case requestToken(scope: [Scope], oauthCallback: URL)
-        case accessToken(oauthVerifier: String)
-    }
-
-    enum OAuthHeader: String {
-        case version = "oauth_version"
-        case consumerKey = "oauth_consumer_key"
-        case nonce = "oauth_nonce"
-        case signatureMethod = "oauth_signature_method"
-        case timestamp = "oauth_timestamp"
-        case signature = "oauth_signature"
-        case token = "oauth_token"
-
-        static func authorizationHeader(consumerKey: String, accessToken: String, accessTokenSecret: String) {
-
-        }
-    }
-}
-
-extension Authenticator.OAuth {
-    enum QueryParameters: String, URLQueryItemConvertible {
-        case scope
-        case oauthCallback = "oauth_callback"
-        case oauthVerifier = "oauth_verifier"
-    }
-
-    var URL: URL? {
-        guard let URL = Foundation.URL.baseURL?.appendingPathComponent(self.URLPathString) else { return nil }
-
-        var components = URLComponents.init(url: URL, resolvingAgainstBaseURL: true)
-        components?.queryItems = parameters
-
-        return components?.url
-    }
-
-    var URLPathString: String {
-        switch self {
-        case .requestToken:
-            return "oauth/request_token"
-        case .accessToken:
-            return "oauth/access_token"
-        }
-    }
-
-    var parameters: [URLQueryItem] {
-        switch self {
-        case .requestToken(let scope, let oauthCallback):
-            return [
-                QueryParameters.scope.queryItem(value: scope.queryString),
-                QueryParameters.oauthCallback.queryItem(value: oauthCallback.absoluteString),
-            ]
-        case .accessToken(let oauthVerifier):
-            return [
-                QueryParameters.oauthVerifier.queryItem(value: oauthVerifier),
-            ]
-        }
     }
 }
 
@@ -100,6 +39,8 @@ public extension Authenticator {
     }
 }
 
+// MARK - Internal
+
 extension Authenticator.Scope {
     static func queryString(_ scope: [Authenticator.Scope]) -> String {
         return scope.map{ $0.rawValue }.joined(separator: " ")
@@ -109,5 +50,87 @@ extension Authenticator.Scope {
 extension Array where Iterator.Element == Authenticator.Scope {
     var queryString: String {
         return Authenticator.Scope.queryString(self)
+    }
+}
+
+extension Authenticator {
+    enum OAuth {
+        case requestToken(scope: [Scope], oauthCallback: URL)
+        case accessToken(oauthVerifier: String)
+    }
+}
+
+extension Authenticator.OAuth: URLConvertible {
+    enum QueryParameters: String, URLQueryItemConvertible {
+        case scope
+        case oauthCallback = "oauth_callback"
+        case oauthVerifier = "oauth_verifier"
+    }
+
+    var urlString: String? {
+        return url?.absoluteString
+    }
+
+    var url: URL? {
+        guard let URL = URL.baseURL?.appendingPathComponent(urlPathString) else { return nil }
+
+        var components = URLComponents.init(url: URL, resolvingAgainstBaseURL: true)
+        components?.queryItems = parameters
+
+        return components?.url
+    }
+
+    var urlPathString: String {
+        switch self {
+        case .requestToken:
+            return "oauth/request_token"
+        case .accessToken:
+            return "oauth/access_token"
+        }
+    }
+
+    var parameters: [URLQueryItem] {
+        switch self {
+        case .requestToken(let scope, let oauthCallback):
+            return [
+                QueryParameters.scope.queryItem(value: scope.queryString),
+                QueryParameters.oauthCallback.queryItem(value: oauthCallback.absoluteString),
+            ]
+        case .accessToken(let oauthVerifier):
+            return [
+                QueryParameters.oauthVerifier.queryItem(value: oauthVerifier),
+            ]
+        }
+    }
+}
+
+extension Authenticator.OAuth {
+    enum Header: String, URLRequestHeaderConvertible {
+        case version = "oauth_version"
+        case consumerKey = "oauth_consumer_key"
+        case nonce = "oauth_nonce"
+        case signatureMethod = "oauth_signature_method"
+        case timestamp = "oauth_timestamp"
+        case signature = "oauth_signature"
+        case token = "oauth_token"
+    }
+}
+
+extension Authenticator.OAuth.Header {
+    static func authorization(consumerKey: String, consumerSecret: String, accessTokenSecret: String = "", accessToken: String? = nil) -> URLRequestHeader {
+        var authorization = URLRequestHeader()
+        authorization.setValue(self.version.requestHeader(value: "1.0"))
+        authorization.setValue(self.signatureMethod.requestHeader(value: "PLAINTEXT"))
+        authorization.setValue(self.timestamp.requestHeader(value: String(Date().timeIntervalSince1970/1000)))
+        authorization.setValue(self.nonce.requestHeader(value: String(Int.random(in: 0 ..< 10000))))
+
+        authorization.setValue(self.consumerKey.requestHeader(value: consumerKey))
+        authorization.setValue(self.signature.requestHeader(value: "\(consumerSecret)&\(accessTokenSecret)"))
+
+        if let accessToken = accessToken {
+            authorization.setValue(self.token.requestHeader(value: accessToken))
+        }
+
+        return authorization
     }
 }

@@ -22,13 +22,13 @@ final class AuthenticatorScopeTests: XCTestCase {
 
 final class AuthenticatorOAuthTests: XCTestCase {
     func test_URL_requestToken() {
-        let subject = Authenticator.OAuth.requestToken(scope: [.listingsRead, .listingsWrite], oauthCallback: URL(string: "app://something")!).URL?.absoluteString
+        let subject = Authenticator.OAuth.requestToken(scope: [.listingsRead, .listingsWrite], oauthCallback: URL(string: "app://something")!).urlString
         let expectation = "https://openapi.etsy.com/v2/oauth/request_token?scope=listings_r%20listings_w&oauth_callback=app://something"
         XCTAssertEqual(subject, expectation)
     }
 
     func test_URL_accessToken() {
-        let subject = Authenticator.OAuth.accessToken(oauthVerifier: "foo").URL?.absoluteString
+        let subject = Authenticator.OAuth.accessToken(oauthVerifier: "foo").urlString
         let expectation = "https://openapi.etsy.com/v2/oauth/access_token?oauth_verifier=foo"
         XCTAssertEqual(subject, expectation)
     }
@@ -37,4 +37,8 @@ final class AuthenticatorOAuthTests: XCTestCase {
         ("test_URL_requestToken", test_URL_requestToken),
         ("test_URL_accessToken", test_URL_accessToken),
     ]
+}
+
+final class AuthenticatorOAuthHeader: XCTestCase {
+    func test_authorizationHeader() {}
 }
