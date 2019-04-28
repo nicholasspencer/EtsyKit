@@ -24,4 +24,9 @@ final class URLRequestHeaderTests: XCTestCase {
 
         XCTAssertEqual(subject, expectation)
     }
+
+    static var allTests = [
+        ("test_addValue", test_addValue),
+        ("test_setValue", test_setValue),
+    ]
 }
