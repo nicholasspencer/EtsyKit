@@ -2,27 +2,37 @@ import Foundation
 
 public protocol URLRequestConvertible {
     var urlRequest: URLRequest? { get }
+    var urlRequestMethod: URLRequestMethod { get }
+}
+
+public extension URLRequestConvertible {
+    var urlRequestMethod: URLRequestMethod {
+        return .get
+    }
+}
+
+public extension URLRequestConvertible where Self: URLConvertible {
+    var urlRequest: URLRequest? {
+        guard let url = url else { return nil }
+        return URLRequest(url: url)
+    }
 }
 
 extension URLRequest: URLRequestConvertible {
     public var urlRequest: URLRequest? { return self }
+    public var urlRequestMethod: URLRequestMethod { 
+        return URLRequestMethod(rawValue: self.httpMethod ?? URLRequestMethod.get.rawValue) ?? .get 
+    }
 }
 
-extension URLRequest {
-    public init?(url: URLConvertible, method: URLRequestMethod, headers: URLRequestHTTPHeader = URLRequestHTTPHeader()) {
+public extension URLRequest {
+    init?(url: URLConvertible, method: URLRequestMethod, headers: URLRequestHTTPHeader = URLRequestHTTPHeader()) {
         guard let url = url.url else { return nil }
 
         self.init(url: url)
 
         httpMethod = method.rawValue
         allHTTPHeaderFields = headers
-    }
-}
-
-extension URLRequestConvertible where Self: URLConvertible {
-    public var urlRequest: URLRequest? {
-        guard let url = url else { return nil }
-        return URLRequest(url: url)
     }
 }
 
