@@ -68,7 +68,7 @@ extension Authenticator {
     }
 }
 
-extension Authenticator.OAuth: URLConvertible {
+extension Authenticator.OAuth: URLConvertible, URLRequestConvertible {
     enum QueryParameters: String, URLQueryItemConvertible {
         case scope
         case oauthCallback = "oauth_callback"
