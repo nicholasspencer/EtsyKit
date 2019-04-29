@@ -1,28 +1,32 @@
 import Foundation
 
 public final class Authenticator {
-    public private(set) var apiCredentials: Credentials?
+    public struct Credentials {
+        public let key: String
+        public let secret: String
+    }
+
+    public private(set) var apiCredentials: Credentials
     public private(set) var oauthCredentials: Credentials?
 
     public init(credentials: Credentials) {
         self.apiCredentials = credentials
     }
-}
 
-public extension Authenticator {
-    struct Credentials {
-        let key: String
-        let secret: String
-    }
-
-    convenience init(key: String, secret: String) {
+    public convenience init(key: String, secret: String) {
         self.init(credentials: Credentials(key: key, secret: secret))
     }
 }
 
-public extension Authenticator {
-    func authenticate(scope _: [Scope], oauthCallback _: URL? = nil, result _: Result<Any, Error>) {}
+extension Authenticator {
+    func requestToken(for scope: [Scope], callback: URL?) -> URLRequest? {
+        guard var urlRequest = OAuth.requestToken(scope: scope, oauthCallback: callback).urlRequest else { return nil }
+        urlRequest.setValue(headers: OAuth.Header.authorizationHeader(consumerCredentials: apiCredentials, oauthCredentials: oauthCredentials))
+        return urlRequest
+    }
 }
+
+// MARK - OAuth Scope
 
 public extension Authenticator {
     enum Scope: String, CaseIterable {
@@ -47,8 +51,6 @@ public extension Authenticator {
     }
 }
 
-// MARK: - Internal
-
 extension Authenticator.Scope {
     static func queryString(_ scope: [Authenticator.Scope]) -> String {
         return scope.map { $0.rawValue }.joined(separator: " ")
@@ -61,9 +63,11 @@ extension Array where Iterator.Element == Authenticator.Scope {
     }
 }
 
+// MARK - OAuth
+
 extension Authenticator {
     enum OAuth {
-        case requestToken(scope: [Scope], oauthCallback: URL)
+        case requestToken(scope: [Scope], oauthCallback: URL?)
         case accessToken(oauthVerifier: String)
     }
 }
@@ -83,7 +87,7 @@ extension Authenticator.OAuth: URLConvertible, URLRequestConvertible {
         guard let URL = URL.baseURL?.appendingPathComponent(urlPathString) else { return nil }
 
         var components = URLComponents(url: URL, resolvingAgainstBaseURL: true)
-        components?.queryItems = parameters
+        components?.queryItems = urlQueryItems
 
         return components?.url
     }
@@ -97,12 +101,12 @@ extension Authenticator.OAuth: URLConvertible, URLRequestConvertible {
         }
     }
 
-    var parameters: [URLQueryItem] {
+    var urlQueryItems: [URLQueryItem] {
         switch self {
         case let .requestToken(scope, oauthCallback):
             return [
                 QueryParameters.scope.queryItem(value: scope.queryString),
-                QueryParameters.oauthCallback.queryItem(value: oauthCallback.absoluteString),
+                QueryParameters.oauthCallback.queryItem(value: oauthCallback?.absoluteString ?? "oob"),
             ]
         case let .accessToken(oauthVerifier):
             return [
@@ -125,7 +129,17 @@ extension Authenticator.OAuth {
 }
 
 extension Authenticator.OAuth.Header {
-    static func authorizationValues(consumerKey: String, consumerSecret: String, accessTokenSecret: String = "", accessToken: String? = nil) -> URLRequestHTTPHeader {
+    static func authorizationHeader(consumerCredentials: Authenticator.Credentials, oauthCredentials: Authenticator.Credentials?) -> URLRequestHTTPHeader {
+        if let oauthAccessToken = oauthCredentials?.key, let oauthTokenSecret = oauthCredentials?.secret {
+            return self.authorizationHeader(consumerKey: consumerCredentials.key, consumerSecret: consumerCredentials.secret, oauthTokenSecret: oauthTokenSecret, oauthAccessToken: oauthAccessToken)
+        } else if let oauthTokenSecret = oauthCredentials?.secret {
+            return self.authorizationHeader(consumerKey: consumerCredentials.key, consumerSecret: consumerCredentials.secret, oauthTokenSecret: oauthTokenSecret)
+        } else {
+            return self.authorizationHeader(consumerKey: consumerCredentials.key, consumerSecret: consumerCredentials.secret)
+        }
+    }
+
+    static func authorizationHeader(consumerKey: String, consumerSecret: String, oauthTokenSecret: String = "", oauthAccessToken: String? = nil) -> URLRequestHTTPHeader {
         var authorization = URLRequestHTTPHeader()
         authorization.setValue(version.header(value: "1.0"))
         authorization.setValue(signatureMethod.header(value: "PLAINTEXT"))
@@ -133,17 +147,12 @@ extension Authenticator.OAuth.Header {
         authorization.setValue(nonce.header(value: String(Int.random(in: 0 ..< 10000))))
 
         authorization.setValue(self.consumerKey.header(value: consumerKey))
-        authorization.setValue(signature.header(value: "\(consumerSecret)&\(accessTokenSecret)"))
+        authorization.setValue(signature.header(value: "\(consumerSecret)&\(oauthTokenSecret)"))
 
-        if let accessToken = accessToken {
-            authorization.setValue(token.header(value: accessToken))
+        if let oauthAccessToken = oauthAccessToken {
+            authorization.setValue(token.header(value: oauthAccessToken))
         }
 
-        return authorization
-    }
-
-    static func authorizationHeader(consumerKey: String, consumerSecret: String, accessTokenSecret: String = "", accessToken: String? = nil) -> URLRequestHTTPHeader {
-        let authorizationValues = self.authorizationValues(consumerKey: consumerKey, consumerSecret: consumerSecret, accessTokenSecret: accessTokenSecret, accessToken: accessToken)
-        return ["Authorization" : "OAuth \(authorizationValues.map{ "\($0)=\"\($1)\"" }.joined(separator: ","))"]
+        return ["Authorization" : "OAuth \(authorization.map{ "\($0)=\"\($1)\"" }.joined(separator: ","))"]
     }
 }
