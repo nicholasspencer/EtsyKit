@@ -111,7 +111,7 @@ extension Authenticator.OAuth: URLConvertible {
 }
 
 extension Authenticator.OAuth {
-    enum Header: String, URLRequestHTTPHeaderConvertible {
+    enum Header: String, HTTPHeaderConvertible {
         case version = "oauth_version"
         case consumerKey = "oauth_consumer_key"
         case nonce = "oauth_nonce"
@@ -125,16 +125,16 @@ extension Authenticator.OAuth {
 extension Authenticator.OAuth.Header {
     static func authorizationValues(consumerKey: String, consumerSecret: String, accessTokenSecret: String = "", accessToken: String? = nil) -> URLRequestHTTPHeader {
         var authorization = URLRequestHTTPHeader()
-        authorization.setValue(version.requestHeader(value: "1.0"))
-        authorization.setValue(signatureMethod.requestHeader(value: "PLAINTEXT"))
-        authorization.setValue(timestamp.requestHeader(value: String(Date().timeIntervalSince1970 / 1000)))
-        authorization.setValue(nonce.requestHeader(value: String(Int.random(in: 0 ..< 10000))))
+        authorization.setValue(version.header(value: "1.0"))
+        authorization.setValue(signatureMethod.header(value: "PLAINTEXT"))
+        authorization.setValue(timestamp.header(value: String(Date().timeIntervalSince1970 / 1000)))
+        authorization.setValue(nonce.header(value: String(Int.random(in: 0 ..< 10000))))
 
-        authorization.setValue(self.consumerKey.requestHeader(value: consumerKey))
-        authorization.setValue(signature.requestHeader(value: "\(consumerSecret)&\(accessTokenSecret)"))
+        authorization.setValue(self.consumerKey.header(value: consumerKey))
+        authorization.setValue(signature.header(value: "\(consumerSecret)&\(accessTokenSecret)"))
 
         if let accessToken = accessToken {
-            authorization.setValue(token.requestHeader(value: accessToken))
+            authorization.setValue(token.header(value: accessToken))
         }
 
         return authorization

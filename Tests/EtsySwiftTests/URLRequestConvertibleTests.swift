@@ -5,9 +5,9 @@ final class URLRequestConvertibleTests: XCTestCase {
 
 }
 
-final class URLRequestHTTPHeaderTests: XCTestCase {
+final class HTTPHeaderTests: XCTestCase {
     func test_addValue() {
-        var dependency = URLRequestHTTPHeader()
+        var dependency = HTTPHeader()
         dependency.addValue(["headerKey": "foo"])
         dependency.addValue(["headerKey": "bar"])
         let subject = dependency["headerKey"]
@@ -17,7 +17,7 @@ final class URLRequestHTTPHeaderTests: XCTestCase {
     }
 
     func test_setValue() {
-        var dependency = URLRequestHTTPHeader()
+        var dependency = HTTPHeader()
         dependency.addValue(["headerKey": "foo"])
         dependency.addValue(["headerKey": "bar"])
         dependency.setValue(["headerKey": "baz"])

@@ -41,24 +41,26 @@ extension URLRequestConvertible where Self: URLConvertible {
     }
 }
 
-public typealias URLRequestHTTPHeader = [String: String]
+public typealias HTTPHeader = [String: String]
+public typealias URLRequestHTTPHeader = HTTPHeader
+public typealias URLResponseHTTPHeader = HTTPHeader
 
-extension URLRequestHTTPHeader {
-    mutating func addValue(_ requestHeader: URLRequestHTTPHeader) {
-        merge(requestHeader) { current, new in "\(current),\(new)" }
+extension HTTPHeader {
+    mutating func addValue(_ header: HTTPHeader) {
+        merge(header) { current, new in "\(current),\(new)" }
     }
 
-    mutating func setValue(_ requestHeader: URLRequestHTTPHeader) {
-        merge(requestHeader) { _, new in new }
+    mutating func setValue(_ header: HTTPHeader) {
+        merge(header) { _, new in new }
     }
 }
 
-public protocol URLRequestHTTPHeaderConvertible {
-    func requestHeader(value: String) -> URLRequestHTTPHeader
+public protocol HTTPHeaderConvertible {
+    func header(value: String) -> HTTPHeader
 }
 
-extension URLRequestHTTPHeaderConvertible where Self: RawRepresentable, RawValue == String {
-    func requestHeader(value: String) -> URLRequestHTTPHeader {
+extension HTTPHeaderConvertible where Self: RawRepresentable, RawValue == String {
+    func header(value: String) -> HTTPHeader {
         return [self.rawValue: value]
     }
 }
