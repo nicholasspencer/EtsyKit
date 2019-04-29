@@ -5,7 +5,7 @@ import XCTest
         return [
             testCase(AuthenticatorScopeTests.allTests),
             testCase(AuthenticatorOAuthTests.allTests),
-            testCase(URLRequestHTTPHeaderTests.allTests),
+            testCase(HTTPHeaderTests.allTests),
         ]
     }
 #endif

@@ -1,10 +1,6 @@
 @testable import EtsySwift
 import XCTest
 
-final class URLRequestConvertibleTests: XCTestCase {
-
-}
-
 final class HTTPHeaderTests: XCTestCase {
     func test_addValue() {
         var dependency = HTTPHeader()
