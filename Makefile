@@ -24,9 +24,6 @@ xcode:
 test:
 	@swift test --parallel --filter EtsySwiftTests
 
-integrate:
-	swift test --parallel --filter EtsySwiftIntegrationTests
-
 ## Etsy Data Generation
 .PHONY: generate type_names type_json type_structs sourcery types
 
