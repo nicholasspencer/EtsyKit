@@ -1,12 +1,20 @@
 import Foundation
 
 public final class Authenticator {
-    let consumerKey: String
-    let consumerSecret: String
+    struct Credentials {
+        let key: String
+        let secret: String
+    }
 
-    init(key: String, secret: String) {
-        consumerKey = key
-        consumerSecret = secret
+    private(set) var apiCredentials: Credentials?
+    private(set) var oauthCredentials: Credentials?
+
+    init(credentials: Credentials) {
+        self.apiCredentials = credentials
+    }
+
+    convenience init(key: String, secret: String) {
+        self.init(credentials: Credentials(key: key, secret: secret))
     }
 }
 

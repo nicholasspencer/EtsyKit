@@ -34,5 +34,6 @@ let package = Package(
             "SwiftGenKit",
         ]),
         .testTarget(name: "EtsySwiftTests", dependencies: ["EtsySwift"]),
+        .testTarget(name: "EtsySwiftIntegrationTests", dependencies: ["EtsySwift"]),
     ]
 )
