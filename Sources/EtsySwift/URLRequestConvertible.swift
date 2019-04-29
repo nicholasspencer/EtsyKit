@@ -3,17 +3,17 @@ import Foundation
 public protocol URLRequestConvertible {
     var urlRequest: URLRequest? { get }
     var urlRequestMethod: URLRequestMethod { get }
-    var urlRequestHeaders: URLRequestHeader { get }
+    var URLRequestHTTPHeaders: URLRequestHTTPHeader { get }
 }
 
 extension URLRequest: URLRequestConvertible {
     public var urlRequest: URLRequest? { return self }
     public var urlRequestMethod: URLRequestMethod { return URLRequestMethod(rawValue: httpMethod ?? "GET") ?? .get }
-    public var urlRequestHeaders: URLRequestHeader { return allHTTPHeaderFields ?? URLRequestHeader() }
+    public var URLRequestHTTPHeaders: URLRequestHTTPHeader { return allHTTPHeaderFields ?? URLRequestHTTPHeader() }
 }
 
 extension URLRequest {
-    public init?(url: URLConvertible, method: URLRequestMethod, headers: URLRequestHeader = URLRequestHeader()) {
+    public init?(url: URLConvertible, method: URLRequestMethod, headers: URLRequestHTTPHeader = URLRequestHTTPHeader()) {
         guard let url = url.url else { return nil }
 
         self.init(url: url)
@@ -27,7 +27,7 @@ extension URLRequestConvertible where Self: URLConvertible {
     public var urlRequest: URLRequest? {
         guard let url = url else { return nil }
         var request = URLRequest(url: url)
-        request.addValue(headers: urlRequestHeaders)
+        request.addValue(headers: URLRequestHTTPHeaders)
         request.httpMethod = urlRequestMethod.rawValue
         return request
     }
@@ -36,29 +36,29 @@ extension URLRequestConvertible where Self: URLConvertible {
         return .get
     }
 
-    public var urlRequestHeaders: URLRequestHeader {
-        return URLRequestHeader()
+    public var URLRequestHTTPHeaders: URLRequestHTTPHeader {
+        return URLRequestHTTPHeader()
     }
 }
 
-public typealias URLRequestHeader = [String: String]
+public typealias URLRequestHTTPHeader = [String: String]
 
-extension URLRequestHeader {
-    mutating func addValue(_ requestHeader: URLRequestHeader) {
+extension URLRequestHTTPHeader {
+    mutating func addValue(_ requestHeader: URLRequestHTTPHeader) {
         merge(requestHeader) { current, new in "\(current),\(new)" }
     }
 
-    mutating func setValue(_ requestHeader: URLRequestHeader) {
+    mutating func setValue(_ requestHeader: URLRequestHTTPHeader) {
         merge(requestHeader) { _, new in new }
     }
 }
 
-public protocol URLRequestHeaderConvertible {
-    func requestHeader(value: String) -> URLRequestHeader
+public protocol URLRequestHTTPHeaderConvertible {
+    func requestHeader(value: String) -> URLRequestHTTPHeader
 }
 
-extension URLRequestHeaderConvertible where Self: RawRepresentable, RawValue == String {
-    func requestHeader(value: String) -> URLRequestHeader {
+extension URLRequestHTTPHeaderConvertible where Self: RawRepresentable, RawValue == String {
+    func requestHeader(value: String) -> URLRequestHTTPHeader {
         return [self.rawValue: value]
     }
 }

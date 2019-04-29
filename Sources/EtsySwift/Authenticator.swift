@@ -111,7 +111,7 @@ extension Authenticator.OAuth: URLConvertible {
 }
 
 extension Authenticator.OAuth {
-    enum Header: String, URLRequestHeaderConvertible {
+    enum Header: String, URLRequestHTTPHeaderConvertible {
         case version = "oauth_version"
         case consumerKey = "oauth_consumer_key"
         case nonce = "oauth_nonce"
@@ -123,8 +123,8 @@ extension Authenticator.OAuth {
 }
 
 extension Authenticator.OAuth.Header {
-    static func authorizationValues(consumerKey: String, consumerSecret: String, accessTokenSecret: String = "", accessToken: String? = nil) -> URLRequestHeader {
-        var authorization = URLRequestHeader()
+    static func authorizationValues(consumerKey: String, consumerSecret: String, accessTokenSecret: String = "", accessToken: String? = nil) -> URLRequestHTTPHeader {
+        var authorization = URLRequestHTTPHeader()
         authorization.setValue(version.requestHeader(value: "1.0"))
         authorization.setValue(signatureMethod.requestHeader(value: "PLAINTEXT"))
         authorization.setValue(timestamp.requestHeader(value: String(Date().timeIntervalSince1970 / 1000)))
@@ -140,7 +140,7 @@ extension Authenticator.OAuth.Header {
         return authorization
     }
 
-    static func authorizationHeader(consumerKey: String, consumerSecret: String, accessTokenSecret: String = "", accessToken: String? = nil) -> URLRequestHeader {
+    static func authorizationHeader(consumerKey: String, consumerSecret: String, accessTokenSecret: String = "", accessToken: String? = nil) -> URLRequestHTTPHeader {
         let authorizationValues = self.authorizationValues(consumerKey: consumerKey, consumerSecret: consumerSecret, accessTokenSecret: accessTokenSecret, accessToken: accessToken)
         return ["Authorization" : "OAuth \(authorizationValues.map{ "\($0)=\"\($1)\"" }.joined(separator: ","))"]
     }
