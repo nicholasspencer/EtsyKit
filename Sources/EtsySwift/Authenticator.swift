@@ -168,3 +168,60 @@ extension Authenticator.OAuth.Header {
         return ["Authorization" : "OAuth \(authorization.map{ "\($0)=\"\($1)\"" }.joined(separator: ","))"]
     }
 }
+
+extension Authenticator.OAuth {
+    struct RequestTokenResponse: Decodable, Hashable {
+        let loginURL: String
+        let oauthToken: String
+        let oauthTokenSecret: String
+        let oauthCallbackConfirmed: Bool
+        let oauthConsumerKey: String
+        let oauthCallback: String
+
+        enum CodingKeys: String, CodingKey {
+            case loginURL = "login_url"
+            case oauthToken = "oauth_token"
+            case oauthTokenSecret = "oauth_token_secret"
+            case oauthCallbackConfirmed = "oauth_callback_confirmed"
+            case oauthConsumerKey = "oauth_consumer_key"
+            case oauthCallback = "oauth_callback"
+        }
+
+        init?(with response: Data) {
+            guard let response = String(data: response, encoding: .utf8) else { return nil }
+            self.init(with: response)
+        }
+
+        init?(with response: String) {
+            let response = response.split(separator: "&").reduce([:]) { (result, substring) -> [RequestTokenResponse.CodingKeys: String] in
+                var result = result
+                let keyValue = substring.split(separator: "=")
+                if
+                    let key = keyValue.first?.removingPercentEncoding,
+                    let codingKey = RequestTokenResponse.CodingKeys(stringValue: key),
+                    let value = keyValue.last?.removingPercentEncoding {
+                    result[codingKey] = value
+                }
+                return result
+            }
+
+            self.init(with: response)
+        }
+
+        init?(with response: [CodingKeys: String]) {
+            guard let loginURL = response[.loginURL] else { return nil }
+            guard let oauthToken = response[.oauthToken] else { return nil }
+            guard let oauthTokenSecret = response[.oauthTokenSecret] else { return nil }
+            guard let oauthCallBackConfirmedString = response[.oauthCallbackConfirmed], let oauthCallbackConfirmed = Bool(oauthCallBackConfirmedString) else { return nil }
+            guard let oauthConsumerKey = response[.oauthConsumerKey] else { return nil }
+            guard let oauthCallback = response[.oauthCallback] else { return nil }
+
+            self.loginURL = loginURL
+            self.oauthToken = oauthToken
+            self.oauthTokenSecret = oauthTokenSecret
+            self.oauthCallbackConfirmed = oauthCallbackConfirmed
+            self.oauthConsumerKey = oauthConsumerKey
+            self.oauthCallback = oauthCallback
+        }
+    }
+}

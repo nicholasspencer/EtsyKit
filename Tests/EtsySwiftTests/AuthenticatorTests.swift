@@ -38,3 +38,34 @@ final class AuthenticatorOAuthTests: XCTestCase {
         ("test_URL_accessToken", test_URL_accessToken),
     ]
 }
+
+extension Authenticator.OAuth.RequestTokenResponse {
+    static let testString = "login_url=LOGIN%20URL&oauth_token=OAUTH%20TOKEN&oauth_token_secret=OAUTH%20TOKEN%20SECRET&oauth_callback_confirmed=true&oauth_consumer_key=OAUTH%20CONSUMER%20KEY&oauth_callback=OAUTH%20CALLBACK"
+    init?(testExpecation: Void) {
+        let response: [CodingKeys: String] = [
+            .loginURL: "LOGIN URL",
+            .oauthToken: "OAUTH TOKEN",
+            .oauthTokenSecret: "OAUTH TOKEN SECRET",
+            .oauthCallbackConfirmed: "true",
+            .oauthConsumerKey: "OAUTH CONSUMER KEY",
+            .oauthCallback: "OAUTH CALLBACK",
+        ]
+        self.init(with: response)
+    }
+}
+
+final class AuthenticatorOAuthRequestTokenResponseTest: XCTestCase {
+    func test_initWithData() {
+        let dependency = Authenticator.OAuth.RequestTokenResponse.testString.data(using: .utf8)!
+        let subject = Authenticator.OAuth.RequestTokenResponse(with: dependency)
+        let expectation = Authenticator.OAuth.RequestTokenResponse(testExpecation: ())
+        XCTAssertEqual(subject, expectation)
+    }
+
+    func test_initWithString() {
+        let dependency = Authenticator.OAuth.RequestTokenResponse.testString
+        let subject = Authenticator.OAuth.RequestTokenResponse(with: dependency)
+        let expectation = Authenticator.OAuth.RequestTokenResponse(testExpecation: ())
+        XCTAssertEqual(subject, expectation)
+    }
+}
