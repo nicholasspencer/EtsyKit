@@ -25,7 +25,7 @@ public final class Authenticator {
 // }
 
 public extension Authenticator {
-    func requestToken(for scope: [Scope], callbackURL: URL?) -> URLRequest? {
+    func requestToken(for scope: [Scope], callbackURL: URL? = nil) -> URLRequest? {
         guard var urlRequest = OAuth.requestToken(scope: scope, oauthCallback: callbackURL).urlRequest else { return nil }
         urlRequest.setValue(headers: OAuth.Header.authorizationHeader(consumerCredentials: apiCredentials, oauthCredentials: oauthCredentials))
         return urlRequest
