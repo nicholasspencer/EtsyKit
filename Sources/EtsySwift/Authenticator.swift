@@ -77,7 +77,7 @@ extension Array where Iterator.Element == Authenticator.Scope {
 
 // MARK - OAuth
 
-extension Authenticator {
+public extension Authenticator {
     enum OAuth {
         case requestToken(scope: [Scope], oauthCallback: URL?)
         case accessToken(oauthVerifier: String)
@@ -91,11 +91,11 @@ extension Authenticator.OAuth: URLConvertible, URLRequestConvertible {
         case oauthVerifier = "oauth_verifier"
     }
 
-    var urlString: String? {
+    public var urlString: String? {
         return url?.absoluteString
     }
 
-    var url: URL? {
+    public var url: URL? {
         guard let URL = URL.baseURL?.appendingPathComponent(urlPathString) else { return nil }
 
         var components = URLComponents(url: URL, resolvingAgainstBaseURL: true)
@@ -169,14 +169,14 @@ extension Authenticator.OAuth.Header {
     }
 }
 
-extension Authenticator.OAuth {
+public extension Authenticator.OAuth {
     struct RequestTokenResponse: Decodable, Hashable {
-        let loginURL: String
-        let oauthToken: String
-        let oauthTokenSecret: String
-        let oauthCallbackConfirmed: Bool
-        let oauthConsumerKey: String
-        let oauthCallback: String
+        public let loginURL: String
+        public let oauthToken: String
+        public let oauthTokenSecret: String
+        public let oauthCallbackConfirmed: Bool
+        public let oauthConsumerKey: String
+        public let oauthCallback: String
 
         enum CodingKeys: String, CodingKey {
             case loginURL = "login_url"
@@ -187,12 +187,12 @@ extension Authenticator.OAuth {
             case oauthCallback = "oauth_callback"
         }
 
-        init?(with response: Data) {
+        public init?(with response: Data) {
             guard let response = String(data: response, encoding: .utf8) else { return nil }
             self.init(with: response)
         }
 
-        init?(with response: String) {
+        public init?(with response: String) {
             let response = response.split(separator: "&").reduce([:]) { (result, substring) -> [RequestTokenResponse.CodingKeys: String] in
                 var result = result
                 let keyValue = substring.split(separator: "=")
