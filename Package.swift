@@ -4,10 +4,10 @@
 import PackageDescription
 
 let package = Package(
-    name: "Etsy.swift",
+    name: "EtsyKit",
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
-        .library(name: "EtsySwift", targets: ["EtsySwift"]),
+        .library(name: "EtsyKit", targets: ["EtsyKit"]),
         .library(name: "EtsyTypeKit", targets: ["EtsyTypeKit"]),
         // .library(name: "EtsyStencilKit", targets: ["EtsyStencilKit"]),
     ],
@@ -22,7 +22,7 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
-        .target(name: "EtsySwift", dependencies: [
+        .target(name: "EtsyKit", dependencies: [
             "EtsyTypeKit",
         ]),
         .target(name: "EtsyTypeKit", dependencies: [
@@ -33,6 +33,6 @@ let package = Package(
         //     "StencilSwiftKit",
         //     "SwiftGenKit",
         // ]),
-        .testTarget(name: "EtsySwiftTests", dependencies: ["EtsySwift"]),
+        .testTarget(name: "EtsyKitTests", dependencies: ["EtsyKit"]),
     ]
 )

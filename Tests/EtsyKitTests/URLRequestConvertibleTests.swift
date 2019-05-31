@@ -1,4 +1,4 @@
-@testable import EtsySwift
+@testable import EtsyKit
 import XCTest
 
 final class HTTPHeaderTests: XCTestCase {
