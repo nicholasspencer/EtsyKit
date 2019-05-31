@@ -19,7 +19,7 @@ public final class Authenticator {
 }
 
 public extension Authenticator {
-    func authorize(scope: [Scope], callbackURL: URL?, callback: @escaping (Result<Authenticator.OAuth.RequestTokenResponse?, Error>) -> Void) {
+    func authorize(scope: [Scope], callbackURL: URL? = nil, _ callback: @escaping (Result<Authenticator.OAuth.RequestTokenResponse?, Error>) -> Void) {
         guard let tokenRequest = requestToken(for: scope, callbackURL: callbackURL) else { return }
 
         URLSession.shared.dataTask(with: tokenRequest) { data, response, error in
@@ -28,9 +28,27 @@ public extension Authenticator {
             }
             guard let data = data else { return }
             guard let requestResponse = Authenticator.OAuth.RequestTokenResponse(with: data) else { return }
-            self.oauthCredentials = Credentials(key: requestResponse.oauthToken, secret: requestResponse.oauthTokenSecret)
+            self.upgrade(tokenResponse: requestResponse)
             callback(.success(requestResponse))
         }.resume()
+    }
+
+    func verify(oauthVerifier: String, callback: @escaping (Result<Authenticator.OAuth.AccessTokenResponse?, Error>) -> Void) {
+        guard let tokenRequest = accessToken(oauthVerifier: oauthVerifier) else { return }
+
+        URLSession.shared.dataTask(with: tokenRequest) { data, response, error in
+            if let error = error {
+                return callback(.failure(error))
+            }
+            guard let data = data else { return }
+            guard let requestResponse = Authenticator.OAuth.AccessTokenResponse(with: data) else { return }
+            self.upgrade(tokenResponse: requestResponse)
+            callback(.success(requestResponse))
+        }.resume()
+    }
+
+    internal func upgrade(tokenResponse: TokenResponse) {
+        self.oauthCredentials = Credentials(key: tokenResponse.oauthToken, secret: tokenResponse.oauthTokenSecret)
     }
 }
 
@@ -179,8 +197,13 @@ extension Authenticator.OAuth.Header {
     }
 }
 
+protocol TokenResponse {
+    var oauthToken: String { get } 
+    var oauthTokenSecret: String { get } 
+}
+
 public extension Authenticator.OAuth {
-    struct RequestTokenResponse: Decodable, Hashable {
+    struct RequestTokenResponse: Decodable, Hashable, TokenResponse {
         public let loginURL: String
         public let oauthToken: String
         public let oauthTokenSecret: String
@@ -232,6 +255,45 @@ public extension Authenticator.OAuth {
             self.oauthCallbackConfirmed = oauthCallbackConfirmed
             self.oauthConsumerKey = oauthConsumerKey
             self.oauthCallback = oauthCallback
+        }
+    }
+
+    struct AccessTokenResponse: Decodable, Hashable, TokenResponse {
+        public let oauthToken: String
+        public let oauthTokenSecret: String
+
+        enum CodingKeys: String, CodingKey {
+            case oauthToken = "oauth_token"
+            case oauthTokenSecret = "oauth_token_secret"
+        }
+
+        public init?(with response: Data) {
+            guard let response = String(data: response, encoding: .utf8) else { return nil }
+            self.init(with: response)
+        }
+
+        public init?(with response: String) {
+            let response = response.split(separator: "&").reduce([:]) { (result, substring) -> [AccessTokenResponse.CodingKeys: String] in
+                var result = result
+                let keyValue = substring.split(separator: "=")
+                if
+                    let key = keyValue.first?.removingPercentEncoding,
+                    let codingKey = AccessTokenResponse.CodingKeys(stringValue: key),
+                    let value = keyValue.last?.removingPercentEncoding {
+                    result[codingKey] = value
+                }
+                return result
+            }
+
+            self.init(with: response)
+        }
+
+        init?(with response: [CodingKeys: String]) {
+            guard let oauthToken = response[.oauthToken] else { return nil }
+            guard let oauthTokenSecret = response[.oauthTokenSecret] else { return nil }
+
+            self.oauthToken = oauthToken
+            self.oauthTokenSecret = oauthTokenSecret
         }
     }
 }
