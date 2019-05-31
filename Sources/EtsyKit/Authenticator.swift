@@ -1,13 +1,13 @@
 import Foundation
 
 public final class Authenticator {
-    public struct Credentials {
+    public struct Credentials: Codable {
         public let key: String
         public let secret: String
     }
 
     internal private(set) var apiCredentials: Credentials
-    internal private(set) var oauthCredentials: Credentials?
+    internal private(set) var oauthCredentials: OAuth.Credentials?
 
     public init(credentials: Credentials) {
         self.apiCredentials = credentials
@@ -16,10 +16,14 @@ public final class Authenticator {
     public convenience init(key: String, secret: String) {
         self.init(credentials: Credentials(key: key, secret: secret))
     }
+
+    public var authenticated: Bool {
+        return oauthCredentials?.temporary == false
+    }
 }
 
 public extension Authenticator {
-    func authorize(scope: [Scope], callbackURL: URL? = nil, _ callback: @escaping (Result<Authenticator.OAuth.RequestTokenResponse?, Error>) -> Void) {
+    func authorize(scope: [Scope], callbackURL: URL? = nil, _ callback: @escaping (Result<OAuth.RequestTokenResponse?, Error>) -> Void) {
         guard let tokenRequest = requestToken(for: scope, callbackURL: callbackURL) else { return }
 
         URLSession.shared.dataTask(with: tokenRequest) { data, response, error in
@@ -33,7 +37,7 @@ public extension Authenticator {
         }.resume()
     }
 
-    func verify(oauthVerifier: String, callback: @escaping (Result<Authenticator.OAuth.AccessTokenResponse?, Error>) -> Void) {
+    func verify(oauthVerifier: String, callback: @escaping (Result<OAuth.AccessTokenResponse?, Error>) -> Void) {
         guard let tokenRequest = accessToken(oauthVerifier: oauthVerifier) else { return }
 
         URLSession.shared.dataTask(with: tokenRequest) { data, response, error in
@@ -55,8 +59,8 @@ public extension Authenticator {
 }
 
 extension Authenticator {
-    func upgrade(tokenResponse: TokenResponse) {
-        self.oauthCredentials = Credentials(key: tokenResponse.oauthToken, secret: tokenResponse.oauthTokenSecret)
+    func upgrade<T: TokenResponse>(tokenResponse: T) {
+        self.oauthCredentials = OAuth.Credentials(response: tokenResponse)
     }
 
     func requestToken(for scope: [Scope], callbackURL: URL? = nil) -> URLRequest? {
@@ -125,6 +129,16 @@ extension Authenticator.OAuth: URLConvertible, URLRequestConvertible {
         case oauthVerifier = "oauth_verifier"
     }
 
+    enum Header: String, HTTPHeaderConvertible {
+        case version = "oauth_version"
+        case consumerKey = "oauth_consumer_key"
+        case nonce = "oauth_nonce"
+        case signatureMethod = "oauth_signature_method"
+        case timestamp = "oauth_timestamp"
+        case signature = "oauth_signature"
+        case token = "oauth_token"
+    }
+
     public var urlString: String? {
         return url?.absoluteString
     }
@@ -163,19 +177,28 @@ extension Authenticator.OAuth: URLConvertible, URLRequestConvertible {
 }
 
 extension Authenticator.OAuth {
-    enum Header: String, HTTPHeaderConvertible {
-        case version = "oauth_version"
-        case consumerKey = "oauth_consumer_key"
-        case nonce = "oauth_nonce"
-        case signatureMethod = "oauth_signature_method"
-        case timestamp = "oauth_timestamp"
-        case signature = "oauth_signature"
-        case token = "oauth_token"
+    struct Credentials: Codable {
+        let credentials: Authenticator.Credentials
+        let temporary: Bool
+
+        var key: String { return credentials.key }
+        var secret: String { return credentials.secret }
+
+        init(credentials: Authenticator.Credentials, temporary: Bool) {
+            self.credentials = credentials
+            self.temporary = temporary
+        }
+
+        init(response: TokenResponse) {
+            let credentials = Authenticator.Credentials(key: response.oauthToken, secret: response.oauthTokenSecret)
+            let temporary = response is AccessTokenResponse ? false : true
+            self.init(credentials: credentials, temporary: temporary)
+        }
     }
 }
 
 extension Authenticator.OAuth.Header {
-    static func authorizationHeader(consumerCredentials: Authenticator.Credentials, oauthCredentials: Authenticator.Credentials?) -> URLRequestHTTPHeader {
+    static func authorizationHeader(consumerCredentials: Authenticator.Credentials, oauthCredentials: Authenticator.OAuth.Credentials?) -> URLRequestHTTPHeader {
         if let oauthAccessToken = oauthCredentials?.key, let oauthTokenSecret = oauthCredentials?.secret {
             return self.authorizationHeader(consumerKey: consumerCredentials.key, consumerSecret: consumerCredentials.secret, oauthTokenSecret: oauthTokenSecret, oauthAccessToken: oauthAccessToken)
         } else if let oauthTokenSecret = oauthCredentials?.secret {
@@ -208,8 +231,38 @@ protocol TokenResponse {
     var oauthTokenSecret: String { get } 
 }
 
+protocol TokenResponseCoding: TokenResponse, Codable {
+    associatedtype CodingKeys: CodingKey, Hashable
+    init?(with response: Data)
+    init?(with response: String)
+    init?(with response: [CodingKeys: String])
+}
+
+extension TokenResponseCoding {
+    public init?(with response: Data) {
+        guard let response = String(data: response, encoding: .utf8) else { return nil }
+        self.init(with: response)
+    }
+
+    public init?(with response: String) {
+        let response = response.split(separator: "&").reduce([:]) { (result, substring) -> [Self.CodingKeys: String] in
+            var result = result
+            let keyValue = substring.split(separator: "=")
+            if
+                let key = keyValue.first?.removingPercentEncoding,
+                let codingKey = Self.CodingKeys(stringValue: key),
+                let value = keyValue.last?.removingPercentEncoding {
+                result[codingKey] = value
+            }
+            return result
+        }
+
+        self.init(with: response)
+    }
+}
+
 public extension Authenticator.OAuth {
-    struct RequestTokenResponse: Decodable, Hashable, TokenResponse {
+    struct RequestTokenResponse: Hashable, TokenResponseCoding {
         public let loginURL: String
         public let oauthToken: String
         public let oauthTokenSecret: String
@@ -224,27 +277,6 @@ public extension Authenticator.OAuth {
             case oauthCallbackConfirmed = "oauth_callback_confirmed"
             case oauthConsumerKey = "oauth_consumer_key"
             case oauthCallback = "oauth_callback"
-        }
-
-        public init?(with response: Data) {
-            guard let response = String(data: response, encoding: .utf8) else { return nil }
-            self.init(with: response)
-        }
-
-        public init?(with response: String) {
-            let response = response.split(separator: "&").reduce([:]) { (result, substring) -> [RequestTokenResponse.CodingKeys: String] in
-                var result = result
-                let keyValue = substring.split(separator: "=")
-                if
-                    let key = keyValue.first?.removingPercentEncoding,
-                    let codingKey = RequestTokenResponse.CodingKeys(stringValue: key),
-                    let value = keyValue.last?.removingPercentEncoding {
-                    result[codingKey] = value
-                }
-                return result
-            }
-
-            self.init(with: response)
         }
 
         init?(with response: [CodingKeys: String]) {
@@ -264,34 +296,13 @@ public extension Authenticator.OAuth {
         }
     }
 
-    struct AccessTokenResponse: Decodable, Hashable, TokenResponse {
+    struct AccessTokenResponse: Hashable, TokenResponseCoding {
         public let oauthToken: String
         public let oauthTokenSecret: String
 
         enum CodingKeys: String, CodingKey {
             case oauthToken = "oauth_token"
             case oauthTokenSecret = "oauth_token_secret"
-        }
-
-        public init?(with response: Data) {
-            guard let response = String(data: response, encoding: .utf8) else { return nil }
-            self.init(with: response)
-        }
-
-        public init?(with response: String) {
-            let response = response.split(separator: "&").reduce([:]) { (result, substring) -> [AccessTokenResponse.CodingKeys: String] in
-                var result = result
-                let keyValue = substring.split(separator: "=")
-                if
-                    let key = keyValue.first?.removingPercentEncoding,
-                    let codingKey = AccessTokenResponse.CodingKeys(stringValue: key),
-                    let value = keyValue.last?.removingPercentEncoding {
-                    result[codingKey] = value
-                }
-                return result
-            }
-
-            self.init(with: response)
         }
 
         init?(with response: [CodingKeys: String]) {
