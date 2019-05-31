@@ -6,8 +6,8 @@ public final class Authenticator {
         public let secret: String
     }
 
-    public internal(set) var apiCredentials: Credentials
-    public internal(set) var oauthCredentials: Credentials?
+    internal private(set) var apiCredentials: Credentials
+    internal private(set) var oauthCredentials: Credentials?
 
     public init(credentials: Credentials) {
         self.apiCredentials = credentials
@@ -47,22 +47,28 @@ public extension Authenticator {
         }.resume()
     }
 
-    internal func upgrade(tokenResponse: TokenResponse) {
-        self.oauthCredentials = Credentials(key: tokenResponse.oauthToken, secret: tokenResponse.oauthTokenSecret)
+    func authenticate(request: URLRequest) -> URLRequest {
+        var request = request
+        request.setValue(headers: OAuth.Header.authorizationHeader(consumerCredentials: apiCredentials, oauthCredentials: oauthCredentials))
+        return request
     }
 }
 
-public extension Authenticator {
+extension Authenticator {
+    func upgrade(tokenResponse: TokenResponse) {
+        self.oauthCredentials = Credentials(key: tokenResponse.oauthToken, secret: tokenResponse.oauthTokenSecret)
+    }
+
     func requestToken(for scope: [Scope], callbackURL: URL? = nil) -> URLRequest? {
-        guard var urlRequest = OAuth.requestToken(scope: scope, oauthCallback: callbackURL).urlRequest else { return nil }
-        urlRequest.setValue(headers: OAuth.Header.authorizationHeader(consumerCredentials: apiCredentials, oauthCredentials: oauthCredentials))
-        return urlRequest
+        guard var request = OAuth.requestToken(scope: scope, oauthCallback: callbackURL).urlRequest else { return nil }
+        request = authenticate(request: request)
+        return request
     }
 
     func accessToken(oauthVerifier: String) -> URLRequest? {
-        guard var urlRequest = OAuth.accessToken(oauthVerifier: oauthVerifier).urlRequest else { return nil }
-        urlRequest.setValue(headers: OAuth.Header.authorizationHeader(consumerCredentials: apiCredentials, oauthCredentials: oauthCredentials))
-        return urlRequest
+        guard var request = OAuth.accessToken(oauthVerifier: oauthVerifier).urlRequest else { return nil }
+        request = authenticate(request: request)
+        return request
     }
 }
 

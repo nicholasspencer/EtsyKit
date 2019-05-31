@@ -1,6 +1,47 @@
 @testable import EtsyKit
 import XCTest
 
+final class AuthenticatorTests: XCTestCase {
+    fileprivate struct TokenResponse: EtsyKit.TokenResponse {
+        let oauthToken: String
+        let oauthTokenSecret: String
+    }
+    func test_upgrade() {
+        let subject = Authenticator(key: "foo", secret: "bar")
+        XCTAssertNil(subject.oauthCredentials)
+        subject.upgrade(tokenResponse: TokenResponse(oauthToken: "batz", oauthTokenSecret: "yolo"))
+        XCTAssertNotNil(subject.oauthCredentials)
+        XCTAssertEqual("batz", subject.oauthCredentials?.key)
+        XCTAssertEqual("yolo", subject.oauthCredentials?.secret)
+    }
+
+    func test_authenticate_consumer_only() {
+        let authenticator = Authenticator(key: "foo", secret: "bar")
+
+        var subject = URLRequest(url: URL(string: "http://localhost")!)
+        subject = authenticator.authenticate(request: subject)
+        XCTAssertTrue(subject.value(forHTTPHeaderField: "Authorization")!.contains("oauth_consumer_key=\"foo\""))
+        XCTAssertTrue(subject.value(forHTTPHeaderField: "Authorization")!.contains("oauth_signature=\"bar&\""))
+    }
+
+    func test_authenticate() {
+        let authenticator = Authenticator(key: "foo", secret: "bar")
+        authenticator.upgrade(tokenResponse: TokenResponse(oauthToken: "batz", oauthTokenSecret: "yolo"))
+
+        var subject = URLRequest(url: URL(string: "http://localhost")!)
+        subject = authenticator.authenticate(request: subject)
+        XCTAssertTrue(subject.value(forHTTPHeaderField: "Authorization")!.contains("oauth_consumer_key=\"foo\""))
+        XCTAssertTrue(subject.value(forHTTPHeaderField: "Authorization")!.contains("oauth_signature=\"bar&yolo\""))
+        XCTAssertTrue(subject.value(forHTTPHeaderField: "Authorization")!.contains("oauth_token=\"batz\""))
+    }
+
+    static var allTests = [
+        ("test_upgrade", test_upgrade),
+        ("test_authenticate_consumer_only", test_authenticate_consumer_only),
+        ("test_authenticate", test_authenticate),
+    ]
+}
+
 final class AuthenticatorScopeTests: XCTestCase {
     func test_queryParameter() {
         let subject = Authenticator.Scope.queryString([.listingsRead, .listingsWrite])
