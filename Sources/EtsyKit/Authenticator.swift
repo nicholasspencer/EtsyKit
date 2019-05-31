@@ -6,8 +6,8 @@ public final class Authenticator {
         public let secret: String
     }
 
-    public private(set) var apiCredentials: Credentials
-    public private(set) var oauthCredentials: Credentials?
+    public internal(set) var apiCredentials: Credentials
+    public internal(set) var oauthCredentials: Credentials?
 
     public init(credentials: Credentials) {
         self.apiCredentials = credentials
@@ -18,11 +18,21 @@ public final class Authenticator {
     }
 }
 
-// public extension Authenticator {
-//     func authorize(scope: [Scope], callbackURL: URL?, callback: (Result<Bool, Error>) -> Void) {
-//         guard var urlRequest = requestToken(for: scope, callbackURL: callbackURL) else { return }
-//     }
-// }
+public extension Authenticator {
+    func authorize(scope: [Scope], callbackURL: URL?, callback: @escaping (Result<Authenticator.OAuth.RequestTokenResponse?, Error>) -> Void) {
+        guard let tokenRequest = requestToken(for: scope, callbackURL: callbackURL) else { return }
+
+        URLSession.shared.dataTask(with: tokenRequest) { data, response, error in
+            if let error = error {
+                return callback(.failure(error))
+            }
+            guard let data = data else { return }
+            guard let requestResponse = Authenticator.OAuth.RequestTokenResponse(with: data) else { return }
+            self.oauthCredentials = Credentials(key: requestResponse.oauthToken, secret: requestResponse.oauthTokenSecret)
+            callback(.success(requestResponse))
+        }.resume()
+    }
+}
 
 public extension Authenticator {
     func requestToken(for scope: [Scope], callbackURL: URL? = nil) -> URLRequest? {

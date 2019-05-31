@@ -4,16 +4,13 @@ ApiTypeInformationLocation=Data/TypeJSON/
 TemplatesDirectory=Templates/EtsyStencilKit/
 EtsySwiftGeneratedDirectory=Sources/EtsyTypeKit/
 
-all: etsy_stencil_kit types etsy_type_kit etsy_swift
+all: types etsy_type_kit etsy_kit
 
 ## SPM
-.PHONY: etsy_stencil_kit etsy_swift etsy_type_kit xcode 
+.PHONY: etsy_kit etsy_type_kit xcode 
 
-etsy_stencil_kit:
-	@swift build --target EtsyStencilKit
-
-etsy_swift:
-	@swift build --target EtsySwift
+etsy_kit:
+	@swift build --target EtsyKit
 
 etsy_type_kit:
 	@swift build --target EtsyTypeKit
@@ -22,7 +19,7 @@ xcode:
 	@swift package generate-xcode
 
 test:
-	@swift test --parallel --filter EtsySwiftTests
+	@swift test --parallel --filter EtsyKitTests
 
 ## Etsy Data Generation
 .PHONY: generate type_names type_json type_structs sourcery types
