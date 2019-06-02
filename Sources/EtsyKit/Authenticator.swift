@@ -189,7 +189,7 @@ extension Authenticator.OAuth {
             self.temporary = temporary
         }
 
-        init(response: TokenResponse) {
+        init<Response: TokenResponse>(response: Response) {
             let credentials = Authenticator.Credentials(key: response.oauthToken, secret: response.oauthTokenSecret)
             let temporary = response is AccessTokenResponse ? false : true
             self.init(credentials: credentials, temporary: temporary)
@@ -226,19 +226,16 @@ extension Authenticator.OAuth.Header {
     }
 }
 
-protocol TokenResponse {
+protocol TokenResponse: Codable, Hashable {
     var oauthToken: String { get } 
     var oauthTokenSecret: String { get } 
-}
-
-protocol TokenResponseCoding: TokenResponse, Codable {
-    associatedtype CodingKeys: CodingKey, Hashable
+    associatedtype CodingKeys: Hashable, CodingKey
     init?(with response: Data)
     init?(with response: String)
     init?(with response: [CodingKeys: String])
 }
 
-extension TokenResponseCoding {
+extension TokenResponse {
     public init?(with response: Data) {
         guard let response = String(data: response, encoding: .utf8) else { return nil }
         self.init(with: response)
@@ -259,10 +256,14 @@ extension TokenResponseCoding {
 
         self.init(with: response)
     }
+
+    init?(with response: [CodingKeys: String]) {
+        return nil
+    }
 }
 
 public extension Authenticator.OAuth {
-    struct RequestTokenResponse: Hashable, TokenResponseCoding {
+    struct RequestTokenResponse: TokenResponse {
         public let loginURL: String
         public let oauthToken: String
         public let oauthTokenSecret: String
@@ -296,7 +297,7 @@ public extension Authenticator.OAuth {
         }
     }
 
-    struct AccessTokenResponse: Hashable, TokenResponseCoding {
+    struct AccessTokenResponse: TokenResponse {
         public let oauthToken: String
         public let oauthTokenSecret: String
 

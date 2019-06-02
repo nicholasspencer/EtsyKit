@@ -1,11 +1,16 @@
 @testable import EtsyKit
 import XCTest
 
-final class AuthenticatorTests: XCTestCase {
-    fileprivate struct TokenResponse: EtsyKit.TokenResponse {
-        let oauthToken: String
-        let oauthTokenSecret: String
+struct TokenResponse: EtsyKit.TokenResponse {
+    enum CodingKeys: String, CodingKey {
+        case oauthToken
+        case oauthTokenSecret
     }
+    let oauthToken: String
+    let oauthTokenSecret: String
+}
+
+final class AuthenticatorTests: XCTestCase {
     func test_upgrade() {
         let subject = Authenticator(key: "foo", secret: "bar")
         XCTAssertNil(subject.oauthCredentials)
