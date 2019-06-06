@@ -1,6 +1,6 @@
 ApiMethodResponse=Data/ApiMethod.response.json
 ApiTypeNames=Data/ApiTypeNames.json
-ApiTypeInformationLocation=Data/TypeJSON/
+ApiTypeInformationDirectory=Data/TypeJSON/
 TemplatesDirectory=Templates/EtsyStencilKit/
 EtsySwiftGeneratedDirectory=Sources/EtsyTypeKit/
 
@@ -30,10 +30,10 @@ type_names:
 	@bin/scrape_type_names.sh > $(ApiTypeNames)
 
 type_properties:
-	@bin/scrape_types.sh $(ApiTypeNames) $(ApiTypeInformationLocation)
+	@bin/scrape_types.sh $(ApiTypeNames) $(ApiTypeInformationDirectory)
 
 type_objects:
-	@swift run swiftgen json -p $(TemplatesDirectory)/EtsyTypeKit/Type.stencil $(ApiTypeInformationLocation) > $(EtsySwiftGeneratedDirectory)Type.swift
+	@swift run swiftgen json -p $(TemplatesDirectory)/EtsyTypeKit/Type.stencil $(ApiTypeInformationDirectory) > $(EtsySwiftGeneratedDirectory)Type.swift
 
 sourcery:
 	@sourcery
@@ -46,7 +46,7 @@ types: scrape generate
 .PHONY: clean format lint
 
 clean:
-	@rm $(ApiTypeInformationLocation)*.json
+	@rm $(ApiTypeInformationDirectory)*.json
 	@rm -r $(EtsySwiftGeneratedDirectory)**/*.generated.swift
 	@swift package clean
 
