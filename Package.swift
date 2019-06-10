@@ -10,7 +10,6 @@ let package = Package(
         .library(name: "EtsyKit", targets: ["EtsyKit"]),
         .library(name: "EtsyTypeKit", targets: ["EtsyTypeKit"]),
         .library(name: "EtsyRequestKit", targets: ["EtsyRequestKit"]),
-        // .library(name: "EtsyStencilKit", targets: ["EtsyStencilKit"]),
     ],
     dependencies: [],
     targets: [
@@ -20,17 +19,10 @@ let package = Package(
             "EtsyTypeKit",
             "EtsyRequestKit",
         ]),
-        .target(name: "EtsyTypeKit", dependencies: [
-            // "EtsyStencilKit",
-        ]),
+        .target(name: "EtsyTypeKit", dependencies: []),
         .target(name: "EtsyRequestKit", dependencies: [
             "EtsyTypeKit",
         ]),
-        // .target(name: "EtsyStencilKit", dependencies: [
-        //     "Stencil",
-        //     "StencilSwiftKit",
-        //     "SwiftGenKit",
-        // ]),
         .testTarget(name: "EtsyKitTests", dependencies: ["EtsyKit"]),
     ]
 )
@@ -39,18 +31,18 @@ let package = Package(
 
 package.dependencies.append(contentsOf: [
     // Dev deps
-    .package(url: "https://github.com/nicklockwood/SwiftFormat.git", from: "0.40.8"),
-    .package(url: "https://github.com/Realm/SwiftLint.git", from: "0.31.0"),
-    .package(url: "https://github.com/stencilproject/Stencil.git", from: "0.13.1"),
+    .package(url: "https://github.com/nicklockwood/SwiftFormat.git", .upToNextMajor(from: "0.40.8")),
+    .package(url: "https://github.com/Realm/SwiftLint.git", .upToNextMajor(from: "0.31.0")),
+    .package(url: "https://github.com/stencilproject/Stencil.git", .upToNextMajor(from: "0.13.1")),
     .package(url: "https://github.com/nicholasspencer/StencilSwiftKit.git", .branch("ExtensionScope")),
-    .package(url: "https://github.com/SwiftGen/SwiftGen.git", from: "6.1.0"),
+    .package(url: "https://github.com/SwiftGen/SwiftGen.git", .upToNextMajor(from: "6.1.0")),
 
 ])
 
 package.targets.append(contentsOf: [
     .target(name: "EtsyKitTooling", dependencies: [
         "SwiftFormat",
-        "SwiftLint",
+        "SwiftLintFramework",
         "Stencil",
         "StencilSwiftKit",
         "SwiftGenKit",
