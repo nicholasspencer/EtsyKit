@@ -37,8 +37,6 @@ let package = Package(
 
 // Developer Tooling
 
-#if DEV
-
 package.dependencies.append(contentsOf: [
     // Dev deps
     .package(url: "https://github.com/nicklockwood/SwiftFormat.git", from: "0.40.8"),
@@ -58,5 +56,3 @@ package.targets.append(contentsOf: [
         "SwiftGenKit",
     ])
 ])
-
-#endif
